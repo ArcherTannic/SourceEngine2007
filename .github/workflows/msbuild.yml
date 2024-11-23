@@ -7,12 +7,9 @@ on:
     branches: [ "main" ]
 
 env:
-  # Путь к файлу решения, относительно корня проекта
-  SOLUTION_FILE_PATH: src/everything.sln  # Укажите путь к вашему .sln файлу
-  # Конфигурация сборки (Release или Debug)
+  SOLUTION_FILE_PATH: src/everything.sln
   BUILD_CONFIGURATION: Release
-  # Платформа (32-битная)
-  PLATFORM: x86
+  PLATFORM: x64  # Попробуйте x64 или Any CPU вместо x86
 
 permissions:
   contents: read
