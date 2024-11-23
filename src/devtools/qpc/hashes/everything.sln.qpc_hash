@@ -1,0 +1,1004 @@
+"commands"
+{
+	"working_dir" "C:/Users/TannicArcher/Engine/src/"
+	"out_dir" ""
+	"macros" "HL2" "HL2MP" "EPISODIC"
+	"add" "everything"
+	"remove"
+}
+
+"hashes"
+{
+	"119ac8bdfa5ca65f342450a1899fe179" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc.py"
+	"66f6f235fa8c7fe221c5b99979971b03" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_base.py"
+	"783606fc8ce81ce88509e66d5262ba86" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_c_parser.py"
+	"4a0c6084fcc94ac880a925f73356ba5d" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_hash.py"
+	"2d60da776598f3bf32b402883944ca95" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_parser.py"
+	"6d735b6443eae5af824aa085c7ce03f9" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_project.py"
+	"d7b0326c22e496178b5a79ab1ad62a8f" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_reader.py"
+	"b3b54f4c3d7ebe2a755fd4f8be91058f" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_generator_handler.py"
+	"bc0faf2004658c19ae8414d22abc8e75" "C:/Users/TannicArcher/Engine/src/devtools/qpc/project_generators/visual_studio/visual_studio.py"
+}
+
+"files"
+{
+	"game/client/_client_hl2.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.client._client_hl2.qpc_hash"
+		"folder" "Game/Client"
+		"dependency_hash" "793213fe8f58a565f0a7fea0df8e2345"
+	}
+
+	"game/client/_client_episodic.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.client._client_episodic.qpc_hash"
+		"folder" "Game/Client"
+		"dependency_hash" "793213fe8f58a565f0a7fea0df8e2345"
+	}
+
+	"game/client/_client_hl2mp.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.client._client_hl2mp.qpc_hash"
+		"folder" "Game/Client"
+		"dependency_hash" "793213fe8f58a565f0a7fea0df8e2345"
+	}
+
+	"game/server/_server_hl2.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.server._server_hl2.qpc_hash"
+		"folder" "Game/Server"
+		"dependency_hash" "7e0640c0c6ee2a2422078c24eb6e2e45"
+	}
+
+	"game/server/_server_episodic.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.server._server_episodic.qpc_hash"
+		"folder" "Game/Server"
+		"dependency_hash" "7e0640c0c6ee2a2422078c24eb6e2e45"
+	}
+
+	"game/server/_server_hl2mp.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.server._server_hl2mp.qpc_hash"
+		"folder" "Game/Server"
+		"dependency_hash" "7e0640c0c6ee2a2422078c24eb6e2e45"
+	}
+
+	"game/gameui/_gameui_hl2.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.gameui._gameui_hl2.qpc_hash"
+		"folder" "Game/GameUI"
+		"dependency_hash" "c88cde035ef65e3107811b4fa7ca5707"
+	}
+
+	"game/gameui/_gameui_episodic.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.gameui._gameui_episodic.qpc_hash"
+		"folder" "Game/GameUI"
+		"dependency_hash" "c88cde035ef65e3107811b4fa7ca5707"
+	}
+
+	"game/gameui/_gameui_hl2mp.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/game.gameui._gameui_hl2mp.qpc_hash"
+		"folder" "Game/GameUI"
+		"dependency_hash" "c88cde035ef65e3107811b4fa7ca5707"
+	}
+
+	"vgui2/vgui_controls/vgui_controls.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.vgui_controls.vgui_controls.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"tier0/tier0.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/tier0.tier0.qpc_hash"
+		"folder" "Libraries/Tiers"
+		"dependency_hash" ""
+	}
+
+	"tier1/tier1.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/tier1.tier1.qpc_hash"
+		"folder" "Libraries/Tiers"
+		"dependency_hash" ""
+	}
+
+	"tier2/tier2.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/tier2.tier2.qpc_hash"
+		"folder" "Libraries/Tiers"
+		"dependency_hash" ""
+	}
+
+	"tier3/tier3.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/tier3.tier3.qpc_hash"
+		"folder" "Libraries/Tiers"
+		"dependency_hash" ""
+	}
+
+	"utils/mxtk/mxtoolkitwin32.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.mxtk.mxtoolkitwin32.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vstdlib/vstdlib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vstdlib.vstdlib.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "4273538dc39bd737bb31fb19038eaa90"
+	}
+
+	"utils/bsppack/bsppack.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.bsppack.bsppack.qpc_hash"
+		"folder" "Utils/BSP Tools"
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"utils/bspzip/bspzip.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.bspzip.bspzip.qpc_hash"
+		"folder" "Utils/BSP Tools"
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"thirdparty/bzip2/bzip2.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bzip2.bzip2.qpc_hash"
+		"folder" "Utils/BSP Tools"
+		"dependency_hash" ""
+	}
+
+	"utils/dx_proxy/dx_proxy_dx9_v00_pc.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.dx_proxy.dx_proxy_dx9_v00_pc.qpc_hash"
+		"folder" "Utils/shadercompile"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/dx_proxy/dx_proxy_dx9_v30_pc.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.dx_proxy.dx_proxy_dx9_v30_pc.qpc_hash"
+		"folder" "Utils/shadercompile"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/shadercompile/shadercompile_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.shadercompile.shadercompile_dll.qpc_hash"
+		"folder" "Utils/shadercompile"
+		"dependency_hash" "f9d6cbe4c4916255000547986215be63"
+	}
+
+	"utils/shadercompile_launcher/shadercompile_launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.shadercompile_launcher.shadercompile_launcher.qpc_hash"
+		"folder" "Utils/shadercompile"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/vmpi_private/mysql_wrapper/mysql_wrapper.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi_private.mysql_wrapper.mysql_wrapper.qpc_hash"
+		"folder" "Utils/shadercompile"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"datamodel/datamodel.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/datamodel.datamodel.qpc_hash"
+		"folder" "Utils/Hammer Editor"
+		"dependency_hash" ""
+	}
+
+	"utils/hammer/hammer_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.hammer.hammer_dll.qpc_hash"
+		"folder" "Utils/Hammer Editor"
+		"dependency_hash" "d831f425bfd27c3712807b9d2397a0eb"
+	}
+
+	"utils/hammer/hammer_launcher/hammer_launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.hammer.hammer_launcher.hammer_launcher.qpc_hash"
+		"folder" "Utils/Hammer Editor"
+		"dependency_hash" "c36abc8b968a188486dd7f05c2c37c8a"
+	}
+
+	"utils/FileSystemOpenDialog/filesystemopendialog.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.FileSystemOpenDialog.filesystemopendialog.qpc_hash"
+		"folder" "Utils/Hammer Editor"
+		"dependency_hash" "83b789bf42bd8d2d9e9a5a34b9b4773b"
+	}
+
+	"utils/vbsp/vbsp.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vbsp.vbsp.qpc_hash"
+		"folder" "Utils/Map Compilers"
+		"dependency_hash" "c8e5359f180e6a54c16f730745b9a94f"
+	}
+
+	"utils/vvis/vvis_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vvis.vvis_dll.qpc_hash"
+		"folder" "Utils/Map Compilers"
+		"dependency_hash" "db94ffcf7efa471f3d4f5a59162bb53c"
+	}
+
+	"utils/vvis_launcher/vvis_launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vvis_launcher.vvis_launcher.qpc_hash"
+		"folder" "Utils/Map Compilers"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/vrad/vrad_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vrad.vrad_dll.qpc_hash"
+		"folder" "Utils/Map Compilers"
+		"dependency_hash" "a019716d4e980e03b573d5cf99c7d6ed"
+	}
+
+	"utils/vrad_launcher/vrad_launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vrad_launcher.vrad_launcher.qpc_hash"
+		"folder" "Utils/Map Compilers"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/elementviewer/elementviewer.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.elementviewer.elementviewer.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "f910a033b459c9dbe2a136675a286c75"
+	}
+
+	"utils/glview/glview.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.glview.glview.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"utils/vmpi/vmpi.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" ""
+	}
+
+	"utils/vmpi/vmpi_job_search/vmpi_job_search.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_job_search.vmpi_job_search.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/vmpi/vmpi_job_watch/vmpi_job_watch.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_job_watch.vmpi_job_watch.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/vmpi/vmpi_services_watch/vmpi_services_watch.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_services_watch.vmpi_services_watch.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "f2ec96762dd2939c747b8d79e50698d1"
+	}
+
+	"utils/vmpi/vmpi_service/vmpi_service.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_service.vmpi_service.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/vmpi/vmpi_transfer/vmpi_transfer.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_transfer.vmpi_transfer.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "e98cc672043600587f8b531b93ab73ff"
+	}
+
+	"utils/vmpi/vmpi_service_install/vmpi_service_install.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_service_install.vmpi_service_install.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "f2ec96762dd2939c747b8d79e50698d1"
+	}
+
+	"utils/vmpi/vmpi_service_ui/vmpi_service_ui.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vmpi.vmpi_service_ui.vmpi_service_ui.qpc_hash"
+		"folder" "Utils/vmpi"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/normal2ssbump/normal2ssbump.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.normal2ssbump.normal2ssbump.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "c8326be20a18788752437ef9f5d83ed4"
+	}
+
+	"utils/height2normal/height2normal.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.height2normal.height2normal.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "c8326be20a18788752437ef9f5d83ed4"
+	}
+
+	"utils/height2ssbump/height2ssbump.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.height2ssbump.height2ssbump.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "3ce2a4b6d09949b4000f64b11fa12430"
+	}
+
+	"utils/vtex/vtex_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vtex.vtex_dll.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "e20c9895b46fbb8662ca122ba845e8a0"
+	}
+
+	"utils/vtex/vtex_launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vtex.vtex_launcher.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "85ab1a227b9fae0e606ea6e2a2322c05"
+	}
+
+	"utils/vtf2tga/vtf2tga.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vtf2tga.vtf2tga.qpc_hash"
+		"folder" "Utils/Converters"
+		"dependency_hash" "e20c9895b46fbb8662ca122ba845e8a0"
+	}
+
+	"utils/hlfaceposer/hlfaceposer.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.hlfaceposer.hlfaceposer.qpc_hash"
+		"folder" "Utils/Models"
+		"dependency_hash" "ca368e41f3b1b92569e7a34090728e3c"
+	}
+
+	"utils/hlmv/hlmv.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.hlmv.hlmv.qpc_hash"
+		"folder" "Utils/Models"
+		"dependency_hash" "be6d9ab21615bcf7c9c1c70ef1dec585"
+	}
+
+	"utils/studiomdl/studiomdl.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.studiomdl.studiomdl.qpc_hash"
+		"folder" "Utils/Models"
+		"dependency_hash" "706fbad193593250b5751849143ba3ab"
+	}
+
+	"utils/appidlink/appidlink.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.appidlink.appidlink.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/captioncompiler/captioncompiler.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.captioncompiler.captioncompiler.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "7a2564b328ebb0515a1249cead2b83e6"
+	}
+
+	"utils/dmxconvert/dmxconvert.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.dmxconvert.dmxconvert.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "06f62577f4d1b700514a2049995a12ad"
+	}
+
+	"utils/dmxedit/dmxedit.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.dmxedit.dmxedit.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "dda6b58041b9884396fe27044f2f1ea7"
+	}
+
+	"utils/localization_check/localization_check.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.localization_check.localization_check.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "03f7ff4b10337ba199b671a710028bcd"
+	}
+
+	"utils/modelbrowser/modelbrowser.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.modelbrowser.modelbrowser.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "f910a033b459c9dbe2a136675a286c75"
+	}
+
+	"utils/motionmapper/motionmapper.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.motionmapper.motionmapper.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "a2142262b238fe0856e745f60bc891cf"
+	}
+
+	"utils/pcffix/pcffix.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.pcffix.pcffix.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "06f62577f4d1b700514a2049995a12ad"
+	}
+
+	"utils/phonemeextractor/phonemeextractor.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.phonemeextractor.phonemeextractor.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "de0deec4d8a304ba4fdf958b61fae0ac"
+	}
+
+	"utils/QC_Eyes/QC_Eyes.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.QC_Eyes.QC_Eyes.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/QCGenerator/QCGenerator_Launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.QCGenerator.QCGenerator_Launcher.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "0a297debab93ef0a7b25219104d900db"
+	}
+
+	"utils/scenemanager/scenemanager.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.scenemanager.scenemanager.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "8f780ee56c50761d9498feb4e3781979"
+	}
+
+	"utils/sceneviewer/sceneviewer.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.sceneviewer.sceneviewer.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "f910a033b459c9dbe2a136675a286c75"
+	}
+
+	"utils/sdklauncher/SDKLauncher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.sdklauncher.SDKLauncher.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "60c73171003229df561ede258cad9de2"
+	}
+
+	"utils/serverplugin_sample/serverplugin_empty.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.serverplugin_sample.serverplugin_empty.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"utils/vcd_sound_check/vcd_sound_check.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vcd_sound_check.vcd_sound_check.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "78ee08e24b7595a9bbbadf7aa98ee926"
+	}
+
+	"utils/vcdupdate/vcdupdate.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vcdupdate.vcdupdate.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "03f7ff4b10337ba199b671a710028bcd"
+	}
+
+	"utils/vice/vice.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.vice.vice.qpc_hash"
+		"folder" "Utils"
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"thirdparty/bullet/src/qpc_scripts/BulletCollision.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bullet.src.qpc_scripts.BulletCollision.qpc_hash"
+		"folder" "Libraries/Bullet 2"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/bullet/src/qpc_scripts/BulletDynamics.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bullet.src.qpc_scripts.BulletDynamics.qpc_hash"
+		"folder" "Libraries/Bullet 2"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/bullet/src/qpc_scripts/BulletMultiThreaded.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bullet.src.qpc_scripts.BulletMultiThreaded.qpc_hash"
+		"folder" "Libraries/Bullet 2"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/bullet/src/qpc_scripts/BulletSoftBody.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bullet.src.qpc_scripts.BulletSoftBody.qpc_hash"
+		"folder" "Libraries/Bullet 2"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/bullet/src/qpc_scripts/LinearMath.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.bullet.src.qpc_scripts.LinearMath.qpc_hash"
+		"folder" "Libraries/Bullet 2"
+		"dependency_hash" ""
+	}
+
+	"appframework/appframework.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/appframework.appframework.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"mathlib/mathlib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/mathlib.mathlib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vgui2/matsys_controls/matsys_controls.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.matsys_controls.matsys_controls.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/jpeglib/jpeglib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.jpeglib.jpeglib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"materialsystem/shaderlib/shaderlib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.shaderlib.shaderlib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"bitmap/bitmap.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/bitmap.bitmap.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"choreoobjects/choreoobjects.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/choreoobjects.choreoobjects.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"dmxloader/dmxloader.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/dmxloader.dmxloader.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"particles/particles.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/particles.particles.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vtf/vtf.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vtf.vtf.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vgui2/vgui_surfacelib/vgui_surfacelib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.vgui_surfacelib.vgui_surfacelib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vgui2/src/vgui_dll.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.src.vgui_dll.qpc_hash"
+		"folder" "VGUI"
+		"dependency_hash" "e10226f5c315a9bc22065e581d24b53f"
+	}
+
+	"vguimatsurface/vguimatsurface.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vguimatsurface.vguimatsurface.qpc_hash"
+		"folder" "VGUI"
+		"dependency_hash" "823fa74fcebca042063febb38e37634f"
+	}
+
+	"gameui/GameUI.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/gameui.GameUI.qpc_hash"
+		"folder" "VGUI"
+		"dependency_hash" "107f097f615e4aa7dce9ed97a31fdf82"
+	}
+
+	"materialsystem/materialsystem.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.materialsystem.qpc_hash"
+		"folder" "Shaders"
+		"dependency_hash" "751d2302463ef03e66acea9dea9ba8aa"
+	}
+
+	"materialsystem/shaderapidx9/shaderapidx9.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.shaderapidx9.shaderapidx9.qpc_hash"
+		"folder" "Shaders"
+		"dependency_hash" "7b7ede8708e4536b101bc8ba3eaa4447"
+	}
+
+	"materialsystem/shaderapiempty/shaderapiempty.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.shaderapiempty.shaderapiempty.qpc_hash"
+		"folder" "Shaders"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"materialsystem/stdshaders/stdshader_dbg.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.stdshaders.stdshader_dbg.qpc_hash"
+		"folder" "Shaders"
+		"dependency_hash" "c74926724a9e2989ec21c6710d9d4532"
+	}
+
+	"materialsystem/stdshaders/stdshader_dx9.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/materialsystem.stdshaders.stdshader_dx9.qpc_hash"
+		"folder" "Shaders"
+		"dependency_hash" "c74926724a9e2989ec21c6710d9d4532"
+	}
+
+	"datacache/datacache.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/datacache.datacache.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "5d97fe760e393070808ef545d49daefd"
+	}
+
+	"engine/engine.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/engine.engine.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "f7979940f36facd9f74d5e7143464eea"
+	}
+
+	"filesystem/filesystem_stdio.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/filesystem.filesystem_stdio.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "85ab1a227b9fae0e606ea6e2a2322c05"
+	}
+
+	"inputsystem/inputsystem.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/inputsystem.inputsystem.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "85ab1a227b9fae0e606ea6e2a2322c05"
+	}
+
+	"launcher/launcher.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/launcher.launcher.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "4dbe430d88d26b3398844523ee379d47"
+	}
+
+	"launcher_main/launcher_main.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/launcher_main.launcher_main.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"scenefilecache/scenefilecache.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/scenefilecache.scenefilecache.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"soundemittersystem/soundemittersystem.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/soundemittersystem.soundemittersystem.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"studiorender/studiorender.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/studiorender.studiorender.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "d266dd8bcc826a226dee754bf4aa8de3"
+	}
+
+	"video/qvideo.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/video.qvideo.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "5d97fe760e393070808ef545d49daefd"
+	}
+
+	"engine/voice_codecs/minimp3/audio_minimp3.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/engine.voice_codecs.minimp3.audio_minimp3.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"unicode/unicode.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unicode.unicode.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"vphysics/vphysics.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vphysics.vphysics.qpc_hash"
+		"folder" "Game"
+		"dependency_hash" "8bd94c39b45a5549e7b82188d1737082"
+	}
+
+	"fgdlib/fgdlib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/fgdlib.fgdlib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"raytrace/raytrace.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/raytrace.raytrace.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"tools/toolutils/toolutils.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/tools.toolutils.toolutils.qpc_hash"
+		"folder" "Engine Tools"
+		"dependency_hash" ""
+	}
+
+	"movieobjects/movieobjects.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/movieobjects.movieobjects.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"dmserializers/dmserializers.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/dmserializers.dmserializers.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"vgui2/dme_controls/dme_controls.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.dme_controls.dme_controls.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"unitlib/unitlib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unitlib.unitlib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"utils/nvtristriplib/nvtristriplib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/utils.nvtristriplib.nvtristriplib.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/lzma/lzma.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.lzma.lzma.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"thirdparty/lua-5.1.1/lua.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.lua-5.1.1.lua.qpc_hash"
+		"folder" "Libraries"
+		"dependency_hash" ""
+	}
+
+	"unittests/dmxtest/dmxtest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.dmxtest.dmxtest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "fde938b0d676c240081a9dad9b4ee71a"
+	}
+
+	"unittests/ihvtest1/ihvtest1.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.ihvtest1.ihvtest1.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "fec419bc1db30e542e64d163d82a0234"
+	}
+
+	"unittests/inputtest/inputtest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.inputtest.inputtest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "f440793838448fbfbb2d12b1f8816c28"
+	}
+
+	"unittests/materialsystemtest/materialsystemtest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.materialsystemtest.materialsystemtest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "f440793838448fbfbb2d12b1f8816c28"
+	}
+
+	"unittests/matsys_regressiontest/matsys_regressiontest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.matsys_regressiontest.matsys_regressiontest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "c8326be20a18788752437ef9f5d83ed4"
+	}
+
+	"unittests/networktest/networktest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.networktest.networktest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "c36abc8b968a188486dd7f05c2c37c8a"
+	}
+
+	"unittests/rt_test/rt_test.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.rt_test.rt_test.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "3ce2a4b6d09949b4000f64b11fa12430"
+	}
+
+	"unittests/shaderapitest/shaderapitest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.shaderapitest.shaderapitest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "997c853dcffea61c4d0d2ab0ff74cc51"
+	}
+
+	"unittests/soundtest/soundtest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.soundtest.soundtest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "c36abc8b968a188486dd7f05c2c37c8a"
+	}
+
+	"unittests/testprocess/testprocess.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.testprocess.testprocess.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "85ab1a227b9fae0e606ea6e2a2322c05"
+	}
+
+	"unittests/tier1test/tier1test.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.tier1test.tier1test.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "85de5c84efc11253f4d7ff861a99a63b"
+	}
+
+	"unittests/tier2test/tier2test.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.tier2test.tier2test.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "abbc6678fe379155c30fea1b67ec5bd5"
+	}
+
+	"unittests/tier3test/tier3test.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.tier3test.tier3test.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "0da283c5530ca6ce6234fa3b2e48dc4d"
+	}
+
+	"unittests/MathlibUnitTest/mathlibtest.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/unittests.MathlibUnitTest.mathlibtest.qpc_hash"
+		"folder" "Unit Tests"
+		"dependency_hash" "de0deec4d8a304ba4fdf958b61fae0ac"
+	}
+
+	"Tracker/AdminServer/AdminServer.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/Tracker.AdminServer.AdminServer.qpc_hash"
+		"folder" ""
+		"dependency_hash" "6e7aae1259d7d9f295c72f083ac09f88"
+	}
+
+	"dedicated/dedicated.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/dedicated.dedicated.qpc_hash"
+		"folder" ""
+		"dependency_hash" "feebc353be219a321517b0f1e380b348"
+	}
+
+	"dedicated_main/dedicated_main.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/dedicated_main.dedicated_main.qpc_hash"
+		"folder" ""
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"mdllib/mdllib.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/mdllib.mdllib.qpc_hash"
+		"folder" ""
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"networksystem/networksystem.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/networksystem.networksystem.qpc_hash"
+		"folder" ""
+		"dependency_hash" "66d7b038b8c0adec6bd5690ee7e6a72c"
+	}
+
+	"soundsystem/soundsystem.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/soundsystem.soundsystem.qpc_hash"
+		"folder" ""
+		"dependency_hash" "ace24d9fc9bb7c9ad60c69b213fbb19d"
+	}
+
+	"thirdparty/libspeex/libspeex.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/thirdparty.libspeex.libspeex.qpc_hash"
+		"folder" ""
+		"dependency_hash" ""
+	}
+
+	"engine/voice_codecs/speex/vaudio_speex.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/engine.voice_codecs.speex.vaudio_speex.qpc_hash"
+		"folder" ""
+		"dependency_hash" "b941f899f0c6410e35ad1a7813338bf7"
+	}
+
+	"vgui2/vlocalize/vlocalize.qpc"
+	{
+		"hash_path" "C:/Users/TannicArcher/Engine/src/devtools/qpc/hashes/vgui2.vlocalize.vlocalize.qpc_hash"
+		"folder" ""
+		"dependency_hash" "60c73171003229df561ede258cad9de2"
+	}
+}

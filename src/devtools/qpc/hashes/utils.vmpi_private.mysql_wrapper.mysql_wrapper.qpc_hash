@@ -1,0 +1,37 @@
+"commands"
+{
+	"working_dir" "C:/Users/TannicArcher/Engine/src/utils/vmpi_private/mysql_wrapper"
+	"out_dir" "utils/vmpi_private/mysql_wrapper"
+	"macros" "HL2" "HL2MP" "EPISODIC"
+	"generators" "visual_studio"
+	"qpc_py_count" "8"
+}
+
+"hashes"
+{
+	"119ac8bdfa5ca65f342450a1899fe179" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc.py"
+	"66f6f235fa8c7fe221c5b99979971b03" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_base.py"
+	"783606fc8ce81ce88509e66d5262ba86" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_c_parser.py"
+	"4a0c6084fcc94ac880a925f73356ba5d" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_hash.py"
+	"2d60da776598f3bf32b402883944ca95" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_parser.py"
+	"6d735b6443eae5af824aa085c7ce03f9" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_project.py"
+	"d7b0326c22e496178b5a79ab1ad62a8f" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_reader.py"
+	"b3b54f4c3d7ebe2a755fd4f8be91058f" "C:/Users/TannicArcher/Engine/src/devtools/qpc/qpc_generator_handler.py"
+	"d140df34be8c636ab56961c6bd40446a" "C:/Users/TannicArcher/Engine/src/devtools/qpc/project_generators/makefile/makefile.py"
+	"bc0faf2004658c19ae8414d22abc8e75" "C:/Users/TannicArcher/Engine/src/devtools/qpc/project_generators/visual_studio/visual_studio.py"
+	"a5568775305ca49fcef7c613ba402543" "mysql_wrapper.qpc"
+	"8556ee95e9f318ebf8a98560630d5d0f" "../../../_qpc_scripts/source_dll_base.qpc"
+	"4f0f6956569fa9197fe1415bd742c8b6" "../../../_qpc_scripts/source_base.qpc"
+	"3163c5c6b26504fd57784e0f1d245d3a" "../../../_qpc_scripts/win/base_vstudio.qpc"
+	"ee3c550bc4148b1ffcec8cf5fd83d116" "../../../_qpc_scripts/win/base_exe_dll.qpc"
+	"186b6a238fac5d2dca5b55bd75f3cd47" "../../../_qpc_scripts/win/dll_base.qpc"
+}
+
+"glob_files"
+
+"dependencies"
+{
+	"tier0/tier0.qpc"
+	"vstdlib/vstdlib.qpc"
+	"tier1/tier1.qpc"
+}

@@ -1,0 +1,841 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>vgui_controls</ProjectName>
+    <ProjectGuid>{C977AE96-7402-4586-B0E3-E4CFC37C1A5F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../lib/public/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>vgui_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../thirdparty;../../thirdparty/cef;generated_proto;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../lib/public/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>vgui_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../thirdparty;../../thirdparty/cef;generated_proto;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../lib/public/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>vgui_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../thirdparty;../../thirdparty/cef;generated_proto;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../lib/public/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>vgui_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../thirdparty;../../thirdparty/cef;generated_proto;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=vgui_controls;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win32/vgui_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=vgui_controls;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win64/vgui_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=vgui_controls;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win32/vgui_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=vgui_controls;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win64/vgui_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="AnalogBar.cpp" />
+    <ClCompile Include="AnimatingImagePanel.cpp" />
+    <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="BuildFactoryHelper.cpp" />
+    <ClCompile Include="BuildGroup.cpp" />
+    <ClCompile Include="BuildModeDialog.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckButton.cpp" />
+    <ClCompile Include="CheckButtonList.cpp" />
+    <ClCompile Include="CircularProgressBar.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="consoledialog.cpp" />
+    <ClCompile Include="ControllerMap.cpp" />
+    <ClCompile Include="controls.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="DirectorySelectDialog.cpp" />
+    <ClCompile Include="Divider.cpp" />
+    <ClCompile Include="EditablePanel.cpp" />
+    <ClCompile Include="ExpandButton.cpp" />
+    <ClCompile Include="FileOpenDialog.cpp" />
+    <ClCompile Include="FileOpenStateMachine.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="FocusNavGroup.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GraphPanel.cpp" />
+    <ClCompile Include="HTML.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageList.cpp" />
+    <ClCompile Include="ImagePanel.cpp" />
+    <ClCompile Include="InputDialog.cpp" />
+    <ClCompile Include="KeyBindingHelpDialog.cpp" />
+    <ClCompile Include="KeyBoardEditorDialog.cpp" />
+    <ClCompile Include="KeyRepeat.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="ListPanel.cpp" />
+    <ClCompile Include="ListViewPanel.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="MessageDialog.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ProgressBox.cpp" />
+    <ClCompile Include="PropertyDialog.cpp" />
+    <ClCompile Include="PropertyPage.cpp" />
+    <ClCompile Include="PropertySheet.cpp" />
+    <ClCompile Include="QueryBox.cpp" />
+    <ClCompile Include="RadioButton.cpp" />
+    <ClCompile Include="RichText.cpp" />
+    <ClCompile Include="RotatingProgressBar.cpp" />
+    <ClCompile Include="savedocumentquery.cpp" />
+    <ClCompile Include="ScalableImagePanel.cpp" />
+    <ClCompile Include="ScrollableEditablePanel.cpp" />
+    <ClCompile Include="ScrollBar.cpp" />
+    <ClCompile Include="ScrollBarSlider.cpp" />
+    <ClCompile Include="SectionedListPanel.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="subrectimage.cpp" />
+    <ClCompile Include="TextEntry.cpp" />
+    <ClCompile Include="TextImage.cpp" />
+    <ClCompile Include="ToggleButton.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="ToolWindow.cpp" />
+    <ClCompile Include="TreeView.cpp" />
+    <ClCompile Include="TreeViewListControl.cpp" />
+    <ClCompile Include="URLLabel.cpp" />
+    <ClCompile Include="WizardPanel.cpp" />
+    <ClCompile Include="WizardSubPanel.cpp" />
+    <ClCompile Include="../../vgui2/src/vgui_key_translation.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../../public/vgui_controls/AnalogBar.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimatingImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimationController.h" />
+    <ClInclude Include="../../public/vgui_controls/BitmapImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildModeDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Button.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButtonList.h" />
+    <ClInclude Include="../../public/vgui_controls/CircularProgressBar.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../public/vgui_controls/ComboBox.h" />
+    <ClInclude Include="../../public/vgui_controls/consoledialog.h" />
+    <ClInclude Include="../../public/vgui_controls/ControllerMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Controls.h" />
+    <ClInclude Include="../../public/vgui_controls/CvarToggleCheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/DialogManager.h" />
+    <ClInclude Include="../../public/vgui_controls/DirectorySelectDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Divider.h" />
+    <ClInclude Include="../../public/vgui_controls/EditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ExpandButton.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenStateMachine.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../public/vgui_controls/FocusNavGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/Frame.h" />
+    <ClInclude Include="../../public/vgui_controls/GraphPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/HTML.h" />
+    <ClInclude Include="../../public/vgui_controls/Image.h" />
+    <ClInclude Include="../../public/vgui_controls/ImageList.h" />
+    <ClInclude Include="../../public/vgui_controls/ImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/InputDialog.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingHelpDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingMap.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBoardEditorDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyRepeat.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../public/vgui_controls/Label.h" />
+    <ClInclude Include="../../public/vgui_controls/ListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ListViewPanel.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/tier1/mempool.h" />
+    <ClInclude Include="../../public/vgui_controls/Menu.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuBar.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuButton.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuItem.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageBox.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Panel.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelAnimationVar.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/PHandle.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBox.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyPage.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertySheet.h" />
+    <ClInclude Include="../../public/vgui_controls/QueryBox.h" />
+    <ClInclude Include="../../public/vgui_controls/RadioButton.h" />
+    <ClInclude Include="../../public/vgui_controls/RichText.h" />
+    <ClInclude Include="../../public/vgui_controls/RotatingProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/savedocumentquery.h" />
+    <ClInclude Include="../../public/vgui_controls/ScalableImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollableEditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBarSlider.h" />
+    <ClInclude Include="../../public/vgui_controls/SectionedListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/Slider.h" />
+    <ClInclude Include="../../public/vgui_controls/Splitter.h" />
+    <ClInclude Include="../../public/vgui_controls/subrectimage.h" />
+    <ClInclude Include="../../public/vgui_controls/TextEntry.h" />
+    <ClInclude Include="../../public/vgui_controls/TextImage.h" />
+    <ClInclude Include="../../public/vgui_controls/ToggleButton.h" />
+    <ClInclude Include="../../public/vgui_controls/Tooltip.h" />
+    <ClInclude Include="../../public/vgui_controls/ToolWindow.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeView.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeViewListControl.h" />
+    <ClInclude Include="../../public/vgui_controls/URLLabel.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardSubPanel.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="AnalogBar.cpp" />
+    <ClCompile Include="AnimatingImagePanel.cpp" />
+    <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="BuildFactoryHelper.cpp" />
+    <ClCompile Include="BuildGroup.cpp" />
+    <ClCompile Include="BuildModeDialog.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckButton.cpp" />
+    <ClCompile Include="CheckButtonList.cpp" />
+    <ClCompile Include="CircularProgressBar.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="consoledialog.cpp" />
+    <ClCompile Include="ControllerMap.cpp" />
+    <ClCompile Include="controls.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="DirectorySelectDialog.cpp" />
+    <ClCompile Include="Divider.cpp" />
+    <ClCompile Include="EditablePanel.cpp" />
+    <ClCompile Include="ExpandButton.cpp" />
+    <ClCompile Include="FileOpenDialog.cpp" />
+    <ClCompile Include="FileOpenStateMachine.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="FocusNavGroup.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GraphPanel.cpp" />
+    <ClCompile Include="HTML.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageList.cpp" />
+    <ClCompile Include="ImagePanel.cpp" />
+    <ClCompile Include="InputDialog.cpp" />
+    <ClCompile Include="KeyBindingHelpDialog.cpp" />
+    <ClCompile Include="KeyBoardEditorDialog.cpp" />
+    <ClCompile Include="KeyRepeat.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="ListPanel.cpp" />
+    <ClCompile Include="ListViewPanel.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="MessageDialog.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ProgressBox.cpp" />
+    <ClCompile Include="PropertyDialog.cpp" />
+    <ClCompile Include="PropertyPage.cpp" />
+    <ClCompile Include="PropertySheet.cpp" />
+    <ClCompile Include="QueryBox.cpp" />
+    <ClCompile Include="RadioButton.cpp" />
+    <ClCompile Include="RichText.cpp" />
+    <ClCompile Include="RotatingProgressBar.cpp" />
+    <ClCompile Include="savedocumentquery.cpp" />
+    <ClCompile Include="ScalableImagePanel.cpp" />
+    <ClCompile Include="ScrollableEditablePanel.cpp" />
+    <ClCompile Include="ScrollBar.cpp" />
+    <ClCompile Include="ScrollBarSlider.cpp" />
+    <ClCompile Include="SectionedListPanel.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="subrectimage.cpp" />
+    <ClCompile Include="TextEntry.cpp" />
+    <ClCompile Include="TextImage.cpp" />
+    <ClCompile Include="ToggleButton.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="ToolWindow.cpp" />
+    <ClCompile Include="TreeView.cpp" />
+    <ClCompile Include="TreeViewListControl.cpp" />
+    <ClCompile Include="URLLabel.cpp" />
+    <ClCompile Include="WizardPanel.cpp" />
+    <ClCompile Include="WizardSubPanel.cpp" />
+    <ClCompile Include="../../vgui2/src/vgui_key_translation.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../../public/vgui_controls/AnalogBar.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimatingImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimationController.h" />
+    <ClInclude Include="../../public/vgui_controls/BitmapImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildModeDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Button.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButtonList.h" />
+    <ClInclude Include="../../public/vgui_controls/CircularProgressBar.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../public/vgui_controls/ComboBox.h" />
+    <ClInclude Include="../../public/vgui_controls/consoledialog.h" />
+    <ClInclude Include="../../public/vgui_controls/ControllerMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Controls.h" />
+    <ClInclude Include="../../public/vgui_controls/CvarToggleCheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/DialogManager.h" />
+    <ClInclude Include="../../public/vgui_controls/DirectorySelectDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Divider.h" />
+    <ClInclude Include="../../public/vgui_controls/EditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ExpandButton.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenStateMachine.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../public/vgui_controls/FocusNavGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/Frame.h" />
+    <ClInclude Include="../../public/vgui_controls/GraphPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/HTML.h" />
+    <ClInclude Include="../../public/vgui_controls/Image.h" />
+    <ClInclude Include="../../public/vgui_controls/ImageList.h" />
+    <ClInclude Include="../../public/vgui_controls/ImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/InputDialog.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingHelpDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingMap.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBoardEditorDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyRepeat.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../public/vgui_controls/Label.h" />
+    <ClInclude Include="../../public/vgui_controls/ListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ListViewPanel.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/tier1/mempool.h" />
+    <ClInclude Include="../../public/vgui_controls/Menu.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuBar.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuButton.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuItem.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageBox.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Panel.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelAnimationVar.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/PHandle.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBox.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyPage.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertySheet.h" />
+    <ClInclude Include="../../public/vgui_controls/QueryBox.h" />
+    <ClInclude Include="../../public/vgui_controls/RadioButton.h" />
+    <ClInclude Include="../../public/vgui_controls/RichText.h" />
+    <ClInclude Include="../../public/vgui_controls/RotatingProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/savedocumentquery.h" />
+    <ClInclude Include="../../public/vgui_controls/ScalableImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollableEditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBarSlider.h" />
+    <ClInclude Include="../../public/vgui_controls/SectionedListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/Slider.h" />
+    <ClInclude Include="../../public/vgui_controls/Splitter.h" />
+    <ClInclude Include="../../public/vgui_controls/subrectimage.h" />
+    <ClInclude Include="../../public/vgui_controls/TextEntry.h" />
+    <ClInclude Include="../../public/vgui_controls/TextImage.h" />
+    <ClInclude Include="../../public/vgui_controls/ToggleButton.h" />
+    <ClInclude Include="../../public/vgui_controls/Tooltip.h" />
+    <ClInclude Include="../../public/vgui_controls/ToolWindow.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeView.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeViewListControl.h" />
+    <ClInclude Include="../../public/vgui_controls/URLLabel.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardSubPanel.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="AnalogBar.cpp" />
+    <ClCompile Include="AnimatingImagePanel.cpp" />
+    <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="BuildFactoryHelper.cpp" />
+    <ClCompile Include="BuildGroup.cpp" />
+    <ClCompile Include="BuildModeDialog.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckButton.cpp" />
+    <ClCompile Include="CheckButtonList.cpp" />
+    <ClCompile Include="CircularProgressBar.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="consoledialog.cpp" />
+    <ClCompile Include="ControllerMap.cpp" />
+    <ClCompile Include="controls.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="DirectorySelectDialog.cpp" />
+    <ClCompile Include="Divider.cpp" />
+    <ClCompile Include="EditablePanel.cpp" />
+    <ClCompile Include="ExpandButton.cpp" />
+    <ClCompile Include="FileOpenDialog.cpp" />
+    <ClCompile Include="FileOpenStateMachine.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="FocusNavGroup.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GraphPanel.cpp" />
+    <ClCompile Include="HTML.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageList.cpp" />
+    <ClCompile Include="ImagePanel.cpp" />
+    <ClCompile Include="InputDialog.cpp" />
+    <ClCompile Include="KeyBindingHelpDialog.cpp" />
+    <ClCompile Include="KeyBoardEditorDialog.cpp" />
+    <ClCompile Include="KeyRepeat.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="ListPanel.cpp" />
+    <ClCompile Include="ListViewPanel.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="MessageDialog.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ProgressBox.cpp" />
+    <ClCompile Include="PropertyDialog.cpp" />
+    <ClCompile Include="PropertyPage.cpp" />
+    <ClCompile Include="PropertySheet.cpp" />
+    <ClCompile Include="QueryBox.cpp" />
+    <ClCompile Include="RadioButton.cpp" />
+    <ClCompile Include="RichText.cpp" />
+    <ClCompile Include="RotatingProgressBar.cpp" />
+    <ClCompile Include="savedocumentquery.cpp" />
+    <ClCompile Include="ScalableImagePanel.cpp" />
+    <ClCompile Include="ScrollableEditablePanel.cpp" />
+    <ClCompile Include="ScrollBar.cpp" />
+    <ClCompile Include="ScrollBarSlider.cpp" />
+    <ClCompile Include="SectionedListPanel.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="subrectimage.cpp" />
+    <ClCompile Include="TextEntry.cpp" />
+    <ClCompile Include="TextImage.cpp" />
+    <ClCompile Include="ToggleButton.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="ToolWindow.cpp" />
+    <ClCompile Include="TreeView.cpp" />
+    <ClCompile Include="TreeViewListControl.cpp" />
+    <ClCompile Include="URLLabel.cpp" />
+    <ClCompile Include="WizardPanel.cpp" />
+    <ClCompile Include="WizardSubPanel.cpp" />
+    <ClCompile Include="../../vgui2/src/vgui_key_translation.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../../public/vgui_controls/AnalogBar.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimatingImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimationController.h" />
+    <ClInclude Include="../../public/vgui_controls/BitmapImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildModeDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Button.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButtonList.h" />
+    <ClInclude Include="../../public/vgui_controls/CircularProgressBar.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../public/vgui_controls/ComboBox.h" />
+    <ClInclude Include="../../public/vgui_controls/consoledialog.h" />
+    <ClInclude Include="../../public/vgui_controls/ControllerMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Controls.h" />
+    <ClInclude Include="../../public/vgui_controls/CvarToggleCheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/DialogManager.h" />
+    <ClInclude Include="../../public/vgui_controls/DirectorySelectDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Divider.h" />
+    <ClInclude Include="../../public/vgui_controls/EditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ExpandButton.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenStateMachine.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../public/vgui_controls/FocusNavGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/Frame.h" />
+    <ClInclude Include="../../public/vgui_controls/GraphPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/HTML.h" />
+    <ClInclude Include="../../public/vgui_controls/Image.h" />
+    <ClInclude Include="../../public/vgui_controls/ImageList.h" />
+    <ClInclude Include="../../public/vgui_controls/ImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/InputDialog.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingHelpDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingMap.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBoardEditorDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyRepeat.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../public/vgui_controls/Label.h" />
+    <ClInclude Include="../../public/vgui_controls/ListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ListViewPanel.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/tier1/mempool.h" />
+    <ClInclude Include="../../public/vgui_controls/Menu.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuBar.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuButton.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuItem.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageBox.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Panel.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelAnimationVar.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/PHandle.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBox.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyPage.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertySheet.h" />
+    <ClInclude Include="../../public/vgui_controls/QueryBox.h" />
+    <ClInclude Include="../../public/vgui_controls/RadioButton.h" />
+    <ClInclude Include="../../public/vgui_controls/RichText.h" />
+    <ClInclude Include="../../public/vgui_controls/RotatingProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/savedocumentquery.h" />
+    <ClInclude Include="../../public/vgui_controls/ScalableImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollableEditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBarSlider.h" />
+    <ClInclude Include="../../public/vgui_controls/SectionedListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/Slider.h" />
+    <ClInclude Include="../../public/vgui_controls/Splitter.h" />
+    <ClInclude Include="../../public/vgui_controls/subrectimage.h" />
+    <ClInclude Include="../../public/vgui_controls/TextEntry.h" />
+    <ClInclude Include="../../public/vgui_controls/TextImage.h" />
+    <ClInclude Include="../../public/vgui_controls/ToggleButton.h" />
+    <ClInclude Include="../../public/vgui_controls/Tooltip.h" />
+    <ClInclude Include="../../public/vgui_controls/ToolWindow.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeView.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeViewListControl.h" />
+    <ClInclude Include="../../public/vgui_controls/URLLabel.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardSubPanel.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="AnalogBar.cpp" />
+    <ClCompile Include="AnimatingImagePanel.cpp" />
+    <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="BuildFactoryHelper.cpp" />
+    <ClCompile Include="BuildGroup.cpp" />
+    <ClCompile Include="BuildModeDialog.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckButton.cpp" />
+    <ClCompile Include="CheckButtonList.cpp" />
+    <ClCompile Include="CircularProgressBar.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="consoledialog.cpp" />
+    <ClCompile Include="ControllerMap.cpp" />
+    <ClCompile Include="controls.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="DirectorySelectDialog.cpp" />
+    <ClCompile Include="Divider.cpp" />
+    <ClCompile Include="EditablePanel.cpp" />
+    <ClCompile Include="ExpandButton.cpp" />
+    <ClCompile Include="FileOpenDialog.cpp" />
+    <ClCompile Include="FileOpenStateMachine.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="FocusNavGroup.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GraphPanel.cpp" />
+    <ClCompile Include="HTML.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageList.cpp" />
+    <ClCompile Include="ImagePanel.cpp" />
+    <ClCompile Include="InputDialog.cpp" />
+    <ClCompile Include="KeyBindingHelpDialog.cpp" />
+    <ClCompile Include="KeyBoardEditorDialog.cpp" />
+    <ClCompile Include="KeyRepeat.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="ListPanel.cpp" />
+    <ClCompile Include="ListViewPanel.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="MessageDialog.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ProgressBox.cpp" />
+    <ClCompile Include="PropertyDialog.cpp" />
+    <ClCompile Include="PropertyPage.cpp" />
+    <ClCompile Include="PropertySheet.cpp" />
+    <ClCompile Include="QueryBox.cpp" />
+    <ClCompile Include="RadioButton.cpp" />
+    <ClCompile Include="RichText.cpp" />
+    <ClCompile Include="RotatingProgressBar.cpp" />
+    <ClCompile Include="savedocumentquery.cpp" />
+    <ClCompile Include="ScalableImagePanel.cpp" />
+    <ClCompile Include="ScrollableEditablePanel.cpp" />
+    <ClCompile Include="ScrollBar.cpp" />
+    <ClCompile Include="ScrollBarSlider.cpp" />
+    <ClCompile Include="SectionedListPanel.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="subrectimage.cpp" />
+    <ClCompile Include="TextEntry.cpp" />
+    <ClCompile Include="TextImage.cpp" />
+    <ClCompile Include="ToggleButton.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="ToolWindow.cpp" />
+    <ClCompile Include="TreeView.cpp" />
+    <ClCompile Include="TreeViewListControl.cpp" />
+    <ClCompile Include="URLLabel.cpp" />
+    <ClCompile Include="WizardPanel.cpp" />
+    <ClCompile Include="WizardSubPanel.cpp" />
+    <ClCompile Include="../../vgui2/src/vgui_key_translation.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../../public/vgui_controls/AnalogBar.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimatingImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/AnimationController.h" />
+    <ClInclude Include="../../public/vgui_controls/BitmapImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/BuildModeDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Button.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/CheckButtonList.h" />
+    <ClInclude Include="../../public/vgui_controls/CircularProgressBar.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../public/vgui_controls/ComboBox.h" />
+    <ClInclude Include="../../public/vgui_controls/consoledialog.h" />
+    <ClInclude Include="../../public/vgui_controls/ControllerMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Controls.h" />
+    <ClInclude Include="../../public/vgui_controls/CvarToggleCheckButton.h" />
+    <ClInclude Include="../../public/vgui_controls/DialogManager.h" />
+    <ClInclude Include="../../public/vgui_controls/DirectorySelectDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/Divider.h" />
+    <ClInclude Include="../../public/vgui_controls/EditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ExpandButton.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/FileOpenStateMachine.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../public/vgui_controls/FocusNavGroup.h" />
+    <ClInclude Include="../../public/vgui_controls/Frame.h" />
+    <ClInclude Include="../../public/vgui_controls/GraphPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/HTML.h" />
+    <ClInclude Include="../../public/vgui_controls/Image.h" />
+    <ClInclude Include="../../public/vgui_controls/ImageList.h" />
+    <ClInclude Include="../../public/vgui_controls/ImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/InputDialog.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingHelpDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBindingMap.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyBoardEditorDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/KeyRepeat.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../public/vgui_controls/Label.h" />
+    <ClInclude Include="../../public/vgui_controls/ListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ListViewPanel.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/tier1/mempool.h" />
+    <ClInclude Include="../../public/vgui_controls/Menu.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuBar.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuButton.h" />
+    <ClInclude Include="../../public/vgui_controls/MenuItem.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageBox.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/MessageMap.h" />
+    <ClInclude Include="../../public/vgui_controls/Panel.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelAnimationVar.h" />
+    <ClInclude Include="../../public/vgui_controls/PanelListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/PHandle.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ProgressBox.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyDialog.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertyPage.h" />
+    <ClInclude Include="../../public/vgui_controls/PropertySheet.h" />
+    <ClInclude Include="../../public/vgui_controls/QueryBox.h" />
+    <ClInclude Include="../../public/vgui_controls/RadioButton.h" />
+    <ClInclude Include="../../public/vgui_controls/RichText.h" />
+    <ClInclude Include="../../public/vgui_controls/RotatingProgressBar.h" />
+    <ClInclude Include="../../public/vgui_controls/savedocumentquery.h" />
+    <ClInclude Include="../../public/vgui_controls/ScalableImagePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollableEditablePanel.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBar.h" />
+    <ClInclude Include="../../public/vgui_controls/ScrollBarSlider.h" />
+    <ClInclude Include="../../public/vgui_controls/SectionedListPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/Slider.h" />
+    <ClInclude Include="../../public/vgui_controls/Splitter.h" />
+    <ClInclude Include="../../public/vgui_controls/subrectimage.h" />
+    <ClInclude Include="../../public/vgui_controls/TextEntry.h" />
+    <ClInclude Include="../../public/vgui_controls/TextImage.h" />
+    <ClInclude Include="../../public/vgui_controls/ToggleButton.h" />
+    <ClInclude Include="../../public/vgui_controls/Tooltip.h" />
+    <ClInclude Include="../../public/vgui_controls/ToolWindow.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeView.h" />
+    <ClInclude Include="../../public/vgui_controls/TreeViewListControl.h" />
+    <ClInclude Include="../../public/vgui_controls/URLLabel.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardPanel.h" />
+    <ClInclude Include="../../public/vgui_controls/WizardSubPanel.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

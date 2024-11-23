@@ -1,0 +1,633 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>tier1</ProjectName>
+    <ProjectGuid>{63EC2D62-DBB9-4A06-8A8B-0D9959DDCD59}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../lib/public/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>tier1</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../lib/public/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>tier1</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../lib/public/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>tier1</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../lib/public/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>tier1</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=tier1;TIER1_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win32/tier1.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=tier1;TIER1_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win64/tier1.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=tier1;TIER1_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win32/tier1.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=tier1;TIER1_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win64/tier1.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="bitbuf.cpp" />
+    <ClCompile Include="newbitbuf.cpp" />
+    <ClCompile Include="byteswap.cpp" />
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="checksum_sha1.cpp" />
+    <ClCompile Include="commandbuffer.cpp" />
+    <ClCompile Include="convar.cpp" />
+    <ClCompile Include="datamanager.cpp" />
+    <ClCompile Include="diff.cpp" />
+    <ClCompile Include="generichash.cpp" />
+    <ClCompile Include="ilocalize.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="KeyValues.cpp" />
+    <ClCompile Include="kvpacker.cpp" />
+    <ClCompile Include="lzmaDecoder.cpp" />
+    <ClCompile Include="lzss.cpp" />
+    <ClCompile Include="mempool.cpp" />
+    <ClCompile Include="memstack.cpp" />
+    <ClCompile Include="NetAdr.cpp" />
+    <ClCompile Include="splitstring.cpp" />
+    <ClCompile Include="processor_detect.cpp" />
+    <ClCompile Include="rangecheckedvar.cpp" />
+    <ClCompile Include="reliabletimer.cpp" />
+    <ClCompile Include="stringpool.cpp" />
+    <ClCompile Include="strtools.cpp" />
+    <ClCompile Include="strtools_unicode.cpp" />
+    <ClCompile Include="tier1.cpp" />
+    <ClCompile Include="tokenreader.cpp" />
+    <ClCompile Include="sparsematrix.cpp" />
+    <ClCompile Include="uniqueid.cpp" />
+    <ClCompile Include="utlbuffer.cpp" />
+    <ClCompile Include="utlbufferutil.cpp" />
+    <ClCompile Include="utlstring.cpp" />
+    <ClCompile Include="utlsymbol.cpp" />
+    <ClCompile Include="utlbinaryblock.cpp" />
+    <ClCompile Include="snappy.cpp" />
+    <ClCompile Include="snappy-sinksource.cpp" />
+    <ClCompile Include="snappy-stubs-internal.cpp" />
+    <ClCompile Include="../thirdparty/lzma/C/LzmaDec.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../thirdparty/lzma/C/LzmaDec.h" />
+    <ClInclude Include="../thirdparty/lzma/CPP/Common/MyTypes.h" />
+    <ClInclude Include="snappy-internal.h" />
+    <ClInclude Include="snappy-stubs-internal.h" />
+    <ClInclude Include="../public/tier1/bitbuf.h" />
+    <ClInclude Include="../public/tier1/byteswap.h" />
+    <ClInclude Include="../public/tier1/callqueue.h" />
+    <ClInclude Include="../public/tier1/characterset.h" />
+    <ClInclude Include="../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../public/tier1/checksum_sha1.h" />
+    <ClInclude Include="../public/tier1/CommandBuffer.h" />
+    <ClInclude Include="../public/tier1/convar.h" />
+    <ClInclude Include="../public/tier1/datamanager.h" />
+    <ClInclude Include="../public/datamap.h" />
+    <ClInclude Include="../public/tier1/delegates.h" />
+    <ClInclude Include="../public/tier1/diff.h" />
+    <ClInclude Include="../public/tier1/fmtstr.h" />
+    <ClInclude Include="../public/tier1/functors.h" />
+    <ClInclude Include="../public/tier1/generichash.h" />
+    <ClInclude Include="../public/tier1/iconvar.h" />
+    <ClInclude Include="../public/tier1/ilocalize.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../public/tier1/KeyValues.h" />
+    <ClInclude Include="../public/tier1/kvpacker.h" />
+    <ClInclude Include="../public/tier1/lzmaDecoder.h" />
+    <ClInclude Include="../public/tier1/lzss.h" />
+    <ClInclude Include="../public/tier1/mempool.h" />
+    <ClInclude Include="../public/tier1/memstack.h" />
+    <ClInclude Include="../public/tier1/netadr.h" />
+    <ClInclude Include="../public/tier1/processor_detect.h" />
+    <ClInclude Include="../public/tier1/rangecheckedvar.h" />
+    <ClInclude Include="../public/tier1/refcount.h" />
+    <ClInclude Include="../public/tier1/smartptr.h" />
+    <ClInclude Include="../public/tier1/snappy.h" />
+    <ClInclude Include="../public/tier1/snappy-sinksource.h" />
+    <ClInclude Include="../public/tier1/stringpool.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier1/tier1.h" />
+    <ClInclude Include="../public/tier1/tokenreader.h" />
+    <ClInclude Include="../public/tier1/uniqueid.h" />
+    <ClInclude Include="../public/tier1/utlbidirectionalset.h" />
+    <ClInclude Include="../public/tier1/utlblockmemory.h" />
+    <ClInclude Include="../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../public/tier1/utlbufferutil.h" />
+    <ClInclude Include="../public/tier1/utlcommon.h" />
+    <ClInclude Include="../public/tier1/utldict.h" />
+    <ClInclude Include="../public/tier1/utlenvelope.h" />
+    <ClInclude Include="../public/tier1/utlfixedmemory.h" />
+    <ClInclude Include="../public/tier1/utlhandletable.h" />
+    <ClInclude Include="../public/tier1/utlhash.h" />
+    <ClInclude Include="../public/tier1/utlhashtable.h" />
+    <ClInclude Include="../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../public/tier1/utlmap.h" />
+    <ClInclude Include="../public/tier1/utlmemory.h" />
+    <ClInclude Include="../public/tier1/utlmultilist.h" />
+    <ClInclude Include="../public/tier1/utlpriorityqueue.h" />
+    <ClInclude Include="../public/tier1/utlqueue.h" />
+    <ClInclude Include="../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../public/tier1/UtlSortVector.h" />
+    <ClInclude Include="../public/tier1/utlstack.h" />
+    <ClInclude Include="../public/tier1/utlstring.h" />
+    <ClInclude Include="../public/tier1/UtlStringMap.h" />
+    <ClInclude Include="../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../public/tier1/utlsymbollarge.h" />
+    <ClInclude Include="../public/tier1/utlvector.h" />
+    <ClInclude Include="../public/tier1/utlbinaryblock.h" />
+    <ClInclude Include="../common/xbox/xboxstubs.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="bitbuf.cpp" />
+    <ClCompile Include="newbitbuf.cpp" />
+    <ClCompile Include="byteswap.cpp" />
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="checksum_sha1.cpp" />
+    <ClCompile Include="commandbuffer.cpp" />
+    <ClCompile Include="convar.cpp" />
+    <ClCompile Include="datamanager.cpp" />
+    <ClCompile Include="diff.cpp" />
+    <ClCompile Include="generichash.cpp" />
+    <ClCompile Include="ilocalize.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="KeyValues.cpp" />
+    <ClCompile Include="kvpacker.cpp" />
+    <ClCompile Include="lzmaDecoder.cpp" />
+    <ClCompile Include="lzss.cpp" />
+    <ClCompile Include="mempool.cpp" />
+    <ClCompile Include="memstack.cpp" />
+    <ClCompile Include="NetAdr.cpp" />
+    <ClCompile Include="splitstring.cpp" />
+    <ClCompile Include="processor_detect.cpp" />
+    <ClCompile Include="rangecheckedvar.cpp" />
+    <ClCompile Include="reliabletimer.cpp" />
+    <ClCompile Include="stringpool.cpp" />
+    <ClCompile Include="strtools.cpp" />
+    <ClCompile Include="strtools_unicode.cpp" />
+    <ClCompile Include="tier1.cpp" />
+    <ClCompile Include="tokenreader.cpp" />
+    <ClCompile Include="sparsematrix.cpp" />
+    <ClCompile Include="uniqueid.cpp" />
+    <ClCompile Include="utlbuffer.cpp" />
+    <ClCompile Include="utlbufferutil.cpp" />
+    <ClCompile Include="utlstring.cpp" />
+    <ClCompile Include="utlsymbol.cpp" />
+    <ClCompile Include="utlbinaryblock.cpp" />
+    <ClCompile Include="snappy.cpp" />
+    <ClCompile Include="snappy-sinksource.cpp" />
+    <ClCompile Include="snappy-stubs-internal.cpp" />
+    <ClCompile Include="../thirdparty/lzma/C/LzmaDec.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../thirdparty/lzma/C/LzmaDec.h" />
+    <ClInclude Include="../thirdparty/lzma/CPP/Common/MyTypes.h" />
+    <ClInclude Include="snappy-internal.h" />
+    <ClInclude Include="snappy-stubs-internal.h" />
+    <ClInclude Include="../public/tier1/bitbuf.h" />
+    <ClInclude Include="../public/tier1/byteswap.h" />
+    <ClInclude Include="../public/tier1/callqueue.h" />
+    <ClInclude Include="../public/tier1/characterset.h" />
+    <ClInclude Include="../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../public/tier1/checksum_sha1.h" />
+    <ClInclude Include="../public/tier1/CommandBuffer.h" />
+    <ClInclude Include="../public/tier1/convar.h" />
+    <ClInclude Include="../public/tier1/datamanager.h" />
+    <ClInclude Include="../public/datamap.h" />
+    <ClInclude Include="../public/tier1/delegates.h" />
+    <ClInclude Include="../public/tier1/diff.h" />
+    <ClInclude Include="../public/tier1/fmtstr.h" />
+    <ClInclude Include="../public/tier1/functors.h" />
+    <ClInclude Include="../public/tier1/generichash.h" />
+    <ClInclude Include="../public/tier1/iconvar.h" />
+    <ClInclude Include="../public/tier1/ilocalize.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../public/tier1/KeyValues.h" />
+    <ClInclude Include="../public/tier1/kvpacker.h" />
+    <ClInclude Include="../public/tier1/lzmaDecoder.h" />
+    <ClInclude Include="../public/tier1/lzss.h" />
+    <ClInclude Include="../public/tier1/mempool.h" />
+    <ClInclude Include="../public/tier1/memstack.h" />
+    <ClInclude Include="../public/tier1/netadr.h" />
+    <ClInclude Include="../public/tier1/processor_detect.h" />
+    <ClInclude Include="../public/tier1/rangecheckedvar.h" />
+    <ClInclude Include="../public/tier1/refcount.h" />
+    <ClInclude Include="../public/tier1/smartptr.h" />
+    <ClInclude Include="../public/tier1/snappy.h" />
+    <ClInclude Include="../public/tier1/snappy-sinksource.h" />
+    <ClInclude Include="../public/tier1/stringpool.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier1/tier1.h" />
+    <ClInclude Include="../public/tier1/tokenreader.h" />
+    <ClInclude Include="../public/tier1/uniqueid.h" />
+    <ClInclude Include="../public/tier1/utlbidirectionalset.h" />
+    <ClInclude Include="../public/tier1/utlblockmemory.h" />
+    <ClInclude Include="../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../public/tier1/utlbufferutil.h" />
+    <ClInclude Include="../public/tier1/utlcommon.h" />
+    <ClInclude Include="../public/tier1/utldict.h" />
+    <ClInclude Include="../public/tier1/utlenvelope.h" />
+    <ClInclude Include="../public/tier1/utlfixedmemory.h" />
+    <ClInclude Include="../public/tier1/utlhandletable.h" />
+    <ClInclude Include="../public/tier1/utlhash.h" />
+    <ClInclude Include="../public/tier1/utlhashtable.h" />
+    <ClInclude Include="../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../public/tier1/utlmap.h" />
+    <ClInclude Include="../public/tier1/utlmemory.h" />
+    <ClInclude Include="../public/tier1/utlmultilist.h" />
+    <ClInclude Include="../public/tier1/utlpriorityqueue.h" />
+    <ClInclude Include="../public/tier1/utlqueue.h" />
+    <ClInclude Include="../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../public/tier1/UtlSortVector.h" />
+    <ClInclude Include="../public/tier1/utlstack.h" />
+    <ClInclude Include="../public/tier1/utlstring.h" />
+    <ClInclude Include="../public/tier1/UtlStringMap.h" />
+    <ClInclude Include="../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../public/tier1/utlsymbollarge.h" />
+    <ClInclude Include="../public/tier1/utlvector.h" />
+    <ClInclude Include="../public/tier1/utlbinaryblock.h" />
+    <ClInclude Include="../common/xbox/xboxstubs.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="bitbuf.cpp" />
+    <ClCompile Include="newbitbuf.cpp" />
+    <ClCompile Include="byteswap.cpp" />
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="checksum_sha1.cpp" />
+    <ClCompile Include="commandbuffer.cpp" />
+    <ClCompile Include="convar.cpp" />
+    <ClCompile Include="datamanager.cpp" />
+    <ClCompile Include="diff.cpp" />
+    <ClCompile Include="generichash.cpp" />
+    <ClCompile Include="ilocalize.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="KeyValues.cpp" />
+    <ClCompile Include="kvpacker.cpp" />
+    <ClCompile Include="lzmaDecoder.cpp" />
+    <ClCompile Include="lzss.cpp" />
+    <ClCompile Include="mempool.cpp" />
+    <ClCompile Include="memstack.cpp" />
+    <ClCompile Include="NetAdr.cpp" />
+    <ClCompile Include="splitstring.cpp" />
+    <ClCompile Include="processor_detect.cpp" />
+    <ClCompile Include="rangecheckedvar.cpp" />
+    <ClCompile Include="reliabletimer.cpp" />
+    <ClCompile Include="stringpool.cpp" />
+    <ClCompile Include="strtools.cpp" />
+    <ClCompile Include="strtools_unicode.cpp" />
+    <ClCompile Include="tier1.cpp" />
+    <ClCompile Include="tokenreader.cpp" />
+    <ClCompile Include="sparsematrix.cpp" />
+    <ClCompile Include="uniqueid.cpp" />
+    <ClCompile Include="utlbuffer.cpp" />
+    <ClCompile Include="utlbufferutil.cpp" />
+    <ClCompile Include="utlstring.cpp" />
+    <ClCompile Include="utlsymbol.cpp" />
+    <ClCompile Include="utlbinaryblock.cpp" />
+    <ClCompile Include="snappy.cpp" />
+    <ClCompile Include="snappy-sinksource.cpp" />
+    <ClCompile Include="snappy-stubs-internal.cpp" />
+    <ClCompile Include="../thirdparty/lzma/C/LzmaDec.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../thirdparty/lzma/C/LzmaDec.h" />
+    <ClInclude Include="../thirdparty/lzma/CPP/Common/MyTypes.h" />
+    <ClInclude Include="snappy-internal.h" />
+    <ClInclude Include="snappy-stubs-internal.h" />
+    <ClInclude Include="../public/tier1/bitbuf.h" />
+    <ClInclude Include="../public/tier1/byteswap.h" />
+    <ClInclude Include="../public/tier1/callqueue.h" />
+    <ClInclude Include="../public/tier1/characterset.h" />
+    <ClInclude Include="../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../public/tier1/checksum_sha1.h" />
+    <ClInclude Include="../public/tier1/CommandBuffer.h" />
+    <ClInclude Include="../public/tier1/convar.h" />
+    <ClInclude Include="../public/tier1/datamanager.h" />
+    <ClInclude Include="../public/datamap.h" />
+    <ClInclude Include="../public/tier1/delegates.h" />
+    <ClInclude Include="../public/tier1/diff.h" />
+    <ClInclude Include="../public/tier1/fmtstr.h" />
+    <ClInclude Include="../public/tier1/functors.h" />
+    <ClInclude Include="../public/tier1/generichash.h" />
+    <ClInclude Include="../public/tier1/iconvar.h" />
+    <ClInclude Include="../public/tier1/ilocalize.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../public/tier1/KeyValues.h" />
+    <ClInclude Include="../public/tier1/kvpacker.h" />
+    <ClInclude Include="../public/tier1/lzmaDecoder.h" />
+    <ClInclude Include="../public/tier1/lzss.h" />
+    <ClInclude Include="../public/tier1/mempool.h" />
+    <ClInclude Include="../public/tier1/memstack.h" />
+    <ClInclude Include="../public/tier1/netadr.h" />
+    <ClInclude Include="../public/tier1/processor_detect.h" />
+    <ClInclude Include="../public/tier1/rangecheckedvar.h" />
+    <ClInclude Include="../public/tier1/refcount.h" />
+    <ClInclude Include="../public/tier1/smartptr.h" />
+    <ClInclude Include="../public/tier1/snappy.h" />
+    <ClInclude Include="../public/tier1/snappy-sinksource.h" />
+    <ClInclude Include="../public/tier1/stringpool.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier1/tier1.h" />
+    <ClInclude Include="../public/tier1/tokenreader.h" />
+    <ClInclude Include="../public/tier1/uniqueid.h" />
+    <ClInclude Include="../public/tier1/utlbidirectionalset.h" />
+    <ClInclude Include="../public/tier1/utlblockmemory.h" />
+    <ClInclude Include="../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../public/tier1/utlbufferutil.h" />
+    <ClInclude Include="../public/tier1/utlcommon.h" />
+    <ClInclude Include="../public/tier1/utldict.h" />
+    <ClInclude Include="../public/tier1/utlenvelope.h" />
+    <ClInclude Include="../public/tier1/utlfixedmemory.h" />
+    <ClInclude Include="../public/tier1/utlhandletable.h" />
+    <ClInclude Include="../public/tier1/utlhash.h" />
+    <ClInclude Include="../public/tier1/utlhashtable.h" />
+    <ClInclude Include="../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../public/tier1/utlmap.h" />
+    <ClInclude Include="../public/tier1/utlmemory.h" />
+    <ClInclude Include="../public/tier1/utlmultilist.h" />
+    <ClInclude Include="../public/tier1/utlpriorityqueue.h" />
+    <ClInclude Include="../public/tier1/utlqueue.h" />
+    <ClInclude Include="../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../public/tier1/UtlSortVector.h" />
+    <ClInclude Include="../public/tier1/utlstack.h" />
+    <ClInclude Include="../public/tier1/utlstring.h" />
+    <ClInclude Include="../public/tier1/UtlStringMap.h" />
+    <ClInclude Include="../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../public/tier1/utlsymbollarge.h" />
+    <ClInclude Include="../public/tier1/utlvector.h" />
+    <ClInclude Include="../public/tier1/utlbinaryblock.h" />
+    <ClInclude Include="../common/xbox/xboxstubs.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="bitbuf.cpp" />
+    <ClCompile Include="newbitbuf.cpp" />
+    <ClCompile Include="byteswap.cpp" />
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="checksum_sha1.cpp" />
+    <ClCompile Include="commandbuffer.cpp" />
+    <ClCompile Include="convar.cpp" />
+    <ClCompile Include="datamanager.cpp" />
+    <ClCompile Include="diff.cpp" />
+    <ClCompile Include="generichash.cpp" />
+    <ClCompile Include="ilocalize.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="KeyValues.cpp" />
+    <ClCompile Include="kvpacker.cpp" />
+    <ClCompile Include="lzmaDecoder.cpp" />
+    <ClCompile Include="lzss.cpp" />
+    <ClCompile Include="mempool.cpp" />
+    <ClCompile Include="memstack.cpp" />
+    <ClCompile Include="NetAdr.cpp" />
+    <ClCompile Include="splitstring.cpp" />
+    <ClCompile Include="processor_detect.cpp" />
+    <ClCompile Include="rangecheckedvar.cpp" />
+    <ClCompile Include="reliabletimer.cpp" />
+    <ClCompile Include="stringpool.cpp" />
+    <ClCompile Include="strtools.cpp" />
+    <ClCompile Include="strtools_unicode.cpp" />
+    <ClCompile Include="tier1.cpp" />
+    <ClCompile Include="tokenreader.cpp" />
+    <ClCompile Include="sparsematrix.cpp" />
+    <ClCompile Include="uniqueid.cpp" />
+    <ClCompile Include="utlbuffer.cpp" />
+    <ClCompile Include="utlbufferutil.cpp" />
+    <ClCompile Include="utlstring.cpp" />
+    <ClCompile Include="utlsymbol.cpp" />
+    <ClCompile Include="utlbinaryblock.cpp" />
+    <ClCompile Include="snappy.cpp" />
+    <ClCompile Include="snappy-sinksource.cpp" />
+    <ClCompile Include="snappy-stubs-internal.cpp" />
+    <ClCompile Include="../thirdparty/lzma/C/LzmaDec.c" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../thirdparty/lzma/C/LzmaDec.h" />
+    <ClInclude Include="../thirdparty/lzma/CPP/Common/MyTypes.h" />
+    <ClInclude Include="snappy-internal.h" />
+    <ClInclude Include="snappy-stubs-internal.h" />
+    <ClInclude Include="../public/tier1/bitbuf.h" />
+    <ClInclude Include="../public/tier1/byteswap.h" />
+    <ClInclude Include="../public/tier1/callqueue.h" />
+    <ClInclude Include="../public/tier1/characterset.h" />
+    <ClInclude Include="../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../public/tier1/checksum_sha1.h" />
+    <ClInclude Include="../public/tier1/CommandBuffer.h" />
+    <ClInclude Include="../public/tier1/convar.h" />
+    <ClInclude Include="../public/tier1/datamanager.h" />
+    <ClInclude Include="../public/datamap.h" />
+    <ClInclude Include="../public/tier1/delegates.h" />
+    <ClInclude Include="../public/tier1/diff.h" />
+    <ClInclude Include="../public/tier1/fmtstr.h" />
+    <ClInclude Include="../public/tier1/functors.h" />
+    <ClInclude Include="../public/tier1/generichash.h" />
+    <ClInclude Include="../public/tier1/iconvar.h" />
+    <ClInclude Include="../public/tier1/ilocalize.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../public/tier1/KeyValues.h" />
+    <ClInclude Include="../public/tier1/kvpacker.h" />
+    <ClInclude Include="../public/tier1/lzmaDecoder.h" />
+    <ClInclude Include="../public/tier1/lzss.h" />
+    <ClInclude Include="../public/tier1/mempool.h" />
+    <ClInclude Include="../public/tier1/memstack.h" />
+    <ClInclude Include="../public/tier1/netadr.h" />
+    <ClInclude Include="../public/tier1/processor_detect.h" />
+    <ClInclude Include="../public/tier1/rangecheckedvar.h" />
+    <ClInclude Include="../public/tier1/refcount.h" />
+    <ClInclude Include="../public/tier1/smartptr.h" />
+    <ClInclude Include="../public/tier1/snappy.h" />
+    <ClInclude Include="../public/tier1/snappy-sinksource.h" />
+    <ClInclude Include="../public/tier1/stringpool.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier1/tier1.h" />
+    <ClInclude Include="../public/tier1/tokenreader.h" />
+    <ClInclude Include="../public/tier1/uniqueid.h" />
+    <ClInclude Include="../public/tier1/utlbidirectionalset.h" />
+    <ClInclude Include="../public/tier1/utlblockmemory.h" />
+    <ClInclude Include="../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../public/tier1/utlbufferutil.h" />
+    <ClInclude Include="../public/tier1/utlcommon.h" />
+    <ClInclude Include="../public/tier1/utldict.h" />
+    <ClInclude Include="../public/tier1/utlenvelope.h" />
+    <ClInclude Include="../public/tier1/utlfixedmemory.h" />
+    <ClInclude Include="../public/tier1/utlhandletable.h" />
+    <ClInclude Include="../public/tier1/utlhash.h" />
+    <ClInclude Include="../public/tier1/utlhashtable.h" />
+    <ClInclude Include="../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../public/tier1/utlmap.h" />
+    <ClInclude Include="../public/tier1/utlmemory.h" />
+    <ClInclude Include="../public/tier1/utlmultilist.h" />
+    <ClInclude Include="../public/tier1/utlpriorityqueue.h" />
+    <ClInclude Include="../public/tier1/utlqueue.h" />
+    <ClInclude Include="../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../public/tier1/UtlSortVector.h" />
+    <ClInclude Include="../public/tier1/utlstack.h" />
+    <ClInclude Include="../public/tier1/utlstring.h" />
+    <ClInclude Include="../public/tier1/UtlStringMap.h" />
+    <ClInclude Include="../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../public/tier1/utlsymbollarge.h" />
+    <ClInclude Include="../public/tier1/utlvector.h" />
+    <ClInclude Include="../public/tier1/utlbinaryblock.h" />
+    <ClInclude Include="../common/xbox/xboxstubs.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

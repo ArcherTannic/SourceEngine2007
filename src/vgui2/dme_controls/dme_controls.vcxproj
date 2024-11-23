@@ -1,0 +1,653 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Dme_controls</ProjectName>
+    <ProjectGuid>{D63934AB-8542-4DF8-94B1-D996B1F07CB5}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../lib/public/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>dme_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../lib/public/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>dme_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../lib/public/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>dme_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../lib/public/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>dme_controls</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=dme_controls;DMECONTROLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Debug/dme_controls.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win32/dme_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=dme_controls;DMECONTROLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Debug/dme_controls.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win64/dme_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=dme_controls;DMECONTROLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Release/dme_controls.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win32/dme_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=dme_controls;DMECONTROLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Release/dme_controls.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/public/win64/dme_controls.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="AttributeSlider.cpp" />
+    <ClCompile Include="AssetBuilder.cpp" />
+    <ClCompile Include="attributeassetpickerpanel.cpp" />
+    <ClCompile Include="AttributeBasePickerPanel.cpp" />
+    <ClCompile Include="AttributeBoolChoicePanel.cpp" />
+    <ClCompile Include="AttributeColorPickerPanel.cpp" />
+    <ClCompile Include="attributedetailtypepickerpanel.cpp" />
+    <ClCompile Include="AttributeElementPanel.cpp" />
+    <ClCompile Include="AttributeElementPickerPanel.cpp" />
+    <ClCompile Include="AttributeFilePickerPanel.cpp" />
+    <ClCompile Include="AttributeIntChoicePanel.cpp" />
+    <ClCompile Include="AttributeInterpolatorChoicePanel.cpp" />
+    <ClCompile Include="AttributeMDLPickerPanel.cpp" />
+    <ClCompile Include="AttributeSequencePickerPanel.cpp" />
+    <ClCompile Include="attributeshaderpickerpanel.cpp" />
+    <ClCompile Include="AttributeSoundPickerPanel.cpp" />
+    <ClCompile Include="AttributeStringChoicePanel.cpp" />
+    <ClCompile Include="attributesurfacepropertypickerpanel.cpp" />
+    <ClCompile Include="AttributeTextEntry.cpp" />
+    <ClCompile Include="AttributeTextPanel.cpp" />
+    <ClCompile Include="AttributeWidgetFactory.cpp" />
+    <ClCompile Include="BaseAttributeChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributeDoubleChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributePanel.cpp" />
+    <ClCompile Include="ChannelGraphPanel.cpp" />
+    <ClCompile Include="dmecombinationsystemeditorpanel.cpp" />
+    <ClCompile Include="dmecontrols.cpp" />
+    <ClCompile Include="dmedageditpanel.cpp" />
+    <ClCompile Include="dmedagrenderpanel.cpp" />
+    <ClCompile Include="dmelogeditpanel.cpp" />
+    <ClCompile Include="dmepanel.cpp" />
+    <ClCompile Include="dmepicker.cpp" />
+    <ClCompile Include="dmepresetgroupeditorpanel.cpp" />
+    <ClCompile Include="DmeSourceDCCFilePanel.cpp" />
+    <ClCompile Include="DmeSourceSkinPanel.cpp" />
+    <ClCompile Include="ElementPropertiesTree.cpp" />
+    <ClCompile Include="FileListManager.cpp" />
+    <ClCompile Include="filtercombobox.cpp" />
+    <ClCompile Include="manipulator.cpp" />
+    <ClCompile Include="mdlpanel.cpp" />
+    <ClCompile Include="mdlpicker.cpp" />
+    <ClCompile Include="mdlsequencepicker.cpp" />
+    <ClCompile Include="particlesystempanel.cpp" />
+    <ClCompile Include="particlesystempropertiespanel.cpp" />
+    <ClCompile Include="sequencepicker.cpp" />
+    <ClCompile Include="simplepotterywheelpanel.cpp" />
+    <ClCompile Include="soundpicker.cpp" />
+    <ClCompile Include="soundrecordpanel.cpp" />
+    <ClCompile Include="vmtpanel.cpp" />
+    <ClCompile Include="BaseAnimationSetEditor.cpp" />
+    <ClCompile Include="BaseAnimSetAttributeSliderPanel.cpp" />
+    <ClCompile Include="BaseAnimSetControlGroupPanel.cpp" />
+    <ClCompile Include="BaseAnimSetPresetFaderPanel.cpp" />
+    <ClCompile Include="presetpicker.cpp" />
+    <ClCompile Include="../../public/phonemeconverter.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../../public/dme_controls/AttributeSlider.h" />
+    <ClInclude Include="../../public/dme_controls/AssetBuilder.h" />
+    <ClInclude Include="../../public/dme_controls/attributeassetpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBasePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBoolChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeColorPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributedetailtypepickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeFilePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeIntChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeInterpolatorChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeMDLPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSequencePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributeshaderpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSoundPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeStringChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributesurfacepropertypickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextEntry.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeWidgetFactory.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeDoubleChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributePanel.h" />
+    <ClInclude Include="../../public/dme_controls/ChannelGraphPanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecombinationsystemeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols_utils.h" />
+    <ClInclude Include="../../public/dme_controls/dmedageditpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmedagrenderpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepicker.h" />
+    <ClInclude Include="../../public/dme_controls/dmepresetgroupeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceDCCFilePanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceSkinPanel.h" />
+    <ClInclude Include="../../public/dme_controls/ElementPropertiesTree.h" />
+    <ClInclude Include="../../public/dme_controls/FileListManager.h" />
+    <ClInclude Include="../../public/dme_controls/filtercombobox.h" />
+    <ClInclude Include="../../public/dme_controls/inotifyui.h" />
+    <ClInclude Include="../../public/dme_controls/manipulator.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpanel.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpicker.h" />
+    <ClInclude Include="../../public/dme_controls/mdlsequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempanel.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempropertiespanel.h" />
+    <ClInclude Include="../../public/dme_controls/sequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/simplepotterywheelpanel.h" />
+    <ClInclude Include="../../public/dme_controls/soundpicker.h" />
+    <ClInclude Include="../../public/dme_controls/soundrecordpanel.h" />
+    <ClInclude Include="../../public/dme_controls/vmtpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AnimSetAttributeValue.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimationSetEditor.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetAttributeSliderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetControlGroupPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetPresetFaderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/LogPreview.h" />
+    <ClInclude Include="../../public/dme_controls/presetpicker.h" />
+    <ClInclude Include="../../public/dme_controls/RecordingState.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="AttributeSlider.cpp" />
+    <ClCompile Include="AssetBuilder.cpp" />
+    <ClCompile Include="attributeassetpickerpanel.cpp" />
+    <ClCompile Include="AttributeBasePickerPanel.cpp" />
+    <ClCompile Include="AttributeBoolChoicePanel.cpp" />
+    <ClCompile Include="AttributeColorPickerPanel.cpp" />
+    <ClCompile Include="attributedetailtypepickerpanel.cpp" />
+    <ClCompile Include="AttributeElementPanel.cpp" />
+    <ClCompile Include="AttributeElementPickerPanel.cpp" />
+    <ClCompile Include="AttributeFilePickerPanel.cpp" />
+    <ClCompile Include="AttributeIntChoicePanel.cpp" />
+    <ClCompile Include="AttributeInterpolatorChoicePanel.cpp" />
+    <ClCompile Include="AttributeMDLPickerPanel.cpp" />
+    <ClCompile Include="AttributeSequencePickerPanel.cpp" />
+    <ClCompile Include="attributeshaderpickerpanel.cpp" />
+    <ClCompile Include="AttributeSoundPickerPanel.cpp" />
+    <ClCompile Include="AttributeStringChoicePanel.cpp" />
+    <ClCompile Include="attributesurfacepropertypickerpanel.cpp" />
+    <ClCompile Include="AttributeTextEntry.cpp" />
+    <ClCompile Include="AttributeTextPanel.cpp" />
+    <ClCompile Include="AttributeWidgetFactory.cpp" />
+    <ClCompile Include="BaseAttributeChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributeDoubleChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributePanel.cpp" />
+    <ClCompile Include="ChannelGraphPanel.cpp" />
+    <ClCompile Include="dmecombinationsystemeditorpanel.cpp" />
+    <ClCompile Include="dmecontrols.cpp" />
+    <ClCompile Include="dmedageditpanel.cpp" />
+    <ClCompile Include="dmedagrenderpanel.cpp" />
+    <ClCompile Include="dmelogeditpanel.cpp" />
+    <ClCompile Include="dmepanel.cpp" />
+    <ClCompile Include="dmepicker.cpp" />
+    <ClCompile Include="dmepresetgroupeditorpanel.cpp" />
+    <ClCompile Include="DmeSourceDCCFilePanel.cpp" />
+    <ClCompile Include="DmeSourceSkinPanel.cpp" />
+    <ClCompile Include="ElementPropertiesTree.cpp" />
+    <ClCompile Include="FileListManager.cpp" />
+    <ClCompile Include="filtercombobox.cpp" />
+    <ClCompile Include="manipulator.cpp" />
+    <ClCompile Include="mdlpanel.cpp" />
+    <ClCompile Include="mdlpicker.cpp" />
+    <ClCompile Include="mdlsequencepicker.cpp" />
+    <ClCompile Include="particlesystempanel.cpp" />
+    <ClCompile Include="particlesystempropertiespanel.cpp" />
+    <ClCompile Include="sequencepicker.cpp" />
+    <ClCompile Include="simplepotterywheelpanel.cpp" />
+    <ClCompile Include="soundpicker.cpp" />
+    <ClCompile Include="soundrecordpanel.cpp" />
+    <ClCompile Include="vmtpanel.cpp" />
+    <ClCompile Include="BaseAnimationSetEditor.cpp" />
+    <ClCompile Include="BaseAnimSetAttributeSliderPanel.cpp" />
+    <ClCompile Include="BaseAnimSetControlGroupPanel.cpp" />
+    <ClCompile Include="BaseAnimSetPresetFaderPanel.cpp" />
+    <ClCompile Include="presetpicker.cpp" />
+    <ClCompile Include="../../public/phonemeconverter.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../../public/dme_controls/AttributeSlider.h" />
+    <ClInclude Include="../../public/dme_controls/AssetBuilder.h" />
+    <ClInclude Include="../../public/dme_controls/attributeassetpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBasePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBoolChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeColorPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributedetailtypepickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeFilePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeIntChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeInterpolatorChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeMDLPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSequencePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributeshaderpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSoundPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeStringChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributesurfacepropertypickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextEntry.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeWidgetFactory.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeDoubleChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributePanel.h" />
+    <ClInclude Include="../../public/dme_controls/ChannelGraphPanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecombinationsystemeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols_utils.h" />
+    <ClInclude Include="../../public/dme_controls/dmedageditpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmedagrenderpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepicker.h" />
+    <ClInclude Include="../../public/dme_controls/dmepresetgroupeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceDCCFilePanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceSkinPanel.h" />
+    <ClInclude Include="../../public/dme_controls/ElementPropertiesTree.h" />
+    <ClInclude Include="../../public/dme_controls/FileListManager.h" />
+    <ClInclude Include="../../public/dme_controls/filtercombobox.h" />
+    <ClInclude Include="../../public/dme_controls/inotifyui.h" />
+    <ClInclude Include="../../public/dme_controls/manipulator.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpanel.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpicker.h" />
+    <ClInclude Include="../../public/dme_controls/mdlsequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempanel.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempropertiespanel.h" />
+    <ClInclude Include="../../public/dme_controls/sequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/simplepotterywheelpanel.h" />
+    <ClInclude Include="../../public/dme_controls/soundpicker.h" />
+    <ClInclude Include="../../public/dme_controls/soundrecordpanel.h" />
+    <ClInclude Include="../../public/dme_controls/vmtpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AnimSetAttributeValue.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimationSetEditor.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetAttributeSliderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetControlGroupPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetPresetFaderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/LogPreview.h" />
+    <ClInclude Include="../../public/dme_controls/presetpicker.h" />
+    <ClInclude Include="../../public/dme_controls/RecordingState.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="AttributeSlider.cpp" />
+    <ClCompile Include="AssetBuilder.cpp" />
+    <ClCompile Include="attributeassetpickerpanel.cpp" />
+    <ClCompile Include="AttributeBasePickerPanel.cpp" />
+    <ClCompile Include="AttributeBoolChoicePanel.cpp" />
+    <ClCompile Include="AttributeColorPickerPanel.cpp" />
+    <ClCompile Include="attributedetailtypepickerpanel.cpp" />
+    <ClCompile Include="AttributeElementPanel.cpp" />
+    <ClCompile Include="AttributeElementPickerPanel.cpp" />
+    <ClCompile Include="AttributeFilePickerPanel.cpp" />
+    <ClCompile Include="AttributeIntChoicePanel.cpp" />
+    <ClCompile Include="AttributeInterpolatorChoicePanel.cpp" />
+    <ClCompile Include="AttributeMDLPickerPanel.cpp" />
+    <ClCompile Include="AttributeSequencePickerPanel.cpp" />
+    <ClCompile Include="attributeshaderpickerpanel.cpp" />
+    <ClCompile Include="AttributeSoundPickerPanel.cpp" />
+    <ClCompile Include="AttributeStringChoicePanel.cpp" />
+    <ClCompile Include="attributesurfacepropertypickerpanel.cpp" />
+    <ClCompile Include="AttributeTextEntry.cpp" />
+    <ClCompile Include="AttributeTextPanel.cpp" />
+    <ClCompile Include="AttributeWidgetFactory.cpp" />
+    <ClCompile Include="BaseAttributeChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributeDoubleChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributePanel.cpp" />
+    <ClCompile Include="ChannelGraphPanel.cpp" />
+    <ClCompile Include="dmecombinationsystemeditorpanel.cpp" />
+    <ClCompile Include="dmecontrols.cpp" />
+    <ClCompile Include="dmedageditpanel.cpp" />
+    <ClCompile Include="dmedagrenderpanel.cpp" />
+    <ClCompile Include="dmelogeditpanel.cpp" />
+    <ClCompile Include="dmepanel.cpp" />
+    <ClCompile Include="dmepicker.cpp" />
+    <ClCompile Include="dmepresetgroupeditorpanel.cpp" />
+    <ClCompile Include="DmeSourceDCCFilePanel.cpp" />
+    <ClCompile Include="DmeSourceSkinPanel.cpp" />
+    <ClCompile Include="ElementPropertiesTree.cpp" />
+    <ClCompile Include="FileListManager.cpp" />
+    <ClCompile Include="filtercombobox.cpp" />
+    <ClCompile Include="manipulator.cpp" />
+    <ClCompile Include="mdlpanel.cpp" />
+    <ClCompile Include="mdlpicker.cpp" />
+    <ClCompile Include="mdlsequencepicker.cpp" />
+    <ClCompile Include="particlesystempanel.cpp" />
+    <ClCompile Include="particlesystempropertiespanel.cpp" />
+    <ClCompile Include="sequencepicker.cpp" />
+    <ClCompile Include="simplepotterywheelpanel.cpp" />
+    <ClCompile Include="soundpicker.cpp" />
+    <ClCompile Include="soundrecordpanel.cpp" />
+    <ClCompile Include="vmtpanel.cpp" />
+    <ClCompile Include="BaseAnimationSetEditor.cpp" />
+    <ClCompile Include="BaseAnimSetAttributeSliderPanel.cpp" />
+    <ClCompile Include="BaseAnimSetControlGroupPanel.cpp" />
+    <ClCompile Include="BaseAnimSetPresetFaderPanel.cpp" />
+    <ClCompile Include="presetpicker.cpp" />
+    <ClCompile Include="../../public/phonemeconverter.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../../public/dme_controls/AttributeSlider.h" />
+    <ClInclude Include="../../public/dme_controls/AssetBuilder.h" />
+    <ClInclude Include="../../public/dme_controls/attributeassetpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBasePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBoolChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeColorPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributedetailtypepickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeFilePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeIntChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeInterpolatorChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeMDLPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSequencePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributeshaderpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSoundPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeStringChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributesurfacepropertypickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextEntry.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeWidgetFactory.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeDoubleChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributePanel.h" />
+    <ClInclude Include="../../public/dme_controls/ChannelGraphPanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecombinationsystemeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols_utils.h" />
+    <ClInclude Include="../../public/dme_controls/dmedageditpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmedagrenderpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepicker.h" />
+    <ClInclude Include="../../public/dme_controls/dmepresetgroupeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceDCCFilePanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceSkinPanel.h" />
+    <ClInclude Include="../../public/dme_controls/ElementPropertiesTree.h" />
+    <ClInclude Include="../../public/dme_controls/FileListManager.h" />
+    <ClInclude Include="../../public/dme_controls/filtercombobox.h" />
+    <ClInclude Include="../../public/dme_controls/inotifyui.h" />
+    <ClInclude Include="../../public/dme_controls/manipulator.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpanel.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpicker.h" />
+    <ClInclude Include="../../public/dme_controls/mdlsequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempanel.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempropertiespanel.h" />
+    <ClInclude Include="../../public/dme_controls/sequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/simplepotterywheelpanel.h" />
+    <ClInclude Include="../../public/dme_controls/soundpicker.h" />
+    <ClInclude Include="../../public/dme_controls/soundrecordpanel.h" />
+    <ClInclude Include="../../public/dme_controls/vmtpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AnimSetAttributeValue.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimationSetEditor.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetAttributeSliderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetControlGroupPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetPresetFaderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/LogPreview.h" />
+    <ClInclude Include="../../public/dme_controls/presetpicker.h" />
+    <ClInclude Include="../../public/dme_controls/RecordingState.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="AttributeSlider.cpp" />
+    <ClCompile Include="AssetBuilder.cpp" />
+    <ClCompile Include="attributeassetpickerpanel.cpp" />
+    <ClCompile Include="AttributeBasePickerPanel.cpp" />
+    <ClCompile Include="AttributeBoolChoicePanel.cpp" />
+    <ClCompile Include="AttributeColorPickerPanel.cpp" />
+    <ClCompile Include="attributedetailtypepickerpanel.cpp" />
+    <ClCompile Include="AttributeElementPanel.cpp" />
+    <ClCompile Include="AttributeElementPickerPanel.cpp" />
+    <ClCompile Include="AttributeFilePickerPanel.cpp" />
+    <ClCompile Include="AttributeIntChoicePanel.cpp" />
+    <ClCompile Include="AttributeInterpolatorChoicePanel.cpp" />
+    <ClCompile Include="AttributeMDLPickerPanel.cpp" />
+    <ClCompile Include="AttributeSequencePickerPanel.cpp" />
+    <ClCompile Include="attributeshaderpickerpanel.cpp" />
+    <ClCompile Include="AttributeSoundPickerPanel.cpp" />
+    <ClCompile Include="AttributeStringChoicePanel.cpp" />
+    <ClCompile Include="attributesurfacepropertypickerpanel.cpp" />
+    <ClCompile Include="AttributeTextEntry.cpp" />
+    <ClCompile Include="AttributeTextPanel.cpp" />
+    <ClCompile Include="AttributeWidgetFactory.cpp" />
+    <ClCompile Include="BaseAttributeChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributeDoubleChoicePanel.cpp" />
+    <ClCompile Include="BaseAttributePanel.cpp" />
+    <ClCompile Include="ChannelGraphPanel.cpp" />
+    <ClCompile Include="dmecombinationsystemeditorpanel.cpp" />
+    <ClCompile Include="dmecontrols.cpp" />
+    <ClCompile Include="dmedageditpanel.cpp" />
+    <ClCompile Include="dmedagrenderpanel.cpp" />
+    <ClCompile Include="dmelogeditpanel.cpp" />
+    <ClCompile Include="dmepanel.cpp" />
+    <ClCompile Include="dmepicker.cpp" />
+    <ClCompile Include="dmepresetgroupeditorpanel.cpp" />
+    <ClCompile Include="DmeSourceDCCFilePanel.cpp" />
+    <ClCompile Include="DmeSourceSkinPanel.cpp" />
+    <ClCompile Include="ElementPropertiesTree.cpp" />
+    <ClCompile Include="FileListManager.cpp" />
+    <ClCompile Include="filtercombobox.cpp" />
+    <ClCompile Include="manipulator.cpp" />
+    <ClCompile Include="mdlpanel.cpp" />
+    <ClCompile Include="mdlpicker.cpp" />
+    <ClCompile Include="mdlsequencepicker.cpp" />
+    <ClCompile Include="particlesystempanel.cpp" />
+    <ClCompile Include="particlesystempropertiespanel.cpp" />
+    <ClCompile Include="sequencepicker.cpp" />
+    <ClCompile Include="simplepotterywheelpanel.cpp" />
+    <ClCompile Include="soundpicker.cpp" />
+    <ClCompile Include="soundrecordpanel.cpp" />
+    <ClCompile Include="vmtpanel.cpp" />
+    <ClCompile Include="BaseAnimationSetEditor.cpp" />
+    <ClCompile Include="BaseAnimSetAttributeSliderPanel.cpp" />
+    <ClCompile Include="BaseAnimSetControlGroupPanel.cpp" />
+    <ClCompile Include="BaseAnimSetPresetFaderPanel.cpp" />
+    <ClCompile Include="presetpicker.cpp" />
+    <ClCompile Include="../../public/phonemeconverter.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../../public/dme_controls/AttributeSlider.h" />
+    <ClInclude Include="../../public/dme_controls/AssetBuilder.h" />
+    <ClInclude Include="../../public/dme_controls/attributeassetpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBasePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeBoolChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeColorPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributedetailtypepickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeElementPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeFilePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeIntChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeInterpolatorChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeMDLPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSequencePickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributeshaderpickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeSoundPickerPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeStringChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/attributesurfacepropertypickerpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextEntry.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeTextPanel.h" />
+    <ClInclude Include="../../public/dme_controls/AttributeWidgetFactory.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributeDoubleChoicePanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAttributePanel.h" />
+    <ClInclude Include="../../public/dme_controls/ChannelGraphPanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecombinationsystemeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols.h" />
+    <ClInclude Include="../../public/dme_controls/dmecontrols_utils.h" />
+    <ClInclude Include="../../public/dme_controls/dmedageditpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmedagrenderpanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepanel.h" />
+    <ClInclude Include="../../public/dme_controls/dmepicker.h" />
+    <ClInclude Include="../../public/dme_controls/dmepresetgroupeditorpanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceDCCFilePanel.h" />
+    <ClInclude Include="../../public/dme_controls/DmeSourceSkinPanel.h" />
+    <ClInclude Include="../../public/dme_controls/ElementPropertiesTree.h" />
+    <ClInclude Include="../../public/dme_controls/FileListManager.h" />
+    <ClInclude Include="../../public/dme_controls/filtercombobox.h" />
+    <ClInclude Include="../../public/dme_controls/inotifyui.h" />
+    <ClInclude Include="../../public/dme_controls/manipulator.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpanel.h" />
+    <ClInclude Include="../../public/dme_controls/mdlpicker.h" />
+    <ClInclude Include="../../public/dme_controls/mdlsequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempanel.h" />
+    <ClInclude Include="../../public/dme_controls/particlesystempropertiespanel.h" />
+    <ClInclude Include="../../public/dme_controls/sequencepicker.h" />
+    <ClInclude Include="../../public/dme_controls/simplepotterywheelpanel.h" />
+    <ClInclude Include="../../public/dme_controls/soundpicker.h" />
+    <ClInclude Include="../../public/dme_controls/soundrecordpanel.h" />
+    <ClInclude Include="../../public/dme_controls/vmtpanel.h" />
+    <ClInclude Include="../../public/dme_controls/AnimSetAttributeValue.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimationSetEditor.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetAttributeSliderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetControlGroupPanel.h" />
+    <ClInclude Include="../../public/dme_controls/BaseAnimSetPresetFaderPanel.h" />
+    <ClInclude Include="../../public/dme_controls/LogPreview.h" />
+    <ClInclude Include="../../public/dme_controls/presetpicker.h" />
+    <ClInclude Include="../../public/dme_controls/RecordingState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

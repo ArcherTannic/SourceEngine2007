@@ -1,0 +1,475 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Dedicated</ProjectName>
+    <ProjectGuid>{45BE0644-8C9C-4EC1-AB83-E18D3FEFD9AB}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>dedicated</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../engine;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win32;../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>dedicated</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../engine;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win64;../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>dedicated</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../engine;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win32;../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>dedicated</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../engine;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win64;../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=dedicated;DEDICATED;LAUNCHERONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win32/tier0.lib;../lib/public/win32/tier1.lib;../lib/public/win32/vstdlib.lib;wsock32.lib;odbc32.lib;odbccp32.lib;winmm.lib;steam_api.lib;appframework.lib;mathlib.lib;tier2.lib;tier3.lib;vgui_controls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win32/dedicated.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win32/dedicated.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=dedicated;DEDICATED;LAUNCHERONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win64/tier0.lib;../lib/public/win64/tier1.lib;../lib/public/win64/vstdlib.lib;wsock32.lib;odbc32.lib;odbccp32.lib;winmm.lib;steam_api.lib;appframework.lib;mathlib.lib;tier2.lib;tier3.lib;vgui_controls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win64/dedicated.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win64/dedicated.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=dedicated;DEDICATED;LAUNCHERONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win32/tier0.lib;../lib/public/win32/tier1.lib;../lib/public/win32/vstdlib.lib;wsock32.lib;odbc32.lib;odbccp32.lib;winmm.lib;steam_api.lib;appframework.lib;mathlib.lib;tier2.lib;tier3.lib;vgui_controls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win32/dedicated.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win32/dedicated.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=dedicated;DEDICATED;LAUNCHERONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win64/tier0.lib;../lib/public/win64/tier1.lib;../lib/public/win64/vstdlib.lib;wsock32.lib;odbc32.lib;odbccp32.lib;winmm.lib;steam_api.lib;appframework.lib;mathlib.lib;tier2.lib;tier3.lib;vgui_controls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win64/dedicated.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win64/dedicated.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/netapi.cpp" />
+    <ClCompile Include="../common/SteamAppStartup.cpp" />
+    <ClCompile Include="sys_common.cpp" />
+    <ClCompile Include="sys_ded.cpp" />
+    <ClCompile Include="sys_windows.cpp">
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="console/conproc.cpp" />
+    <ClCompile Include="console/textconsole.cpp" />
+    <ClCompile Include="console/TextConsoleWin32.cpp" />
+    <ClCompile Include="vgui/CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="vgui/MainPanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="vgui/vguihelpers.cpp" />
+    <ClCompile Include="../filesystem/filetracker.cpp" />
+    <ClCompile Include="../filesystem/BaseFileSystem.cpp" />
+    <ClCompile Include="../filesystem/filesystem_async.cpp" />
+    <ClCompile Include="../filesystem/filesystem_stdio.cpp" />
+    <ClCompile Include="../filesystem/filesystem_steam.cpp" />
+    <ClCompile Include="../filesystem/packfile.cpp" />
+    <ClCompile Include="../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../filesystem/filetracker.h" />
+    <ClInclude Include="../filesystem/threadsaferefcountedobject.h" />
+    <ClInclude Include="../Public/ifilelist.h" />
+    <ClInclude Include="../Public/tier0/basetypes.h" />
+    <ClInclude Include="../Public/commonmacros.h" />
+    <ClInclude Include="../public/tier0/dbg.h" />
+    <ClInclude Include="dedicated.h" />
+    <ClInclude Include="../public/engine_hlds_api.h" />
+    <ClInclude Include="../public/tier0/fasttimer.h" />
+    <ClInclude Include="../Public/FileSystem.h" />
+    <ClInclude Include="../common/IAdminServer.h" />
+    <ClInclude Include="../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../public/idedicatedexports.h" />
+    <ClInclude Include="../common/IManageServer.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="isys.h" />
+    <ClInclude Include="../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../common/netapi.h" />
+    <ClInclude Include="../public/tier0/platform.h" />
+    <ClInclude Include="../public/protected_things.h" />
+    <ClInclude Include="../common/SteamAppStartup.h" />
+    <ClInclude Include="../public/string_t.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier0/vcr_shared.h" />
+    <ClInclude Include="../public/tier0/vcrmode.h" />
+    <ClInclude Include="../Public/mathlib/vector.h" />
+    <ClInclude Include="../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="console/conproc.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="console/textconsole.h" />
+    <ClInclude Include="console/TextConsoleWin32.h" />
+    <ClInclude Include="vgui/CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="vgui/MainPanel.h" />
+    <ClInclude Include="vgui/vguihelpers.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ResourceCompile Include="dedicated.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/netapi.cpp" />
+    <ClCompile Include="../common/SteamAppStartup.cpp" />
+    <ClCompile Include="sys_common.cpp" />
+    <ClCompile Include="sys_ded.cpp" />
+    <ClCompile Include="sys_windows.cpp">
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="console/conproc.cpp" />
+    <ClCompile Include="console/textconsole.cpp" />
+    <ClCompile Include="console/TextConsoleWin32.cpp" />
+    <ClCompile Include="vgui/CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="vgui/MainPanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="vgui/vguihelpers.cpp" />
+    <ClCompile Include="../filesystem/filetracker.cpp" />
+    <ClCompile Include="../filesystem/BaseFileSystem.cpp" />
+    <ClCompile Include="../filesystem/filesystem_async.cpp" />
+    <ClCompile Include="../filesystem/filesystem_stdio.cpp" />
+    <ClCompile Include="../filesystem/filesystem_steam.cpp" />
+    <ClCompile Include="../filesystem/packfile.cpp" />
+    <ClCompile Include="../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../filesystem/filetracker.h" />
+    <ClInclude Include="../filesystem/threadsaferefcountedobject.h" />
+    <ClInclude Include="../Public/ifilelist.h" />
+    <ClInclude Include="../Public/tier0/basetypes.h" />
+    <ClInclude Include="../Public/commonmacros.h" />
+    <ClInclude Include="../public/tier0/dbg.h" />
+    <ClInclude Include="dedicated.h" />
+    <ClInclude Include="../public/engine_hlds_api.h" />
+    <ClInclude Include="../public/tier0/fasttimer.h" />
+    <ClInclude Include="../Public/FileSystem.h" />
+    <ClInclude Include="../common/IAdminServer.h" />
+    <ClInclude Include="../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../public/idedicatedexports.h" />
+    <ClInclude Include="../common/IManageServer.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="isys.h" />
+    <ClInclude Include="../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../common/netapi.h" />
+    <ClInclude Include="../public/tier0/platform.h" />
+    <ClInclude Include="../public/protected_things.h" />
+    <ClInclude Include="../common/SteamAppStartup.h" />
+    <ClInclude Include="../public/string_t.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier0/vcr_shared.h" />
+    <ClInclude Include="../public/tier0/vcrmode.h" />
+    <ClInclude Include="../Public/mathlib/vector.h" />
+    <ClInclude Include="../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="console/conproc.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="console/textconsole.h" />
+    <ClInclude Include="console/TextConsoleWin32.h" />
+    <ClInclude Include="vgui/CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="vgui/MainPanel.h" />
+    <ClInclude Include="vgui/vguihelpers.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ResourceCompile Include="dedicated.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/netapi.cpp" />
+    <ClCompile Include="../common/SteamAppStartup.cpp" />
+    <ClCompile Include="sys_common.cpp" />
+    <ClCompile Include="sys_ded.cpp" />
+    <ClCompile Include="sys_windows.cpp">
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="console/conproc.cpp" />
+    <ClCompile Include="console/textconsole.cpp" />
+    <ClCompile Include="console/TextConsoleWin32.cpp" />
+    <ClCompile Include="vgui/CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="vgui/MainPanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="vgui/vguihelpers.cpp" />
+    <ClCompile Include="../filesystem/filetracker.cpp" />
+    <ClCompile Include="../filesystem/BaseFileSystem.cpp" />
+    <ClCompile Include="../filesystem/filesystem_async.cpp" />
+    <ClCompile Include="../filesystem/filesystem_stdio.cpp" />
+    <ClCompile Include="../filesystem/filesystem_steam.cpp" />
+    <ClCompile Include="../filesystem/packfile.cpp" />
+    <ClCompile Include="../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../filesystem/filetracker.h" />
+    <ClInclude Include="../filesystem/threadsaferefcountedobject.h" />
+    <ClInclude Include="../Public/ifilelist.h" />
+    <ClInclude Include="../Public/tier0/basetypes.h" />
+    <ClInclude Include="../Public/commonmacros.h" />
+    <ClInclude Include="../public/tier0/dbg.h" />
+    <ClInclude Include="dedicated.h" />
+    <ClInclude Include="../public/engine_hlds_api.h" />
+    <ClInclude Include="../public/tier0/fasttimer.h" />
+    <ClInclude Include="../Public/FileSystem.h" />
+    <ClInclude Include="../common/IAdminServer.h" />
+    <ClInclude Include="../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../public/idedicatedexports.h" />
+    <ClInclude Include="../common/IManageServer.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="isys.h" />
+    <ClInclude Include="../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../common/netapi.h" />
+    <ClInclude Include="../public/tier0/platform.h" />
+    <ClInclude Include="../public/protected_things.h" />
+    <ClInclude Include="../common/SteamAppStartup.h" />
+    <ClInclude Include="../public/string_t.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier0/vcr_shared.h" />
+    <ClInclude Include="../public/tier0/vcrmode.h" />
+    <ClInclude Include="../Public/mathlib/vector.h" />
+    <ClInclude Include="../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="console/conproc.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="console/textconsole.h" />
+    <ClInclude Include="console/TextConsoleWin32.h" />
+    <ClInclude Include="vgui/CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="vgui/MainPanel.h" />
+    <ClInclude Include="vgui/vguihelpers.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ResourceCompile Include="dedicated.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/netapi.cpp" />
+    <ClCompile Include="../common/SteamAppStartup.cpp" />
+    <ClCompile Include="sys_common.cpp" />
+    <ClCompile Include="sys_ded.cpp" />
+    <ClCompile Include="sys_windows.cpp">
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="console/conproc.cpp" />
+    <ClCompile Include="console/textconsole.cpp" />
+    <ClCompile Include="console/TextConsoleWin32.cpp" />
+    <ClCompile Include="vgui/CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="vgui/MainPanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="vgui/vguihelpers.cpp" />
+    <ClCompile Include="../filesystem/filetracker.cpp" />
+    <ClCompile Include="../filesystem/BaseFileSystem.cpp" />
+    <ClCompile Include="../filesystem/filesystem_async.cpp" />
+    <ClCompile Include="../filesystem/filesystem_stdio.cpp" />
+    <ClCompile Include="../filesystem/filesystem_steam.cpp" />
+    <ClCompile Include="../filesystem/packfile.cpp" />
+    <ClCompile Include="../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../filesystem/filetracker.h" />
+    <ClInclude Include="../filesystem/threadsaferefcountedobject.h" />
+    <ClInclude Include="../Public/ifilelist.h" />
+    <ClInclude Include="../Public/tier0/basetypes.h" />
+    <ClInclude Include="../Public/commonmacros.h" />
+    <ClInclude Include="../public/tier0/dbg.h" />
+    <ClInclude Include="dedicated.h" />
+    <ClInclude Include="../public/engine_hlds_api.h" />
+    <ClInclude Include="../public/tier0/fasttimer.h" />
+    <ClInclude Include="../Public/FileSystem.h" />
+    <ClInclude Include="../common/IAdminServer.h" />
+    <ClInclude Include="../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../public/idedicatedexports.h" />
+    <ClInclude Include="../common/IManageServer.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="isys.h" />
+    <ClInclude Include="../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../common/netapi.h" />
+    <ClInclude Include="../public/tier0/platform.h" />
+    <ClInclude Include="../public/protected_things.h" />
+    <ClInclude Include="../common/SteamAppStartup.h" />
+    <ClInclude Include="../public/string_t.h" />
+    <ClInclude Include="../public/tier1/strtools.h" />
+    <ClInclude Include="../public/tier0/vcr_shared.h" />
+    <ClInclude Include="../public/tier0/vcrmode.h" />
+    <ClInclude Include="../Public/mathlib/vector.h" />
+    <ClInclude Include="../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="console/conproc.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="console/textconsole.h" />
+    <ClInclude Include="console/TextConsoleWin32.h" />
+    <ClInclude Include="vgui/CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="vgui/MainPanel.h" />
+    <ClInclude Include="vgui/vguihelpers.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ResourceCompile Include="dedicated.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

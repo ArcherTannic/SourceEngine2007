@@ -1,0 +1,115 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External Header Files">
+      <UniqueIdentifier>{7621776D-3903-46EA-939D-519DEBD11E22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A3DD5CCB-0F3F-4D93-8CC8-EB240974BFD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{32B66EB2-F930-44B1-8960-FBDAABD99135}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdupdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/collisionutils.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/sentence.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdupdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/collisionutils.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/sentence.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdupdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/collisionutils.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/sentence.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdupdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/collisionutils.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="../../public/sentence.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../../public/sentence.h">
+      <Filter>External Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../public/interpolatortypes.h">
+      <Filter>External Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup/>
+  <ItemGroup/>
+</Project>

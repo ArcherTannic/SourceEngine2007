@@ -1,0 +1,831 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>GameUI</ProjectName>
+    <ProjectGuid>{E37A5876-7663-453F-AE3B-793D04EC5A5D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>GameUI</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../vgui2/include;../vgui2/controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win32;../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>GameUI</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../vgui2/include;../vgui2/controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win64;../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>GameUI</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../vgui2/include;../vgui2/controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win32;../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>GameUI</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;./;../vgui2/include;../vgui2/controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/common/win64;../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=GameUI;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win32/tier0.lib;../lib/public/win32/tier1.lib;../lib/public/win32/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;../lib/public/win32/bitmap.lib;../lib/common/win32/jpeglib.lib;../lib/public/win32/mathlib.lib;../lib/public/win32/tier2.lib;../lib/public/win32/tier3.lib;../lib/public/win32/vgui_controls.lib;../lib/public/win32/vtf.lib;../lib/public/win32/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win32/GameUI.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win32/GameUI.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=GameUI;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win64/tier0.lib;../lib/public/win64/tier1.lib;../lib/public/win64/vstdlib.lib;../lib/public/win64/bitmap.lib;../lib/common/win64/jpeglib.lib;../lib/public/win64/mathlib.lib;../lib/public/win64/tier2.lib;../lib/public/win64/tier3.lib;../lib/public/win64/vgui_controls.lib;../lib/public/win64/vtf.lib;../lib/public/win64/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win64/GameUI.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win64/GameUI.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=GameUI;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win32/tier0.lib;../lib/public/win32/tier1.lib;../lib/public/win32/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;../lib/public/win32/bitmap.lib;../lib/common/win32/jpeglib.lib;../lib/public/win32/mathlib.lib;../lib/public/win32/tier2.lib;../lib/public/win32/tier3.lib;../lib/public/win32/vgui_controls.lib;../lib/public/win32/vtf.lib;../lib/public/win32/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win32/GameUI.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win32/GameUI.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=GameUI;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../lib/public/win64/tier0.lib;../lib/public/win64/tier1.lib;../lib/public/win64/vstdlib.lib;../lib/public/win64/bitmap.lib;../lib/common/win64/jpeglib.lib;../lib/public/win64/mathlib.lib;../lib/public/win64/tier2.lib;../lib/public/win64/tier3.lib;../lib/public/win64/vgui_controls.lib;../lib/public/win64/vtf.lib;../lib/public/win64/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../game/bin/win64/GameUI.dll</OutputFile>
+      <ProgramDatabaseFile>../../game/bin/win64/GameUI.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BackgroundMenuButton.cpp" />
+    <ClCompile Include="BasePanel.cpp" />
+    <ClCompile Include="GameConsole.cpp" />
+    <ClCompile Include="GameUI_Interface.cpp" />
+    <ClCompile Include="LogoFile.cpp" />
+    <ClCompile Include="ModInfo.cpp" />
+    <ClCompile Include="MouseMessageForwardingPanel.cpp" />
+    <ClCompile Include="../Tracker/common/msgbuffer.cpp" />
+    <ClCompile Include="../Tracker/common/netapi.cpp" />
+    <ClCompile Include="../common/GameUI/ObjectList.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="RunGameEngine.cpp" />
+    <ClCompile Include="ScriptObject.cpp" />
+    <ClCompile Include="../Tracker/common/Socket.cpp" />
+    <ClCompile Include="Sys_Utils.cpp" />
+    <ClCompile Include="TextEntryBox.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="VGuiSystemModuleLoader.cpp" />
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="../common/language.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="CommandCheckButton.cpp" />
+    <ClCompile Include="CvarNegateCheckButton.cpp" />
+    <ClCompile Include="CvarSlider.cpp" />
+    <ClCompile Include="CvarTextEntry.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="KeyToggleCheckButton.cpp" />
+    <ClCompile Include="LabeledCommandComboBox.cpp" />
+    <ClCompile Include="URLButton.cpp" />
+    <ClCompile Include="vcontrolslistpanel.cpp" />
+    <ClCompile Include="BenchmarkDialog.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ContentControlDialog.cpp" />
+    <ClCompile Include="GameConsoleDialog.cpp" />
+    <ClCompile Include="LoadGameDialog_Xbox.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="MultiplayerAdvancedDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="PlayerListDialog.cpp" />
+    <ClCompile Include="SaveGameDialog_Xbox.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="LoadCommentaryDialog.cpp" />
+    <ClCompile Include="LoadingDialog.cpp" />
+    <ClCompile Include="BaseSaveGameDialog.cpp" />
+    <ClCompile Include="ChangeGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameBotPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameGameplayPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="OptionsDialog_Xbox.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="matchmaking/achievementsdialog.cpp" />
+    <ClCompile Include="matchmaking/basedialog.cpp" />
+    <ClCompile Include="matchmaking/dialogmenu.cpp" />
+    <ClCompile Include="matchmaking/leaderboarddialog.cpp" />
+    <ClCompile Include="matchmaking/matchmakingbasepanel.cpp" />
+    <ClCompile Include="matchmaking/pausedialog.cpp" />
+    <ClCompile Include="matchmaking/sessionlobbydialog.cpp" />
+    <ClCompile Include="matchmaking/sessionoptionsdialog.cpp" />
+    <ClCompile Include="matchmaking/sessionbrowserdialog.cpp" />
+    <ClCompile Include="matchmaking/welcomedialog.cpp" />
+    <ClCompile Include="OptionsDialog.cpp" />
+    <ClCompile Include="OptionsSubAudio.cpp" />
+    <ClCompile Include="OptionsSubDifficulty.cpp" />
+    <ClCompile Include="OptionsSubGame.cpp" />
+    <ClCompile Include="OptionsSubKeyboard.cpp" />
+    <ClCompile Include="OptionsSubMouse.cpp" />
+    <ClCompile Include="OptionsSubMultiplayer.cpp" />
+    <ClCompile Include="OptionsSubPortal.cpp" />
+    <ClCompile Include="OptionsSubVideo.cpp" />
+    <ClCompile Include="OptionsSubVoice.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BackgroundMenuButton.h" />
+    <ClInclude Include="BasePanel.h" />
+    <ClInclude Include="BaseSaveGameDialog.h" />
+    <ClInclude Include="CDKeyEntryDialog.h" />
+    <ClInclude Include="ChangeGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameBotPage.h" />
+    <ClInclude Include="CreateMultiplayerGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameGameplayPage.h" />
+    <ClInclude Include="CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="EngineInterface.h" />
+    <ClInclude Include="GameConsole.h" />
+    <ClInclude Include="GameUI_Interface.h" />
+    <ClInclude Include="LoadingDialog.h" />
+    <ClInclude Include="../vgui2/src/Memorybitmap.h" />
+    <ClInclude Include="ModInfo.h" />
+    <ClInclude Include="MouseMessageForwardingPanel.h" />
+    <ClInclude Include="PanelListPanel.h" />
+    <ClInclude Include="ScriptObject.h" />
+    <ClInclude Include="Sys_Utils.h" />
+    <ClInclude Include="TextEntryBox.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="VGuiSystemModuleLoader.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="../public/iachievementmgr.h" />
+    <ClInclude Include="../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../public/IGameUIFuncs.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/IRunGameEngine.h" />
+    <ClInclude Include="../common/IVguiModule.h" />
+    <ClInclude Include="../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="../Public/savegame_version.h" />
+    <ClInclude Include="../Tracker/common/TrackerMessageFlags.h" />
+    <ClInclude Include="../common/ValveCDKeyGameAndTerritoryCodes.h" />
+    <ClInclude Include="../common/language.h" />
+    <ClInclude Include="BitmapImagePanel.h" />
+    <ClInclude Include="CommandCheckButton.h" />
+    <ClInclude Include="CvarNegateCheckButton.h" />
+    <ClInclude Include="CvarSlider.h" />
+    <ClInclude Include="CvarTextEntry.h" />
+    <ClInclude Include="CvarToggleCheckButton.h" />
+    <ClInclude Include="KeyToggleCheckButton.h" />
+    <ClInclude Include="LabeledCommandComboBox.h" />
+    <ClInclude Include="URLButton.h" />
+    <ClInclude Include="vcontrolslistpanel.h" />
+    <ClInclude Include="BenchmarkDialog.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ContentControlDialog.h" />
+    <ClInclude Include="GameConsoleDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="MultiplayerAdvancedDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="PlayerListDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="matchmaking/achievementsdialog.h" />
+    <ClInclude Include="matchmaking/basedialog.h" />
+    <ClInclude Include="matchmaking/dialogmenu.h" />
+    <ClInclude Include="matchmaking/leaderboarddialog.h" />
+    <ClInclude Include="matchmaking/matchmakingbasepanel.h" />
+    <ClInclude Include="matchmaking/pausedialog.h" />
+    <ClInclude Include="matchmaking/sessionlobbydialog.h" />
+    <ClInclude Include="matchmaking/sessionoptionsdialog.h" />
+    <ClInclude Include="matchmaking/sessionbrowserdialog.h" />
+    <ClInclude Include="matchmaking/welcomedialog.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="OptionsSubAudio.h" />
+    <ClInclude Include="OptionsSubDifficulty.h" />
+    <ClInclude Include="OptionsSubGame.h" />
+    <ClInclude Include="OptionsSubKeyboard.h" />
+    <ClInclude Include="OptionsSubMouse.h" />
+    <ClInclude Include="OptionsSubMultiplayer.h" />
+    <ClInclude Include="OptionsSubPortal.h" />
+    <ClInclude Include="OptionsSubVideo.h" />
+    <ClInclude Include="OptionsSubVoice.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BackgroundMenuButton.cpp" />
+    <ClCompile Include="BasePanel.cpp" />
+    <ClCompile Include="GameConsole.cpp" />
+    <ClCompile Include="GameUI_Interface.cpp" />
+    <ClCompile Include="LogoFile.cpp" />
+    <ClCompile Include="ModInfo.cpp" />
+    <ClCompile Include="MouseMessageForwardingPanel.cpp" />
+    <ClCompile Include="../Tracker/common/msgbuffer.cpp" />
+    <ClCompile Include="../Tracker/common/netapi.cpp" />
+    <ClCompile Include="../common/GameUI/ObjectList.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="RunGameEngine.cpp" />
+    <ClCompile Include="ScriptObject.cpp" />
+    <ClCompile Include="../Tracker/common/Socket.cpp" />
+    <ClCompile Include="Sys_Utils.cpp" />
+    <ClCompile Include="TextEntryBox.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="VGuiSystemModuleLoader.cpp" />
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="../common/language.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="CommandCheckButton.cpp" />
+    <ClCompile Include="CvarNegateCheckButton.cpp" />
+    <ClCompile Include="CvarSlider.cpp" />
+    <ClCompile Include="CvarTextEntry.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="KeyToggleCheckButton.cpp" />
+    <ClCompile Include="LabeledCommandComboBox.cpp" />
+    <ClCompile Include="URLButton.cpp" />
+    <ClCompile Include="vcontrolslistpanel.cpp" />
+    <ClCompile Include="BenchmarkDialog.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ContentControlDialog.cpp" />
+    <ClCompile Include="GameConsoleDialog.cpp" />
+    <ClCompile Include="LoadGameDialog_Xbox.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="MultiplayerAdvancedDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="PlayerListDialog.cpp" />
+    <ClCompile Include="SaveGameDialog_Xbox.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="LoadCommentaryDialog.cpp" />
+    <ClCompile Include="LoadingDialog.cpp" />
+    <ClCompile Include="BaseSaveGameDialog.cpp" />
+    <ClCompile Include="ChangeGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameBotPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameGameplayPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="OptionsDialog_Xbox.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="matchmaking/achievementsdialog.cpp" />
+    <ClCompile Include="matchmaking/basedialog.cpp" />
+    <ClCompile Include="matchmaking/dialogmenu.cpp" />
+    <ClCompile Include="matchmaking/leaderboarddialog.cpp" />
+    <ClCompile Include="matchmaking/matchmakingbasepanel.cpp" />
+    <ClCompile Include="matchmaking/pausedialog.cpp" />
+    <ClCompile Include="matchmaking/sessionlobbydialog.cpp" />
+    <ClCompile Include="matchmaking/sessionoptionsdialog.cpp" />
+    <ClCompile Include="matchmaking/sessionbrowserdialog.cpp" />
+    <ClCompile Include="matchmaking/welcomedialog.cpp" />
+    <ClCompile Include="OptionsDialog.cpp" />
+    <ClCompile Include="OptionsSubAudio.cpp" />
+    <ClCompile Include="OptionsSubDifficulty.cpp" />
+    <ClCompile Include="OptionsSubGame.cpp" />
+    <ClCompile Include="OptionsSubKeyboard.cpp" />
+    <ClCompile Include="OptionsSubMouse.cpp" />
+    <ClCompile Include="OptionsSubMultiplayer.cpp" />
+    <ClCompile Include="OptionsSubPortal.cpp" />
+    <ClCompile Include="OptionsSubVideo.cpp" />
+    <ClCompile Include="OptionsSubVoice.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BackgroundMenuButton.h" />
+    <ClInclude Include="BasePanel.h" />
+    <ClInclude Include="BaseSaveGameDialog.h" />
+    <ClInclude Include="CDKeyEntryDialog.h" />
+    <ClInclude Include="ChangeGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameBotPage.h" />
+    <ClInclude Include="CreateMultiplayerGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameGameplayPage.h" />
+    <ClInclude Include="CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="EngineInterface.h" />
+    <ClInclude Include="GameConsole.h" />
+    <ClInclude Include="GameUI_Interface.h" />
+    <ClInclude Include="LoadingDialog.h" />
+    <ClInclude Include="../vgui2/src/Memorybitmap.h" />
+    <ClInclude Include="ModInfo.h" />
+    <ClInclude Include="MouseMessageForwardingPanel.h" />
+    <ClInclude Include="PanelListPanel.h" />
+    <ClInclude Include="ScriptObject.h" />
+    <ClInclude Include="Sys_Utils.h" />
+    <ClInclude Include="TextEntryBox.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="VGuiSystemModuleLoader.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="../public/iachievementmgr.h" />
+    <ClInclude Include="../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../public/IGameUIFuncs.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/IRunGameEngine.h" />
+    <ClInclude Include="../common/IVguiModule.h" />
+    <ClInclude Include="../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="../Public/savegame_version.h" />
+    <ClInclude Include="../Tracker/common/TrackerMessageFlags.h" />
+    <ClInclude Include="../common/ValveCDKeyGameAndTerritoryCodes.h" />
+    <ClInclude Include="../common/language.h" />
+    <ClInclude Include="BitmapImagePanel.h" />
+    <ClInclude Include="CommandCheckButton.h" />
+    <ClInclude Include="CvarNegateCheckButton.h" />
+    <ClInclude Include="CvarSlider.h" />
+    <ClInclude Include="CvarTextEntry.h" />
+    <ClInclude Include="CvarToggleCheckButton.h" />
+    <ClInclude Include="KeyToggleCheckButton.h" />
+    <ClInclude Include="LabeledCommandComboBox.h" />
+    <ClInclude Include="URLButton.h" />
+    <ClInclude Include="vcontrolslistpanel.h" />
+    <ClInclude Include="BenchmarkDialog.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ContentControlDialog.h" />
+    <ClInclude Include="GameConsoleDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="MultiplayerAdvancedDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="PlayerListDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="matchmaking/achievementsdialog.h" />
+    <ClInclude Include="matchmaking/basedialog.h" />
+    <ClInclude Include="matchmaking/dialogmenu.h" />
+    <ClInclude Include="matchmaking/leaderboarddialog.h" />
+    <ClInclude Include="matchmaking/matchmakingbasepanel.h" />
+    <ClInclude Include="matchmaking/pausedialog.h" />
+    <ClInclude Include="matchmaking/sessionlobbydialog.h" />
+    <ClInclude Include="matchmaking/sessionoptionsdialog.h" />
+    <ClInclude Include="matchmaking/sessionbrowserdialog.h" />
+    <ClInclude Include="matchmaking/welcomedialog.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="OptionsSubAudio.h" />
+    <ClInclude Include="OptionsSubDifficulty.h" />
+    <ClInclude Include="OptionsSubGame.h" />
+    <ClInclude Include="OptionsSubKeyboard.h" />
+    <ClInclude Include="OptionsSubMouse.h" />
+    <ClInclude Include="OptionsSubMultiplayer.h" />
+    <ClInclude Include="OptionsSubPortal.h" />
+    <ClInclude Include="OptionsSubVideo.h" />
+    <ClInclude Include="OptionsSubVoice.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BackgroundMenuButton.cpp" />
+    <ClCompile Include="BasePanel.cpp" />
+    <ClCompile Include="GameConsole.cpp" />
+    <ClCompile Include="GameUI_Interface.cpp" />
+    <ClCompile Include="LogoFile.cpp" />
+    <ClCompile Include="ModInfo.cpp" />
+    <ClCompile Include="MouseMessageForwardingPanel.cpp" />
+    <ClCompile Include="../Tracker/common/msgbuffer.cpp" />
+    <ClCompile Include="../Tracker/common/netapi.cpp" />
+    <ClCompile Include="../common/GameUI/ObjectList.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="RunGameEngine.cpp" />
+    <ClCompile Include="ScriptObject.cpp" />
+    <ClCompile Include="../Tracker/common/Socket.cpp" />
+    <ClCompile Include="Sys_Utils.cpp" />
+    <ClCompile Include="TextEntryBox.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="VGuiSystemModuleLoader.cpp" />
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="../common/language.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="CommandCheckButton.cpp" />
+    <ClCompile Include="CvarNegateCheckButton.cpp" />
+    <ClCompile Include="CvarSlider.cpp" />
+    <ClCompile Include="CvarTextEntry.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="KeyToggleCheckButton.cpp" />
+    <ClCompile Include="LabeledCommandComboBox.cpp" />
+    <ClCompile Include="URLButton.cpp" />
+    <ClCompile Include="vcontrolslistpanel.cpp" />
+    <ClCompile Include="BenchmarkDialog.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ContentControlDialog.cpp" />
+    <ClCompile Include="GameConsoleDialog.cpp" />
+    <ClCompile Include="LoadGameDialog_Xbox.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="MultiplayerAdvancedDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="PlayerListDialog.cpp" />
+    <ClCompile Include="SaveGameDialog_Xbox.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="LoadCommentaryDialog.cpp" />
+    <ClCompile Include="LoadingDialog.cpp" />
+    <ClCompile Include="BaseSaveGameDialog.cpp" />
+    <ClCompile Include="ChangeGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameBotPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameGameplayPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="OptionsDialog_Xbox.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="matchmaking/achievementsdialog.cpp" />
+    <ClCompile Include="matchmaking/basedialog.cpp" />
+    <ClCompile Include="matchmaking/dialogmenu.cpp" />
+    <ClCompile Include="matchmaking/leaderboarddialog.cpp" />
+    <ClCompile Include="matchmaking/matchmakingbasepanel.cpp" />
+    <ClCompile Include="matchmaking/pausedialog.cpp" />
+    <ClCompile Include="matchmaking/sessionlobbydialog.cpp" />
+    <ClCompile Include="matchmaking/sessionoptionsdialog.cpp" />
+    <ClCompile Include="matchmaking/sessionbrowserdialog.cpp" />
+    <ClCompile Include="matchmaking/welcomedialog.cpp" />
+    <ClCompile Include="OptionsDialog.cpp" />
+    <ClCompile Include="OptionsSubAudio.cpp" />
+    <ClCompile Include="OptionsSubDifficulty.cpp" />
+    <ClCompile Include="OptionsSubGame.cpp" />
+    <ClCompile Include="OptionsSubKeyboard.cpp" />
+    <ClCompile Include="OptionsSubMouse.cpp" />
+    <ClCompile Include="OptionsSubMultiplayer.cpp" />
+    <ClCompile Include="OptionsSubPortal.cpp" />
+    <ClCompile Include="OptionsSubVideo.cpp" />
+    <ClCompile Include="OptionsSubVoice.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BackgroundMenuButton.h" />
+    <ClInclude Include="BasePanel.h" />
+    <ClInclude Include="BaseSaveGameDialog.h" />
+    <ClInclude Include="CDKeyEntryDialog.h" />
+    <ClInclude Include="ChangeGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameBotPage.h" />
+    <ClInclude Include="CreateMultiplayerGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameGameplayPage.h" />
+    <ClInclude Include="CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="EngineInterface.h" />
+    <ClInclude Include="GameConsole.h" />
+    <ClInclude Include="GameUI_Interface.h" />
+    <ClInclude Include="LoadingDialog.h" />
+    <ClInclude Include="../vgui2/src/Memorybitmap.h" />
+    <ClInclude Include="ModInfo.h" />
+    <ClInclude Include="MouseMessageForwardingPanel.h" />
+    <ClInclude Include="PanelListPanel.h" />
+    <ClInclude Include="ScriptObject.h" />
+    <ClInclude Include="Sys_Utils.h" />
+    <ClInclude Include="TextEntryBox.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="VGuiSystemModuleLoader.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="../public/iachievementmgr.h" />
+    <ClInclude Include="../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../public/IGameUIFuncs.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/IRunGameEngine.h" />
+    <ClInclude Include="../common/IVguiModule.h" />
+    <ClInclude Include="../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="../Public/savegame_version.h" />
+    <ClInclude Include="../Tracker/common/TrackerMessageFlags.h" />
+    <ClInclude Include="../common/ValveCDKeyGameAndTerritoryCodes.h" />
+    <ClInclude Include="../common/language.h" />
+    <ClInclude Include="BitmapImagePanel.h" />
+    <ClInclude Include="CommandCheckButton.h" />
+    <ClInclude Include="CvarNegateCheckButton.h" />
+    <ClInclude Include="CvarSlider.h" />
+    <ClInclude Include="CvarTextEntry.h" />
+    <ClInclude Include="CvarToggleCheckButton.h" />
+    <ClInclude Include="KeyToggleCheckButton.h" />
+    <ClInclude Include="LabeledCommandComboBox.h" />
+    <ClInclude Include="URLButton.h" />
+    <ClInclude Include="vcontrolslistpanel.h" />
+    <ClInclude Include="BenchmarkDialog.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ContentControlDialog.h" />
+    <ClInclude Include="GameConsoleDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="MultiplayerAdvancedDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="PlayerListDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="matchmaking/achievementsdialog.h" />
+    <ClInclude Include="matchmaking/basedialog.h" />
+    <ClInclude Include="matchmaking/dialogmenu.h" />
+    <ClInclude Include="matchmaking/leaderboarddialog.h" />
+    <ClInclude Include="matchmaking/matchmakingbasepanel.h" />
+    <ClInclude Include="matchmaking/pausedialog.h" />
+    <ClInclude Include="matchmaking/sessionlobbydialog.h" />
+    <ClInclude Include="matchmaking/sessionoptionsdialog.h" />
+    <ClInclude Include="matchmaking/sessionbrowserdialog.h" />
+    <ClInclude Include="matchmaking/welcomedialog.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="OptionsSubAudio.h" />
+    <ClInclude Include="OptionsSubDifficulty.h" />
+    <ClInclude Include="OptionsSubGame.h" />
+    <ClInclude Include="OptionsSubKeyboard.h" />
+    <ClInclude Include="OptionsSubMouse.h" />
+    <ClInclude Include="OptionsSubMultiplayer.h" />
+    <ClInclude Include="OptionsSubPortal.h" />
+    <ClInclude Include="OptionsSubVideo.h" />
+    <ClInclude Include="OptionsSubVoice.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BackgroundMenuButton.cpp" />
+    <ClCompile Include="BasePanel.cpp" />
+    <ClCompile Include="GameConsole.cpp" />
+    <ClCompile Include="GameUI_Interface.cpp" />
+    <ClCompile Include="LogoFile.cpp" />
+    <ClCompile Include="ModInfo.cpp" />
+    <ClCompile Include="MouseMessageForwardingPanel.cpp" />
+    <ClCompile Include="../Tracker/common/msgbuffer.cpp" />
+    <ClCompile Include="../Tracker/common/netapi.cpp" />
+    <ClCompile Include="../common/GameUI/ObjectList.cpp" />
+    <ClCompile Include="PanelListPanel.cpp" />
+    <ClCompile Include="RunGameEngine.cpp" />
+    <ClCompile Include="ScriptObject.cpp" />
+    <ClCompile Include="../Tracker/common/Socket.cpp" />
+    <ClCompile Include="Sys_Utils.cpp" />
+    <ClCompile Include="TextEntryBox.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="../public/vgui_controls/vgui_controls.cpp" />
+    <ClCompile Include="VGuiSystemModuleLoader.cpp" />
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="../common/language.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="BitmapImagePanel.cpp" />
+    <ClCompile Include="CommandCheckButton.cpp" />
+    <ClCompile Include="CvarNegateCheckButton.cpp" />
+    <ClCompile Include="CvarSlider.cpp" />
+    <ClCompile Include="CvarTextEntry.cpp" />
+    <ClCompile Include="CvarToggleCheckButton.cpp" />
+    <ClCompile Include="KeyToggleCheckButton.cpp" />
+    <ClCompile Include="LabeledCommandComboBox.cpp" />
+    <ClCompile Include="URLButton.cpp" />
+    <ClCompile Include="vcontrolslistpanel.cpp" />
+    <ClCompile Include="BenchmarkDialog.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ContentControlDialog.cpp" />
+    <ClCompile Include="GameConsoleDialog.cpp" />
+    <ClCompile Include="LoadGameDialog_Xbox.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="MultiplayerAdvancedDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="PlayerListDialog.cpp" />
+    <ClCompile Include="SaveGameDialog_Xbox.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="LoadCommentaryDialog.cpp" />
+    <ClCompile Include="LoadingDialog.cpp" />
+    <ClCompile Include="BaseSaveGameDialog.cpp" />
+    <ClCompile Include="ChangeGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameBotPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameDialog.cpp" />
+    <ClCompile Include="CreateMultiplayerGameGameplayPage.cpp" />
+    <ClCompile Include="CreateMultiplayerGameServerPage.cpp" />
+    <ClCompile Include="OptionsDialog_Xbox.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="matchmaking/achievementsdialog.cpp" />
+    <ClCompile Include="matchmaking/basedialog.cpp" />
+    <ClCompile Include="matchmaking/dialogmenu.cpp" />
+    <ClCompile Include="matchmaking/leaderboarddialog.cpp" />
+    <ClCompile Include="matchmaking/matchmakingbasepanel.cpp" />
+    <ClCompile Include="matchmaking/pausedialog.cpp" />
+    <ClCompile Include="matchmaking/sessionlobbydialog.cpp" />
+    <ClCompile Include="matchmaking/sessionoptionsdialog.cpp" />
+    <ClCompile Include="matchmaking/sessionbrowserdialog.cpp" />
+    <ClCompile Include="matchmaking/welcomedialog.cpp" />
+    <ClCompile Include="OptionsDialog.cpp" />
+    <ClCompile Include="OptionsSubAudio.cpp" />
+    <ClCompile Include="OptionsSubDifficulty.cpp" />
+    <ClCompile Include="OptionsSubGame.cpp" />
+    <ClCompile Include="OptionsSubKeyboard.cpp" />
+    <ClCompile Include="OptionsSubMouse.cpp" />
+    <ClCompile Include="OptionsSubMultiplayer.cpp" />
+    <ClCompile Include="OptionsSubPortal.cpp" />
+    <ClCompile Include="OptionsSubVideo.cpp" />
+    <ClCompile Include="OptionsSubVoice.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BackgroundMenuButton.h" />
+    <ClInclude Include="BasePanel.h" />
+    <ClInclude Include="BaseSaveGameDialog.h" />
+    <ClInclude Include="CDKeyEntryDialog.h" />
+    <ClInclude Include="ChangeGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameBotPage.h" />
+    <ClInclude Include="CreateMultiplayerGameDialog.h" />
+    <ClInclude Include="CreateMultiplayerGameGameplayPage.h" />
+    <ClInclude Include="CreateMultiplayerGameServerPage.h" />
+    <ClInclude Include="EngineInterface.h" />
+    <ClInclude Include="GameConsole.h" />
+    <ClInclude Include="GameUI_Interface.h" />
+    <ClInclude Include="LoadingDialog.h" />
+    <ClInclude Include="../vgui2/src/Memorybitmap.h" />
+    <ClInclude Include="ModInfo.h" />
+    <ClInclude Include="MouseMessageForwardingPanel.h" />
+    <ClInclude Include="PanelListPanel.h" />
+    <ClInclude Include="ScriptObject.h" />
+    <ClInclude Include="Sys_Utils.h" />
+    <ClInclude Include="TextEntryBox.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="VGuiSystemModuleLoader.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="../public/iachievementmgr.h" />
+    <ClInclude Include="../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../public/IGameUIFuncs.h" />
+    <ClInclude Include="../public/tier1/interface.h" />
+    <ClInclude Include="../common/IObjectContainer.h" />
+    <ClInclude Include="../common/IRunGameEngine.h" />
+    <ClInclude Include="../common/IVguiModule.h" />
+    <ClInclude Include="../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../common/GameUI/ObjectList.h" />
+    <ClInclude Include="../Public/savegame_version.h" />
+    <ClInclude Include="../Tracker/common/TrackerMessageFlags.h" />
+    <ClInclude Include="../common/ValveCDKeyGameAndTerritoryCodes.h" />
+    <ClInclude Include="../common/language.h" />
+    <ClInclude Include="BitmapImagePanel.h" />
+    <ClInclude Include="CommandCheckButton.h" />
+    <ClInclude Include="CvarNegateCheckButton.h" />
+    <ClInclude Include="CvarSlider.h" />
+    <ClInclude Include="CvarTextEntry.h" />
+    <ClInclude Include="CvarToggleCheckButton.h" />
+    <ClInclude Include="KeyToggleCheckButton.h" />
+    <ClInclude Include="LabeledCommandComboBox.h" />
+    <ClInclude Include="URLButton.h" />
+    <ClInclude Include="vcontrolslistpanel.h" />
+    <ClInclude Include="BenchmarkDialog.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ContentControlDialog.h" />
+    <ClInclude Include="GameConsoleDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="MultiplayerAdvancedDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="PlayerListDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="matchmaking/achievementsdialog.h" />
+    <ClInclude Include="matchmaking/basedialog.h" />
+    <ClInclude Include="matchmaking/dialogmenu.h" />
+    <ClInclude Include="matchmaking/leaderboarddialog.h" />
+    <ClInclude Include="matchmaking/matchmakingbasepanel.h" />
+    <ClInclude Include="matchmaking/pausedialog.h" />
+    <ClInclude Include="matchmaking/sessionlobbydialog.h" />
+    <ClInclude Include="matchmaking/sessionoptionsdialog.h" />
+    <ClInclude Include="matchmaking/sessionbrowserdialog.h" />
+    <ClInclude Include="matchmaking/welcomedialog.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="OptionsSubAudio.h" />
+    <ClInclude Include="OptionsSubDifficulty.h" />
+    <ClInclude Include="OptionsSubGame.h" />
+    <ClInclude Include="OptionsSubKeyboard.h" />
+    <ClInclude Include="OptionsSubMouse.h" />
+    <ClInclude Include="OptionsSubMultiplayer.h" />
+    <ClInclude Include="OptionsSubPortal.h" />
+    <ClInclude Include="OptionsSubVideo.h" />
+    <ClInclude Include="OptionsSubVoice.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

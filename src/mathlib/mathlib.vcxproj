@@ -1,0 +1,377 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>mathlib</ProjectName>
+    <ProjectGuid>{09926DB4-108F-4813-83A1-43F43FCB7D57}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../lib/public/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>mathlib</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;../public/mathlib;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../lib/public/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>mathlib</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;../public/mathlib;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../lib/public/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>mathlib</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;../public/mathlib;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../lib/public/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>mathlib</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../common;../public;../public/tier0;../public/tier1;../public/mathlib;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=mathlib;MATHLIB_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win32/mathlib.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=mathlib;MATHLIB_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win64/mathlib.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=mathlib;MATHLIB_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win32/mathlib.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=mathlib;MATHLIB_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../lib/public/win64/mathlib.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="color_conversion.cpp" />
+    <ClCompile Include="halton.cpp" />
+    <ClCompile Include="lightdesc.cpp" />
+    <ClCompile Include="mathlib_base.cpp" />
+    <ClCompile Include="powsse.cpp" />
+    <ClCompile Include="sparse_convolution_noise.cpp" />
+    <ClCompile Include="sseconst.cpp" />
+    <ClCompile Include="sse.cpp" />
+    <ClCompile Include="ssenoise.cpp" />
+    <ClCompile Include="anorms.cpp" />
+    <ClCompile Include="bumpvects.cpp" />
+    <ClCompile Include="IceKey.cpp" />
+    <ClCompile Include="imagequant.cpp" />
+    <ClCompile Include="polyhedron.cpp" />
+    <ClCompile Include="quantize.cpp" />
+    <ClCompile Include="randsse.cpp" />
+    <ClCompile Include="spherical.cpp" />
+    <ClCompile Include="simdvectormatrix.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="vmatrix.cpp" />
+    <ClCompile Include="almostequal.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../public/mathlib/anorms.h" />
+    <ClInclude Include="../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../public/mathlib/compressed_3d_unitvec.h" />
+    <ClInclude Include="../public/mathlib/compressed_light_cube.h" />
+    <ClInclude Include="../public/mathlib/compressed_vector.h" />
+    <ClInclude Include="../public/mathlib/halton.h" />
+    <ClInclude Include="../public/mathlib/IceKey.H" />
+    <ClInclude Include="../public/mathlib/lightdesc.h" />
+    <ClInclude Include="../public/mathlib/math_pfns.h" />
+    <ClInclude Include="../public/mathlib/mathlib.h" />
+    <ClInclude Include="../public/mathlib/noise.h" />
+    <ClInclude Include="../public/mathlib/polyhedron.h" />
+    <ClInclude Include="../public/mathlib/quantize.h" />
+    <ClInclude Include="../public/mathlib/simdvectormatrix.h" />
+    <ClInclude Include="../public/mathlib/spherical_geometry.h" />
+    <ClInclude Include="../public/mathlib/ssemath.h" />
+    <ClInclude Include="../public/mathlib/ssequaternion.h" />
+    <ClInclude Include="../public/mathlib/vector.h" />
+    <ClInclude Include="../public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/mathlib/vector4d.h" />
+    <ClInclude Include="../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../public/mathlib/vplane.h" />
+    <ClInclude Include="noisedata.h" />
+    <ClInclude Include="sse.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="color_conversion.cpp" />
+    <ClCompile Include="halton.cpp" />
+    <ClCompile Include="lightdesc.cpp" />
+    <ClCompile Include="mathlib_base.cpp" />
+    <ClCompile Include="powsse.cpp" />
+    <ClCompile Include="sparse_convolution_noise.cpp" />
+    <ClCompile Include="sseconst.cpp" />
+    <ClCompile Include="sse.cpp" />
+    <ClCompile Include="ssenoise.cpp" />
+    <ClCompile Include="anorms.cpp" />
+    <ClCompile Include="bumpvects.cpp" />
+    <ClCompile Include="IceKey.cpp" />
+    <ClCompile Include="imagequant.cpp" />
+    <ClCompile Include="polyhedron.cpp" />
+    <ClCompile Include="quantize.cpp" />
+    <ClCompile Include="randsse.cpp" />
+    <ClCompile Include="spherical.cpp" />
+    <ClCompile Include="simdvectormatrix.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="vmatrix.cpp" />
+    <ClCompile Include="almostequal.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../public/mathlib/anorms.h" />
+    <ClInclude Include="../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../public/mathlib/compressed_3d_unitvec.h" />
+    <ClInclude Include="../public/mathlib/compressed_light_cube.h" />
+    <ClInclude Include="../public/mathlib/compressed_vector.h" />
+    <ClInclude Include="../public/mathlib/halton.h" />
+    <ClInclude Include="../public/mathlib/IceKey.H" />
+    <ClInclude Include="../public/mathlib/lightdesc.h" />
+    <ClInclude Include="../public/mathlib/math_pfns.h" />
+    <ClInclude Include="../public/mathlib/mathlib.h" />
+    <ClInclude Include="../public/mathlib/noise.h" />
+    <ClInclude Include="../public/mathlib/polyhedron.h" />
+    <ClInclude Include="../public/mathlib/quantize.h" />
+    <ClInclude Include="../public/mathlib/simdvectormatrix.h" />
+    <ClInclude Include="../public/mathlib/spherical_geometry.h" />
+    <ClInclude Include="../public/mathlib/ssemath.h" />
+    <ClInclude Include="../public/mathlib/ssequaternion.h" />
+    <ClInclude Include="../public/mathlib/vector.h" />
+    <ClInclude Include="../public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/mathlib/vector4d.h" />
+    <ClInclude Include="../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../public/mathlib/vplane.h" />
+    <ClInclude Include="noisedata.h" />
+    <ClInclude Include="sse.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="color_conversion.cpp" />
+    <ClCompile Include="halton.cpp" />
+    <ClCompile Include="lightdesc.cpp" />
+    <ClCompile Include="mathlib_base.cpp" />
+    <ClCompile Include="powsse.cpp" />
+    <ClCompile Include="sparse_convolution_noise.cpp" />
+    <ClCompile Include="sseconst.cpp" />
+    <ClCompile Include="sse.cpp" />
+    <ClCompile Include="ssenoise.cpp" />
+    <ClCompile Include="anorms.cpp" />
+    <ClCompile Include="bumpvects.cpp" />
+    <ClCompile Include="IceKey.cpp" />
+    <ClCompile Include="imagequant.cpp" />
+    <ClCompile Include="polyhedron.cpp" />
+    <ClCompile Include="quantize.cpp" />
+    <ClCompile Include="randsse.cpp" />
+    <ClCompile Include="spherical.cpp" />
+    <ClCompile Include="simdvectormatrix.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="vmatrix.cpp" />
+    <ClCompile Include="almostequal.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../public/mathlib/anorms.h" />
+    <ClInclude Include="../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../public/mathlib/compressed_3d_unitvec.h" />
+    <ClInclude Include="../public/mathlib/compressed_light_cube.h" />
+    <ClInclude Include="../public/mathlib/compressed_vector.h" />
+    <ClInclude Include="../public/mathlib/halton.h" />
+    <ClInclude Include="../public/mathlib/IceKey.H" />
+    <ClInclude Include="../public/mathlib/lightdesc.h" />
+    <ClInclude Include="../public/mathlib/math_pfns.h" />
+    <ClInclude Include="../public/mathlib/mathlib.h" />
+    <ClInclude Include="../public/mathlib/noise.h" />
+    <ClInclude Include="../public/mathlib/polyhedron.h" />
+    <ClInclude Include="../public/mathlib/quantize.h" />
+    <ClInclude Include="../public/mathlib/simdvectormatrix.h" />
+    <ClInclude Include="../public/mathlib/spherical_geometry.h" />
+    <ClInclude Include="../public/mathlib/ssemath.h" />
+    <ClInclude Include="../public/mathlib/ssequaternion.h" />
+    <ClInclude Include="../public/mathlib/vector.h" />
+    <ClInclude Include="../public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/mathlib/vector4d.h" />
+    <ClInclude Include="../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../public/mathlib/vplane.h" />
+    <ClInclude Include="noisedata.h" />
+    <ClInclude Include="sse.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="color_conversion.cpp" />
+    <ClCompile Include="halton.cpp" />
+    <ClCompile Include="lightdesc.cpp" />
+    <ClCompile Include="mathlib_base.cpp" />
+    <ClCompile Include="powsse.cpp" />
+    <ClCompile Include="sparse_convolution_noise.cpp" />
+    <ClCompile Include="sseconst.cpp" />
+    <ClCompile Include="sse.cpp" />
+    <ClCompile Include="ssenoise.cpp" />
+    <ClCompile Include="anorms.cpp" />
+    <ClCompile Include="bumpvects.cpp" />
+    <ClCompile Include="IceKey.cpp" />
+    <ClCompile Include="imagequant.cpp" />
+    <ClCompile Include="polyhedron.cpp" />
+    <ClCompile Include="quantize.cpp" />
+    <ClCompile Include="randsse.cpp" />
+    <ClCompile Include="spherical.cpp" />
+    <ClCompile Include="simdvectormatrix.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="vmatrix.cpp" />
+    <ClCompile Include="almostequal.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../public/mathlib/anorms.h" />
+    <ClInclude Include="../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../public/mathlib/compressed_3d_unitvec.h" />
+    <ClInclude Include="../public/mathlib/compressed_light_cube.h" />
+    <ClInclude Include="../public/mathlib/compressed_vector.h" />
+    <ClInclude Include="../public/mathlib/halton.h" />
+    <ClInclude Include="../public/mathlib/IceKey.H" />
+    <ClInclude Include="../public/mathlib/lightdesc.h" />
+    <ClInclude Include="../public/mathlib/math_pfns.h" />
+    <ClInclude Include="../public/mathlib/mathlib.h" />
+    <ClInclude Include="../public/mathlib/noise.h" />
+    <ClInclude Include="../public/mathlib/polyhedron.h" />
+    <ClInclude Include="../public/mathlib/quantize.h" />
+    <ClInclude Include="../public/mathlib/simdvectormatrix.h" />
+    <ClInclude Include="../public/mathlib/spherical_geometry.h" />
+    <ClInclude Include="../public/mathlib/ssemath.h" />
+    <ClInclude Include="../public/mathlib/ssequaternion.h" />
+    <ClInclude Include="../public/mathlib/vector.h" />
+    <ClInclude Include="../public/mathlib/vector2d.h" />
+    <ClInclude Include="../public/mathlib/vector4d.h" />
+    <ClInclude Include="../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../public/mathlib/vplane.h" />
+    <ClInclude Include="noisedata.h" />
+    <ClInclude Include="sse.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

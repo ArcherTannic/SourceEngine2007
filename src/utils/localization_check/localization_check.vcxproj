@@ -1,0 +1,515 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Localization_check</ProjectName>
+    <ProjectGuid>{A56A7EA7-3499-4EA1-A7F0-A14847901ABF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>localization_check</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../utils/localization_check;../../game/shared;../common;../hlfaceposer;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>localization_check</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../utils/localization_check;../../game/shared;../common;../hlfaceposer;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>localization_check</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../utils/localization_check;../../game/shared;../common;../hlfaceposer;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>localization_check</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../utils/localization_check;../../game/shared;../common;../hlfaceposer;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=localization_check;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;winmm.lib;odbc32.lib;odbccp32.lib;appframework.lib;choreoobjects.lib;mathlib.lib;tier2.lib;tier3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/localization_check.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/localization_check.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=localization_check;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;winmm.lib;odbc32.lib;odbccp32.lib;appframework.lib;choreoobjects.lib;mathlib.lib;tier2.lib;tier3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/localization_check.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/localization_check.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=localization_check;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;winmm.lib;odbc32.lib;odbccp32.lib;appframework.lib;choreoobjects.lib;mathlib.lib;tier2.lib;tier3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/localization_check.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/localization_check.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=localization_check;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;legacy_stdio_definitions.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;winmm.lib;odbc32.lib;odbccp32.lib;appframework.lib;choreoobjects.lib;mathlib.lib;tier2.lib;tier3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/localization_check.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/localization_check.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="faceposersound_simple.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp" />
+    <ClCompile Include="../../game/shared/interval.cpp" />
+    <ClCompile Include="localization_check.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../../public/sentence.cpp" />
+    <ClCompile Include="../../public/soundcombiner.cpp" />
+    <ClCompile Include="../../public/UnicodeFileHelpers.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_audio_source.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer_adpcm.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_source.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../game/shared/ichoreoeventcallback.h" />
+    <ClInclude Include="../../game/shared/iscenetokenprocessor.h" />
+    <ClInclude Include="../../public/isoundcombiner.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/UnicodeFileHelpers.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="../../game/shared/choreoactor.h" />
+    <ClInclude Include="../../game/shared/choreochannel.h" />
+    <ClInclude Include="../../game/shared/choreoevent.h" />
+    <ClInclude Include="../../game/shared/choreoscene.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../Public/commonmacros.h" />
+    <ClInclude Include="../../public/tier1/convar.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../game/shared/ExpressionSample.h" />
+    <ClInclude Include="../../public/tier0/fasttimer.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="../common/filesystem_tools.h" />
+    <ClInclude Include="../../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../../Public/engine/IEngineSound.h" />
+    <ClInclude Include="../../public/vstdlib/IKeyValuesSystem.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/interpolatortypes.h" />
+    <ClInclude Include="../../game/shared/interval.h" />
+    <ClInclude Include="../../public/irecipientfilter.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../public/tier0/mem.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/networkvar.h" />
+    <ClInclude Include="../../public/tier0/platform.h" />
+    <ClInclude Include="../../public/protected_things.h" />
+    <ClInclude Include="../../public/vstdlib/random.h" />
+    <ClInclude Include="../../game/shared/sharedInterface.h" />
+    <ClInclude Include="../../public/soundchars.h" />
+    <ClInclude Include="../../Public/soundflags.h" />
+    <ClInclude Include="../../public/string_t.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../../public/tier1/utldict.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../hlfaceposer/snd_audio_source.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_adpcm.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_private.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_source.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="faceposersound_simple.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp" />
+    <ClCompile Include="../../game/shared/interval.cpp" />
+    <ClCompile Include="localization_check.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../../public/sentence.cpp" />
+    <ClCompile Include="../../public/soundcombiner.cpp" />
+    <ClCompile Include="../../public/UnicodeFileHelpers.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_audio_source.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer_adpcm.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_source.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../game/shared/ichoreoeventcallback.h" />
+    <ClInclude Include="../../game/shared/iscenetokenprocessor.h" />
+    <ClInclude Include="../../public/isoundcombiner.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/UnicodeFileHelpers.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="../../game/shared/choreoactor.h" />
+    <ClInclude Include="../../game/shared/choreochannel.h" />
+    <ClInclude Include="../../game/shared/choreoevent.h" />
+    <ClInclude Include="../../game/shared/choreoscene.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../Public/commonmacros.h" />
+    <ClInclude Include="../../public/tier1/convar.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../game/shared/ExpressionSample.h" />
+    <ClInclude Include="../../public/tier0/fasttimer.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="../common/filesystem_tools.h" />
+    <ClInclude Include="../../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../../Public/engine/IEngineSound.h" />
+    <ClInclude Include="../../public/vstdlib/IKeyValuesSystem.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/interpolatortypes.h" />
+    <ClInclude Include="../../game/shared/interval.h" />
+    <ClInclude Include="../../public/irecipientfilter.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../public/tier0/mem.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/networkvar.h" />
+    <ClInclude Include="../../public/tier0/platform.h" />
+    <ClInclude Include="../../public/protected_things.h" />
+    <ClInclude Include="../../public/vstdlib/random.h" />
+    <ClInclude Include="../../game/shared/sharedInterface.h" />
+    <ClInclude Include="../../public/soundchars.h" />
+    <ClInclude Include="../../Public/soundflags.h" />
+    <ClInclude Include="../../public/string_t.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../../public/tier1/utldict.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../hlfaceposer/snd_audio_source.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_adpcm.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_private.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_source.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="faceposersound_simple.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp" />
+    <ClCompile Include="../../game/shared/interval.cpp" />
+    <ClCompile Include="localization_check.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../../public/sentence.cpp" />
+    <ClCompile Include="../../public/soundcombiner.cpp" />
+    <ClCompile Include="../../public/UnicodeFileHelpers.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_audio_source.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer_adpcm.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_source.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../game/shared/ichoreoeventcallback.h" />
+    <ClInclude Include="../../game/shared/iscenetokenprocessor.h" />
+    <ClInclude Include="../../public/isoundcombiner.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/UnicodeFileHelpers.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="../../game/shared/choreoactor.h" />
+    <ClInclude Include="../../game/shared/choreochannel.h" />
+    <ClInclude Include="../../game/shared/choreoevent.h" />
+    <ClInclude Include="../../game/shared/choreoscene.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../Public/commonmacros.h" />
+    <ClInclude Include="../../public/tier1/convar.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../game/shared/ExpressionSample.h" />
+    <ClInclude Include="../../public/tier0/fasttimer.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="../common/filesystem_tools.h" />
+    <ClInclude Include="../../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../../Public/engine/IEngineSound.h" />
+    <ClInclude Include="../../public/vstdlib/IKeyValuesSystem.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/interpolatortypes.h" />
+    <ClInclude Include="../../game/shared/interval.h" />
+    <ClInclude Include="../../public/irecipientfilter.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../public/tier0/mem.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/networkvar.h" />
+    <ClInclude Include="../../public/tier0/platform.h" />
+    <ClInclude Include="../../public/protected_things.h" />
+    <ClInclude Include="../../public/vstdlib/random.h" />
+    <ClInclude Include="../../game/shared/sharedInterface.h" />
+    <ClInclude Include="../../public/soundchars.h" />
+    <ClInclude Include="../../Public/soundflags.h" />
+    <ClInclude Include="../../public/string_t.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../../public/tier1/utldict.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../hlfaceposer/snd_audio_source.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_adpcm.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_private.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_source.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="faceposersound_simple.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp" />
+    <ClCompile Include="../../game/shared/interval.cpp" />
+    <ClCompile Include="localization_check.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../../public/sentence.cpp" />
+    <ClCompile Include="../../public/soundcombiner.cpp" />
+    <ClCompile Include="../../public/UnicodeFileHelpers.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_audio_source.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_mixer_adpcm.cpp" />
+    <ClCompile Include="../hlfaceposer/snd_wave_source.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../../game/shared/ichoreoeventcallback.h" />
+    <ClInclude Include="../../game/shared/iscenetokenprocessor.h" />
+    <ClInclude Include="../../public/isoundcombiner.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/UnicodeFileHelpers.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="../../game/shared/choreoactor.h" />
+    <ClInclude Include="../../game/shared/choreochannel.h" />
+    <ClInclude Include="../../game/shared/choreoevent.h" />
+    <ClInclude Include="../../game/shared/choreoscene.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/Color.h" />
+    <ClInclude Include="../../Public/commonmacros.h" />
+    <ClInclude Include="../../public/tier1/convar.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../game/shared/ExpressionSample.h" />
+    <ClInclude Include="../../public/tier0/fasttimer.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="../common/filesystem_tools.h" />
+    <ClInclude Include="../../public/appframework/IAppSystem.h" />
+    <ClInclude Include="../../public/tier0/ICommandLine.h" />
+    <ClInclude Include="../../Public/engine/IEngineSound.h" />
+    <ClInclude Include="../../public/vstdlib/IKeyValuesSystem.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../public/interpolatortypes.h" />
+    <ClInclude Include="../../game/shared/interval.h" />
+    <ClInclude Include="../../public/irecipientfilter.h" />
+    <ClInclude Include="../../public/tier1/KeyValues.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../public/tier0/mem.h" />
+    <ClInclude Include="../../public/tier0/memdbgoff.h" />
+    <ClInclude Include="../../public/tier0/memdbgon.h" />
+    <ClInclude Include="../../public/networkvar.h" />
+    <ClInclude Include="../../public/tier0/platform.h" />
+    <ClInclude Include="../../public/protected_things.h" />
+    <ClInclude Include="../../public/vstdlib/random.h" />
+    <ClInclude Include="../../game/shared/sharedInterface.h" />
+    <ClInclude Include="../../public/soundchars.h" />
+    <ClInclude Include="../../Public/soundflags.h" />
+    <ClInclude Include="../../public/string_t.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../../public/tier1/utldict.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../hlfaceposer/snd_audio_source.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_adpcm.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_mixer_private.h" />
+    <ClInclude Include="../hlfaceposer/snd_wave_source.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

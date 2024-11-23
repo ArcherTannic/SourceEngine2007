@@ -1,0 +1,1291 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>GameUI (HL2)</ProjectName>
+    <ProjectGuid>{2485434F-6185-4692-8D98-C433CCCBFB24}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32/mod_hl2\</OutDir>
+    <IntDir>Debug/win32/mod_hl2\</IntDir>
+    <TargetName>gameui</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;./;../../game/shared;../../game/client;../../game/client/game_controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64/mod_hl2\</OutDir>
+    <IntDir>Debug/win64/mod_hl2\</IntDir>
+    <TargetName>gameui</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;./;../../game/shared;../../game/client;../../game/client/game_controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32/mod_hl2\</OutDir>
+    <IntDir>Release/win32/mod_hl2\</IntDir>
+    <TargetName>gameui</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;./;../../game/shared;../../game/client;../../game/client/game_controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64/mod_hl2\</OutDir>
+    <IntDir>Release/win64/mod_hl2\</IntDir>
+    <TargetName>gameui</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;./;../../game/shared;../../game/client;../../game/client/game_controls;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=gameui;HL2_CLIENT_DLL;HL2_EPISODIC;GAMEUI_DLL;SUPPRESS_INVALID_PARAMETER_NO_INFO;_CRT_NO_VA_START_VALIDATION;NO_STRING_T;CLIENT_DLL;VECTOR;VERSION_SAFE_STEAM_API_INTERFACES;DISABLE_PROTECTED_THINGS;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cbase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/gameui.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;winmm.lib;../../lib/common/win32/jpeglib.lib;../../lib/public/win32/bitmap.lib;../../lib/public/win32/mathlib.lib;../../lib/public/win32/tier2.lib;../../lib/public/win32/tier3.lib;../../lib/public/win32/dmxloader.lib;../../lib/public/win32/vgui_controls.lib;../../lib/public/win32/matsys_controls.lib;../../lib/public/win32/vtf.lib;../../lib/public/win32/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/mod_hl2/bin/win32/gameui.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/mod_hl2/bin/win32/gameui.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=gameui;HL2_CLIENT_DLL;HL2_EPISODIC;GAMEUI_DLL;SUPPRESS_INVALID_PARAMETER_NO_INFO;_CRT_NO_VA_START_VALIDATION;NO_STRING_T;CLIENT_DLL;VECTOR;VERSION_SAFE_STEAM_API_INTERFACES;DISABLE_PROTECTED_THINGS;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cbase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/gameui.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;winmm.lib;../../lib/common/win64/jpeglib.lib;../../lib/public/win64/bitmap.lib;../../lib/public/win64/mathlib.lib;../../lib/public/win64/tier2.lib;../../lib/public/win64/tier3.lib;../../lib/public/win64/dmxloader.lib;../../lib/public/win64/vgui_controls.lib;../../lib/public/win64/matsys_controls.lib;../../lib/public/win64/vtf.lib;../../lib/public/win64/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/mod_hl2/bin/win64/gameui.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/mod_hl2/bin/win64/gameui.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=gameui;HL2_CLIENT_DLL;HL2_EPISODIC;GAMEUI_DLL;SUPPRESS_INVALID_PARAMETER_NO_INFO;_CRT_NO_VA_START_VALIDATION;NO_STRING_T;CLIENT_DLL;VECTOR;VERSION_SAFE_STEAM_API_INTERFACES;DISABLE_PROTECTED_THINGS;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cbase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/gameui.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;winmm.lib;../../lib/common/win32/jpeglib.lib;../../lib/public/win32/bitmap.lib;../../lib/public/win32/mathlib.lib;../../lib/public/win32/tier2.lib;../../lib/public/win32/tier3.lib;../../lib/public/win32/dmxloader.lib;../../lib/public/win32/vgui_controls.lib;../../lib/public/win32/matsys_controls.lib;../../lib/public/win32/vtf.lib;../../lib/public/win32/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/mod_hl2/bin/win32/gameui.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/mod_hl2/bin/win32/gameui.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=gameui;HL2_CLIENT_DLL;HL2_EPISODIC;GAMEUI_DLL;SUPPRESS_INVALID_PARAMETER_NO_INFO;_CRT_NO_VA_START_VALIDATION;NO_STRING_T;CLIENT_DLL;VECTOR;VERSION_SAFE_STEAM_API_INTERFACES;DISABLE_PROTECTED_THINGS;strncpy=use_Q_strncpy_instead;_snprintf=use_Q_snprintf_instead;GAMEUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cbase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/gameui.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;Ws2_32.lib;odbc32.lib;odbccp32.lib;Shlwapi.lib;winmm.lib;../../lib/common/win64/jpeglib.lib;../../lib/public/win64/bitmap.lib;../../lib/public/win64/mathlib.lib;../../lib/public/win64/tier2.lib;../../lib/public/win64/tier3.lib;../../lib/public/win64/dmxloader.lib;../../lib/public/win64/vgui_controls.lib;../../lib/public/win64/matsys_controls.lib;../../lib/public/win64/vtf.lib;../../lib/public/win64/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/mod_hl2/bin/win64/gameui.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/mod_hl2/bin/win64/gameui.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="nb_button.cpp" />
+    <ClCompile Include="basemodframe.cpp" />
+    <ClCompile Include="BaseModPanel.cpp" />
+    <ClCompile Include="gamemodes.cpp" />
+    <ClCompile Include="vaddonassociation.cpp" />
+    <ClCompile Include="vaddons.cpp" />
+    <ClCompile Include="vattractscreen.cpp" />
+    <ClCompile Include="vcampaigns.cpp" />
+    <ClCompile Include="vcustomcampaigns.cpp" />
+    <ClCompile Include="vdropdownmenu.cpp" />
+    <ClCompile Include="vflyoutmenu.cpp" />
+    <ClCompile Include="vfooterpanel.cpp" />
+    <ClCompile Include="vgenericconfirmation.cpp" />
+    <ClCompile Include="vgenericpanellist.cpp" />
+    <ClCompile Include="vgetlegacydata.cpp" />
+    <ClCompile Include="vhybridbutton.cpp" />
+    <ClCompile Include="vingamemainmenu.cpp" />
+    <ClCompile Include="vloadingprogress.cpp" />
+    <ClCompile Include="vmainmenu.cpp" />
+    <ClCompile Include="vmenubackground.cpp" />
+    <ClCompile Include="vslidercontrol.cpp" />
+    <ClCompile Include="vtransitionscreen.cpp" />
+    <ClCompile Include="UIGameData.cpp" />
+    <ClCompile Include="backgroundmenubutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="basesavegamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="bitmapimagepanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="commandcheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="contentcontroldialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamebotpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamegameplaypage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergameserverpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="customtabexplanationdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarnegatecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarslider.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartextentry.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsole.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsoledialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_interface.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_util.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="keytogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="labeledcommandcombobox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingtippanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="logofile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="modinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="mousemessageforwardingpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="multiplayeradvanceddialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="panellistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="playerlistdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rungameengine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scriptobject.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sys_utils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="textentrybox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="urlbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vcontrolslistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vguisystemmoduleloader.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/language.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/crtmemdebug.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/randoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudiovideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vgameplaysettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboardmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/voptions.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsmousedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubdifficulty.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubgame.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubportal.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvoice.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="nb_button.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="basemodframe.h" />
+    <ClInclude Include="gamemodes.h" />
+    <ClInclude Include="UIGameData.h" />
+    <ClInclude Include="vaddonassociation.h" />
+    <ClInclude Include="vaddons.h" />
+    <ClInclude Include="vattractscreen.h" />
+    <ClInclude Include="vcustomcampaigns.h" />
+    <ClInclude Include="vdropdownmenu.h" />
+    <ClInclude Include="vflyoutmenu.h" />
+    <ClInclude Include="vfooterpanel.h" />
+    <ClInclude Include="vgenericconfirmation.h" />
+    <ClInclude Include="vgenericpanellist.h" />
+    <ClInclude Include="vgetlegacydata.h" />
+    <ClInclude Include="vhybridbutton.h" />
+    <ClInclude Include="vingamemainmenu.h" />
+    <ClInclude Include="vloadingprogress.h" />
+    <ClInclude Include="vmainmenu.h" />
+    <ClInclude Include="vslidercontrol.h" />
+    <ClInclude Include="vtransitionscreen.h" />
+    <ClInclude Include="shared/settings/vaudio.h" />
+    <ClInclude Include="shared/settings/vaudiovideo.h" />
+    <ClInclude Include="shared/settings/vgameplaysettings.h" />
+    <ClInclude Include="shared/settings/vkeyboard.h" />
+    <ClInclude Include="shared/settings/vkeyboardmouse.h" />
+    <ClInclude Include="shared/settings/vmouse.h" />
+    <ClInclude Include="shared/settings/voptions.h" />
+    <ClInclude Include="shared/settings/vvideo.h" />
+    <ClInclude Include="shared/settings_old/optionsdialog.h" />
+    <ClInclude Include="shared/settings_old/optionsmousedialog.h" />
+    <ClInclude Include="shared/settings_old/optionssubaudio.h" />
+    <ClInclude Include="shared/settings_old/optionssubdifficulty.h" />
+    <ClInclude Include="shared/settings_old/optionssubgame.h" />
+    <ClInclude Include="shared/settings_old/optionssubkeyboard.h" />
+    <ClInclude Include="shared/settings_old/optionssubmouse.h" />
+    <ClInclude Include="shared/settings_old/optionssubportal.h" />
+    <ClInclude Include="shared/settings_old/optionssubvideo.h" />
+    <ClInclude Include="shared/settings_old/optionssubvoice.h" />
+    <ClInclude Include="../../public/iachievementmgr.h" />
+    <ClInclude Include="../../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../../public/IGameUIFuncs.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../common/IRunGameEngine.h" />
+    <ClInclude Include="../../common/IVGuiModule.h" />
+    <ClInclude Include="../../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../../public/savegame_version.h" />
+    <ClInclude Include="../../common/language.h" />
+    <ClInclude Include="maplab/ui_defines.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="nb_button.cpp" />
+    <ClCompile Include="basemodframe.cpp" />
+    <ClCompile Include="BaseModPanel.cpp" />
+    <ClCompile Include="gamemodes.cpp" />
+    <ClCompile Include="vaddonassociation.cpp" />
+    <ClCompile Include="vaddons.cpp" />
+    <ClCompile Include="vattractscreen.cpp" />
+    <ClCompile Include="vcampaigns.cpp" />
+    <ClCompile Include="vcustomcampaigns.cpp" />
+    <ClCompile Include="vdropdownmenu.cpp" />
+    <ClCompile Include="vflyoutmenu.cpp" />
+    <ClCompile Include="vfooterpanel.cpp" />
+    <ClCompile Include="vgenericconfirmation.cpp" />
+    <ClCompile Include="vgenericpanellist.cpp" />
+    <ClCompile Include="vgetlegacydata.cpp" />
+    <ClCompile Include="vhybridbutton.cpp" />
+    <ClCompile Include="vingamemainmenu.cpp" />
+    <ClCompile Include="vloadingprogress.cpp" />
+    <ClCompile Include="vmainmenu.cpp" />
+    <ClCompile Include="vmenubackground.cpp" />
+    <ClCompile Include="vslidercontrol.cpp" />
+    <ClCompile Include="vtransitionscreen.cpp" />
+    <ClCompile Include="UIGameData.cpp" />
+    <ClCompile Include="backgroundmenubutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="basesavegamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="bitmapimagepanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="commandcheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="contentcontroldialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamebotpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamegameplaypage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergameserverpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="customtabexplanationdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarnegatecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarslider.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartextentry.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsole.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsoledialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_interface.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_util.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="keytogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="labeledcommandcombobox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingtippanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="logofile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="modinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="mousemessageforwardingpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="multiplayeradvanceddialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="panellistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="playerlistdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rungameengine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scriptobject.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sys_utils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="textentrybox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="urlbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vcontrolslistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vguisystemmoduleloader.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/language.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/crtmemdebug.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/randoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudiovideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vgameplaysettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboardmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/voptions.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsmousedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubdifficulty.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubgame.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubportal.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvoice.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="nb_button.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="basemodframe.h" />
+    <ClInclude Include="gamemodes.h" />
+    <ClInclude Include="UIGameData.h" />
+    <ClInclude Include="vaddonassociation.h" />
+    <ClInclude Include="vaddons.h" />
+    <ClInclude Include="vattractscreen.h" />
+    <ClInclude Include="vcustomcampaigns.h" />
+    <ClInclude Include="vdropdownmenu.h" />
+    <ClInclude Include="vflyoutmenu.h" />
+    <ClInclude Include="vfooterpanel.h" />
+    <ClInclude Include="vgenericconfirmation.h" />
+    <ClInclude Include="vgenericpanellist.h" />
+    <ClInclude Include="vgetlegacydata.h" />
+    <ClInclude Include="vhybridbutton.h" />
+    <ClInclude Include="vingamemainmenu.h" />
+    <ClInclude Include="vloadingprogress.h" />
+    <ClInclude Include="vmainmenu.h" />
+    <ClInclude Include="vslidercontrol.h" />
+    <ClInclude Include="vtransitionscreen.h" />
+    <ClInclude Include="shared/settings/vaudio.h" />
+    <ClInclude Include="shared/settings/vaudiovideo.h" />
+    <ClInclude Include="shared/settings/vgameplaysettings.h" />
+    <ClInclude Include="shared/settings/vkeyboard.h" />
+    <ClInclude Include="shared/settings/vkeyboardmouse.h" />
+    <ClInclude Include="shared/settings/vmouse.h" />
+    <ClInclude Include="shared/settings/voptions.h" />
+    <ClInclude Include="shared/settings/vvideo.h" />
+    <ClInclude Include="shared/settings_old/optionsdialog.h" />
+    <ClInclude Include="shared/settings_old/optionsmousedialog.h" />
+    <ClInclude Include="shared/settings_old/optionssubaudio.h" />
+    <ClInclude Include="shared/settings_old/optionssubdifficulty.h" />
+    <ClInclude Include="shared/settings_old/optionssubgame.h" />
+    <ClInclude Include="shared/settings_old/optionssubkeyboard.h" />
+    <ClInclude Include="shared/settings_old/optionssubmouse.h" />
+    <ClInclude Include="shared/settings_old/optionssubportal.h" />
+    <ClInclude Include="shared/settings_old/optionssubvideo.h" />
+    <ClInclude Include="shared/settings_old/optionssubvoice.h" />
+    <ClInclude Include="../../public/iachievementmgr.h" />
+    <ClInclude Include="../../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../../public/IGameUIFuncs.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../common/IRunGameEngine.h" />
+    <ClInclude Include="../../common/IVGuiModule.h" />
+    <ClInclude Include="../../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../../public/savegame_version.h" />
+    <ClInclude Include="../../common/language.h" />
+    <ClInclude Include="maplab/ui_defines.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="nb_button.cpp" />
+    <ClCompile Include="basemodframe.cpp" />
+    <ClCompile Include="BaseModPanel.cpp" />
+    <ClCompile Include="gamemodes.cpp" />
+    <ClCompile Include="vaddonassociation.cpp" />
+    <ClCompile Include="vaddons.cpp" />
+    <ClCompile Include="vattractscreen.cpp" />
+    <ClCompile Include="vcampaigns.cpp" />
+    <ClCompile Include="vcustomcampaigns.cpp" />
+    <ClCompile Include="vdropdownmenu.cpp" />
+    <ClCompile Include="vflyoutmenu.cpp" />
+    <ClCompile Include="vfooterpanel.cpp" />
+    <ClCompile Include="vgenericconfirmation.cpp" />
+    <ClCompile Include="vgenericpanellist.cpp" />
+    <ClCompile Include="vgetlegacydata.cpp" />
+    <ClCompile Include="vhybridbutton.cpp" />
+    <ClCompile Include="vingamemainmenu.cpp" />
+    <ClCompile Include="vloadingprogress.cpp" />
+    <ClCompile Include="vmainmenu.cpp" />
+    <ClCompile Include="vmenubackground.cpp" />
+    <ClCompile Include="vslidercontrol.cpp" />
+    <ClCompile Include="vtransitionscreen.cpp" />
+    <ClCompile Include="UIGameData.cpp" />
+    <ClCompile Include="backgroundmenubutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="basesavegamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="bitmapimagepanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="commandcheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="contentcontroldialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamebotpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamegameplaypage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergameserverpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="customtabexplanationdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarnegatecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarslider.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartextentry.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsole.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsoledialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_interface.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_util.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="keytogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="labeledcommandcombobox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingtippanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="logofile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="modinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="mousemessageforwardingpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="multiplayeradvanceddialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="panellistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="playerlistdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rungameengine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scriptobject.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sys_utils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="textentrybox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="urlbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vcontrolslistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vguisystemmoduleloader.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/language.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/crtmemdebug.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/randoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudiovideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vgameplaysettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboardmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/voptions.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsmousedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubdifficulty.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubgame.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubportal.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvoice.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="nb_button.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="basemodframe.h" />
+    <ClInclude Include="gamemodes.h" />
+    <ClInclude Include="UIGameData.h" />
+    <ClInclude Include="vaddonassociation.h" />
+    <ClInclude Include="vaddons.h" />
+    <ClInclude Include="vattractscreen.h" />
+    <ClInclude Include="vcustomcampaigns.h" />
+    <ClInclude Include="vdropdownmenu.h" />
+    <ClInclude Include="vflyoutmenu.h" />
+    <ClInclude Include="vfooterpanel.h" />
+    <ClInclude Include="vgenericconfirmation.h" />
+    <ClInclude Include="vgenericpanellist.h" />
+    <ClInclude Include="vgetlegacydata.h" />
+    <ClInclude Include="vhybridbutton.h" />
+    <ClInclude Include="vingamemainmenu.h" />
+    <ClInclude Include="vloadingprogress.h" />
+    <ClInclude Include="vmainmenu.h" />
+    <ClInclude Include="vslidercontrol.h" />
+    <ClInclude Include="vtransitionscreen.h" />
+    <ClInclude Include="shared/settings/vaudio.h" />
+    <ClInclude Include="shared/settings/vaudiovideo.h" />
+    <ClInclude Include="shared/settings/vgameplaysettings.h" />
+    <ClInclude Include="shared/settings/vkeyboard.h" />
+    <ClInclude Include="shared/settings/vkeyboardmouse.h" />
+    <ClInclude Include="shared/settings/vmouse.h" />
+    <ClInclude Include="shared/settings/voptions.h" />
+    <ClInclude Include="shared/settings/vvideo.h" />
+    <ClInclude Include="shared/settings_old/optionsdialog.h" />
+    <ClInclude Include="shared/settings_old/optionsmousedialog.h" />
+    <ClInclude Include="shared/settings_old/optionssubaudio.h" />
+    <ClInclude Include="shared/settings_old/optionssubdifficulty.h" />
+    <ClInclude Include="shared/settings_old/optionssubgame.h" />
+    <ClInclude Include="shared/settings_old/optionssubkeyboard.h" />
+    <ClInclude Include="shared/settings_old/optionssubmouse.h" />
+    <ClInclude Include="shared/settings_old/optionssubportal.h" />
+    <ClInclude Include="shared/settings_old/optionssubvideo.h" />
+    <ClInclude Include="shared/settings_old/optionssubvoice.h" />
+    <ClInclude Include="../../public/iachievementmgr.h" />
+    <ClInclude Include="../../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../../public/IGameUIFuncs.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../common/IRunGameEngine.h" />
+    <ClInclude Include="../../common/IVGuiModule.h" />
+    <ClInclude Include="../../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../../public/savegame_version.h" />
+    <ClInclude Include="../../common/language.h" />
+    <ClInclude Include="maplab/ui_defines.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BonusMapsDatabase.cpp" />
+    <ClCompile Include="BonusMapsDialog.cpp" />
+    <ClCompile Include="CommentaryExplanationDialog.cpp" />
+    <ClCompile Include="ControllerDialog.cpp" />
+    <ClCompile Include="LoadGameDialog.cpp" />
+    <ClCompile Include="NewGameDialog.cpp" />
+    <ClCompile Include="SaveGameBrowserDialog.cpp" />
+    <ClCompile Include="SaveGameDialog.cpp" />
+    <ClCompile Include="TGAImagePanel.cpp" />
+    <ClCompile Include="nb_button.cpp" />
+    <ClCompile Include="basemodframe.cpp" />
+    <ClCompile Include="BaseModPanel.cpp" />
+    <ClCompile Include="gamemodes.cpp" />
+    <ClCompile Include="vaddonassociation.cpp" />
+    <ClCompile Include="vaddons.cpp" />
+    <ClCompile Include="vattractscreen.cpp" />
+    <ClCompile Include="vcampaigns.cpp" />
+    <ClCompile Include="vcustomcampaigns.cpp" />
+    <ClCompile Include="vdropdownmenu.cpp" />
+    <ClCompile Include="vflyoutmenu.cpp" />
+    <ClCompile Include="vfooterpanel.cpp" />
+    <ClCompile Include="vgenericconfirmation.cpp" />
+    <ClCompile Include="vgenericpanellist.cpp" />
+    <ClCompile Include="vgetlegacydata.cpp" />
+    <ClCompile Include="vhybridbutton.cpp" />
+    <ClCompile Include="vingamemainmenu.cpp" />
+    <ClCompile Include="vloadingprogress.cpp" />
+    <ClCompile Include="vmainmenu.cpp" />
+    <ClCompile Include="vmenubackground.cpp" />
+    <ClCompile Include="vslidercontrol.cpp" />
+    <ClCompile Include="vtransitionscreen.cpp" />
+    <ClCompile Include="UIGameData.cpp" />
+    <ClCompile Include="backgroundmenubutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="basesavegamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="bitmapimagepanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="commandcheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="contentcontroldialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamebotpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergamegameplaypage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="createmultiplayergameserverpage.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="customtabexplanationdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarnegatecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvarslider.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartextentry.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="cvartogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsole.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameconsoledialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_interface.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gameui_util.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="keytogglecheckbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="labeledcommandcombobox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="loadingtippanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="logofile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="modinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="mousemessageforwardingpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="multiplayeradvanceddialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="panellistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="playerlistdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rungameengine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scriptobject.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sys_utils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="textentrybox.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="urlbutton.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vcontrolslistpanel.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vguisystemmoduleloader.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/language.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/crtmemdebug.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/randoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vaudiovideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vgameplaysettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vkeyboardmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/voptions.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings/vvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsdialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionsmousedialog.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubaudio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubdifficulty.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubgame.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubkeyboard.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubmouse.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubportal.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvideo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="shared/settings_old/optionssubvoice.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="BonusMapsDatabase.h" />
+    <ClInclude Include="BonusMapsDialog.h" />
+    <ClInclude Include="CommentaryExplanationDialog.h" />
+    <ClInclude Include="ControllerDialog.h" />
+    <ClInclude Include="LoadGameDialog.h" />
+    <ClInclude Include="NewGameDialog.h" />
+    <ClInclude Include="SaveGameBrowserDialog.h" />
+    <ClInclude Include="SaveGameDialog.h" />
+    <ClInclude Include="TGAImagePanel.h" />
+    <ClInclude Include="nb_button.h" />
+    <ClInclude Include="cbase.h" />
+    <ClInclude Include="basemodframe.h" />
+    <ClInclude Include="gamemodes.h" />
+    <ClInclude Include="UIGameData.h" />
+    <ClInclude Include="vaddonassociation.h" />
+    <ClInclude Include="vaddons.h" />
+    <ClInclude Include="vattractscreen.h" />
+    <ClInclude Include="vcustomcampaigns.h" />
+    <ClInclude Include="vdropdownmenu.h" />
+    <ClInclude Include="vflyoutmenu.h" />
+    <ClInclude Include="vfooterpanel.h" />
+    <ClInclude Include="vgenericconfirmation.h" />
+    <ClInclude Include="vgenericpanellist.h" />
+    <ClInclude Include="vgetlegacydata.h" />
+    <ClInclude Include="vhybridbutton.h" />
+    <ClInclude Include="vingamemainmenu.h" />
+    <ClInclude Include="vloadingprogress.h" />
+    <ClInclude Include="vmainmenu.h" />
+    <ClInclude Include="vslidercontrol.h" />
+    <ClInclude Include="vtransitionscreen.h" />
+    <ClInclude Include="shared/settings/vaudio.h" />
+    <ClInclude Include="shared/settings/vaudiovideo.h" />
+    <ClInclude Include="shared/settings/vgameplaysettings.h" />
+    <ClInclude Include="shared/settings/vkeyboard.h" />
+    <ClInclude Include="shared/settings/vkeyboardmouse.h" />
+    <ClInclude Include="shared/settings/vmouse.h" />
+    <ClInclude Include="shared/settings/voptions.h" />
+    <ClInclude Include="shared/settings/vvideo.h" />
+    <ClInclude Include="shared/settings_old/optionsdialog.h" />
+    <ClInclude Include="shared/settings_old/optionsmousedialog.h" />
+    <ClInclude Include="shared/settings_old/optionssubaudio.h" />
+    <ClInclude Include="shared/settings_old/optionssubdifficulty.h" />
+    <ClInclude Include="shared/settings_old/optionssubgame.h" />
+    <ClInclude Include="shared/settings_old/optionssubkeyboard.h" />
+    <ClInclude Include="shared/settings_old/optionssubmouse.h" />
+    <ClInclude Include="shared/settings_old/optionssubportal.h" />
+    <ClInclude Include="shared/settings_old/optionssubvideo.h" />
+    <ClInclude Include="shared/settings_old/optionssubvoice.h" />
+    <ClInclude Include="../../public/iachievementmgr.h" />
+    <ClInclude Include="../../public/game/client/IGameClientExports.h" />
+    <ClInclude Include="../../common/GameUI/IGameUI.h" />
+    <ClInclude Include="../../public/IGameUIFuncs.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="../../common/IRunGameEngine.h" />
+    <ClInclude Include="../../common/IVGuiModule.h" />
+    <ClInclude Include="../../common/IVGuiModuleLoader.h" />
+    <ClInclude Include="../../public/savegame_version.h" />
+    <ClInclude Include="../../common/language.h" />
+    <ClInclude Include="maplab/ui_defines.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

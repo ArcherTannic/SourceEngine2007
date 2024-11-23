@@ -1,0 +1,117 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3DAE1306-39D0-4E85-9014-F6913FCDA9A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DC5F4B2E-C847-4C9C-9781-7269A242A3DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{621E0B49-82D7-4AD3-AEB5-D42E3B1899E7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QC_Eyes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QC_EyesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QC_Eyes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QC_EyesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QC_Eyes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QC_EyesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QC_Eyes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QC_EyesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QC_Eyes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QC_EyesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QC_Eyes.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res/eye_default.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_lower_hi.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_lower_lo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_lower_mid.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_upper_hi.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_upper_lo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_upper_mid.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_XY_L.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_XY_R.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_Z_L.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/eye_Z_R.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/QC_Eyes.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res/QC_Eyes.rc2">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,281 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>lzma</ProjectName>
+    <ProjectGuid>{574B7AF7-7089-410A-BFA1-A65756CE303F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../lib/common/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>lzma</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;C;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../lib/common/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>lzma</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;C;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../lib/common/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>lzma</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;C;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../lib/common/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>lzma</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;C;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=lzma;_NO_EXCEPTIONS;_LZMA_PROB32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/common/win32/lzma.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=lzma;_NO_EXCEPTIONS;_LZMA_PROB32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/common/win64/lzma.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=lzma;_NO_EXCEPTIONS;_LZMA_PROB32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/common/win32/lzma.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=lzma;_NO_EXCEPTIONS;_LZMA_PROB32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../lib/common/win64/lzma.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="Lzma.cpp" />
+    <ClCompile Include="C/Alloc.c" />
+    <ClCompile Include="C/Threads.c" />
+    <ClCompile Include="C/LzFind.c" />
+    <ClCompile Include="C/LzFindMt.c" />
+    <ClCompile Include="C/LzmaDec.c" />
+    <ClCompile Include="C/LzmaEnc.c" />
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp" />
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp" />
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp" />
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="C/Alloc.h" />
+    <ClInclude Include="C/Threads.h" />
+    <ClInclude Include="C/LzFind.h" />
+    <ClInclude Include="C/LzFindMt.h" />
+    <ClInclude Include="C/LzmaDec.h" />
+    <ClInclude Include="C/LzmaEnc.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMADecoder.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMAEncoder.h" />
+    <ClInclude Include="CPP/7zip/Common/CWrappers.h" />
+    <ClInclude Include="CPP/7zip/Common/StreamUtils.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="Lzma.cpp" />
+    <ClCompile Include="C/Alloc.c" />
+    <ClCompile Include="C/Threads.c" />
+    <ClCompile Include="C/LzFind.c" />
+    <ClCompile Include="C/LzFindMt.c" />
+    <ClCompile Include="C/LzmaDec.c" />
+    <ClCompile Include="C/LzmaEnc.c" />
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp" />
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp" />
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp" />
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="C/Alloc.h" />
+    <ClInclude Include="C/Threads.h" />
+    <ClInclude Include="C/LzFind.h" />
+    <ClInclude Include="C/LzFindMt.h" />
+    <ClInclude Include="C/LzmaDec.h" />
+    <ClInclude Include="C/LzmaEnc.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMADecoder.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMAEncoder.h" />
+    <ClInclude Include="CPP/7zip/Common/CWrappers.h" />
+    <ClInclude Include="CPP/7zip/Common/StreamUtils.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="Lzma.cpp" />
+    <ClCompile Include="C/Alloc.c" />
+    <ClCompile Include="C/Threads.c" />
+    <ClCompile Include="C/LzFind.c" />
+    <ClCompile Include="C/LzFindMt.c" />
+    <ClCompile Include="C/LzmaDec.c" />
+    <ClCompile Include="C/LzmaEnc.c" />
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp" />
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp" />
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp" />
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="C/Alloc.h" />
+    <ClInclude Include="C/Threads.h" />
+    <ClInclude Include="C/LzFind.h" />
+    <ClInclude Include="C/LzFindMt.h" />
+    <ClInclude Include="C/LzmaDec.h" />
+    <ClInclude Include="C/LzmaEnc.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMADecoder.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMAEncoder.h" />
+    <ClInclude Include="CPP/7zip/Common/CWrappers.h" />
+    <ClInclude Include="CPP/7zip/Common/StreamUtils.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="Lzma.cpp" />
+    <ClCompile Include="C/Alloc.c" />
+    <ClCompile Include="C/Threads.c" />
+    <ClCompile Include="C/LzFind.c" />
+    <ClCompile Include="C/LzFindMt.c" />
+    <ClCompile Include="C/LzmaDec.c" />
+    <ClCompile Include="C/LzmaEnc.c" />
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp" />
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp" />
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp" />
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="C/Alloc.h" />
+    <ClInclude Include="C/Threads.h" />
+    <ClInclude Include="C/LzFind.h" />
+    <ClInclude Include="C/LzFindMt.h" />
+    <ClInclude Include="C/LzmaDec.h" />
+    <ClInclude Include="C/LzmaEnc.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMADecoder.h" />
+    <ClInclude Include="CPP/7zip/Compress/LZMAEncoder.h" />
+    <ClInclude Include="CPP/7zip/Common/CWrappers.h" />
+    <ClInclude Include="CPP/7zip/Common/StreamUtils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

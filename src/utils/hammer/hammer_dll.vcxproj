@@ -1,0 +1,2627 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>hammer_dll</ProjectName>
+    <ProjectGuid>{9ED1CABA-CD33-4C38-8691-DB41B2700217}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>hammer_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../common/shaderdll;../../common/iostream;../../game/shared;../../utils/common;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>hammer_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../common/shaderdll;../../common/iostream;../../game/shared;../../utils/common;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>hammer_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../common/shaderdll;../../common/iostream;../../game/shared;../../utils/common;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>hammer_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../../common/shaderdll;../../common/iostream;../../game/shared;../../utils/common;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=hammer_dll;VALVE;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Debug/win32/hammer.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;nafxcwd.lib;libcmtd.lib;winmm.lib;rpcrt4.lib;../../lib/common/win32/jpeglib.lib;../../lib/common/win32/steam.lib;bitmap.lib;choreoobjects.lib;datamodel.lib;dme_controls.lib;dmserializers.lib;fgdlib.lib;mathlib.lib;matsys_controls.lib;movieobjects.lib;raytrace.lib;tier2.lib;tier3.lib;vgui_controls.lib;dmxloader.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/hammer_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/hammer_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;nafxcw.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=hammer_dll;VALVE;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Debug/win64/hammer.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;nafxcwd.lib;libcmtd.lib;winmm.lib;rpcrt4.lib;../../lib/common/win64/jpeglib.lib;../../lib/common/win64/steam.lib;bitmap.lib;choreoobjects.lib;datamodel.lib;dme_controls.lib;dmserializers.lib;fgdlib.lib;mathlib.lib;matsys_controls.lib;movieobjects.lib;raytrace.lib;tier2.lib;tier3.lib;vgui_controls.lib;dmxloader.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/hammer_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/hammer_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;nafxcw.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=hammer_dll;VALVE;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Release/win32/hammer.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;nafxcw.lib;libcmt.lib;winmm.lib;rpcrt4.lib;../../lib/common/win32/jpeglib.lib;../../lib/common/win32/steam.lib;bitmap.lib;choreoobjects.lib;datamodel.lib;dme_controls.lib;dmserializers.lib;fgdlib.lib;mathlib.lib;matsys_controls.lib;movieobjects.lib;raytrace.lib;tier2.lib;tier3.lib;vgui_controls.lib;dmxloader.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/hammer_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/hammer_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;nafxcwd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=hammer_dll;VALVE;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>Release/win64/hammer.pch</PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;nafxcw.lib;libcmt.lib;winmm.lib;rpcrt4.lib;../../lib/common/win64/jpeglib.lib;../../lib/common/win64/steam.lib;bitmap.lib;choreoobjects.lib;datamodel.lib;dme_controls.lib;dmserializers.lib;fgdlib.lib;mathlib.lib;matsys_controls.lib;movieobjects.lib;raytrace.lib;tier2.lib;tier3.lib;vgui_controls.lib;dmxloader.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/hammer_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/hammer_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;nafxcwd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PreprocessorDefinitions>NO_MEMOVERRIDE_NEW_DELETE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/builddisp.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BuildNum.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/ChunkFile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/CollisionUtils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/ConfigManager.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/SourceAppInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_common.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_powerinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_init.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hammer_mathlib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/KeyFrame/keyframe.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/rope_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SaveInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/simple_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerSettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/tier0/afxmem_override.cpp" />
+    <ClCompile Include="AnchorMgr.cpp" />
+    <ClCompile Include="AngleBox.cpp" />
+    <ClCompile Include="AutoSelCombo.cpp" />
+    <ClCompile Include="Axes2.cpp" />
+    <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="Brushops.cpp" />
+    <ClCompile Include="bsplighting.cpp" />
+    <ClCompile Include="bsplightingthread.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="clipcode.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="CreateArch.cpp" />
+    <ClCompile Include="CullTreeNode.cpp" />
+    <ClCompile Include="DetailObjects.cpp" />
+    <ClCompile Include="DispManager.cpp" />
+    <ClCompile Include="DispMapImageFilter.cpp" />
+    <ClCompile Include="DispPaint.cpp" />
+    <ClCompile Include="DispSew.cpp" />
+    <ClCompile Include="DispShore.cpp" />
+    <ClCompile Include="DispSubdiv.cpp" />
+    <ClCompile Include="DynamicDialogWnd.cpp" />
+    <ClCompile Include="EditGameClass.cpp" />
+    <ClCompile Include="EditGameConfigs.cpp" />
+    <ClCompile Include="EntityConnection.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="FileChangeWatcher.cpp" />
+    <ClCompile Include="FilteredComboBox.cpp" />
+    <ClCompile Include="gameconfig.cpp" />
+    <ClCompile Include="gamepalette.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="GroupList.cpp" />
+    <ClCompile Include="hammer.cpp" />
+    <ClCompile Include="HammerScene.cpp" />
+    <ClCompile Include="HammerVGui.cpp" />
+    <ClCompile Include="HelperFactory.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="IconComboBox.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="ListBoxEx.cpp" />
+    <ClCompile Include="LoadSave_MAP.cpp" />
+    <ClCompile Include="LoadSave_RMF.cpp" />
+    <ClCompile Include="lpreview_thread.cpp" />
+    <ClCompile Include="lprvwindow.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MakePrefabLibrary.cpp" />
+    <ClCompile Include="Mapdoc.cpp" />
+    <ClCompile Include="MapPath.cpp" />
+    <ClCompile Include="MapView.cpp" />
+    <ClCompile Include="MapView2D.cpp" />
+    <ClCompile Include="mapview2dbase.cpp" />
+    <ClCompile Include="MapView3D.cpp" />
+    <ClCompile Include="mapviewlogical.cpp" />
+    <ClCompile Include="materialproxyfactory_wc.cpp" />
+    <ClCompile Include="MDIClientWnd.cpp" />
+    <ClCompile Include="MessageWnd.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="ModelBrowser.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="ObjectBar.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="osver.cpp" />
+    <ClCompile Include="Prefab3D.cpp" />
+    <ClCompile Include="Prefabs.cpp" />
+    <ClCompile Include="ProcessWnd.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Render2D.cpp" />
+    <ClCompile Include="Render3DMS.cpp" />
+    <ClCompile Include="RenderUtils.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="RunCommands.cpp" />
+    <ClCompile Include="RunMap.cpp" />
+    <ClCompile Include="ScenePreviewDlg.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="SoundBrowser.cpp" />
+    <ClCompile Include="soundsystem.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SSolid.cpp" />
+    <ClCompile Include="../../utils/common/scriplib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockSolids.cpp" />
+    <ClCompile Include="StudioModel.cpp" />
+    <ClCompile Include="TargetNameCombo.cpp" />
+    <ClCompile Include="TextureBox.cpp" />
+    <ClCompile Include="TextureConverter.cpp" />
+    <ClCompile Include="TextureWindow.cpp" />
+    <ClCompile Include="TitleWnd.cpp" />
+    <ClCompile Include="VGuiWnd.cpp" />
+    <ClCompile Include="VisGroup.cpp" />
+    <ClCompile Include="MapAlignedBox.cpp" />
+    <ClCompile Include="MapAnimator.cpp" />
+    <ClCompile Include="MapAxisHandle.cpp" />
+    <ClCompile Include="Mapclass.cpp" />
+    <ClCompile Include="mapcylinder.cpp" />
+    <ClCompile Include="MapDecal.cpp" />
+    <ClCompile Include="MapDisp.cpp" />
+    <ClCompile Include="MapEntity.cpp" />
+    <ClCompile Include="MapFace.cpp" />
+    <ClCompile Include="MapFrustum.cpp" />
+    <ClCompile Include="MapGroup.cpp" />
+    <ClCompile Include="MapHelper.cpp" />
+    <ClCompile Include="MapKeyFrame.cpp" />
+    <ClCompile Include="MapLight.cpp" />
+    <ClCompile Include="MapLightCone.cpp" />
+    <ClCompile Include="MapLine.cpp" />
+    <ClCompile Include="MapOverlay.cpp" />
+    <ClCompile Include="mapoverlaytrans.cpp" />
+    <ClCompile Include="mapplayerhullhandle.cpp" />
+    <ClCompile Include="MapPoint.cpp" />
+    <ClCompile Include="MapPointHandle.cpp" />
+    <ClCompile Include="MapQuadBounds.cpp" />
+    <ClCompile Include="MapSideList.cpp" />
+    <ClCompile Include="MapSolid.cpp" />
+    <ClCompile Include="MapSphere.cpp" />
+    <ClCompile Include="MapSprite.cpp" />
+    <ClCompile Include="MapStudioModel.cpp" />
+    <ClCompile Include="mapsweptplayerhull.cpp" />
+    <ClCompile Include="MapWorld.cpp" />
+    <ClCompile Include="Box3D.cpp" />
+    <ClCompile Include="Tool3D.cpp" />
+    <ClCompile Include="ToolAxisHandle.cpp" />
+    <ClCompile Include="ToolBase.cpp" />
+    <ClCompile Include="ToolBlock.cpp" />
+    <ClCompile Include="ToolCamera.cpp" />
+    <ClCompile Include="ToolClipper.cpp" />
+    <ClCompile Include="ToolCordon.cpp" />
+    <ClCompile Include="ToolDecal.cpp" />
+    <ClCompile Include="ToolDisplace.cpp" />
+    <ClCompile Include="ToolEntity.cpp" />
+    <ClCompile Include="ToolMagnify.cpp" />
+    <ClCompile Include="ToolManager.cpp" />
+    <ClCompile Include="ToolMaterial.cpp" />
+    <ClCompile Include="ToolMorph.cpp" />
+    <ClCompile Include="ToolOverlay.cpp" />
+    <ClCompile Include="ToolPickAngles.cpp" />
+    <ClCompile Include="ToolPickEntity.cpp" />
+    <ClCompile Include="ToolPickFace.cpp" />
+    <ClCompile Include="ToolPointHandle.cpp" />
+    <ClCompile Include="ToolSelection.cpp" />
+    <ClCompile Include="ToolSphere.cpp" />
+    <ClCompile Include="toolswepthull.cpp" />
+    <ClCompile Include="DummyTexture.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureSystem.cpp" />
+    <ClCompile Include="WADTexture.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="ShellMessageWnd.cpp" />
+    <ClCompile Include="ArchDlg.cpp" />
+    <ClCompile Include="DispDlg.cpp" />
+    <ClCompile Include="EditGroups.cpp" />
+    <ClCompile Include="EditPathDlg.cpp" />
+    <ClCompile Include="EditPathNodeDlg.cpp" />
+    <ClCompile Include="EditPrefabDlg.cpp" />
+    <ClCompile Include="EntityHelpDlg.cpp" />
+    <ClCompile Include="EntityReportDlg.cpp" />
+    <ClCompile Include="FaceEdit_DispPage.cpp" />
+    <ClCompile Include="FaceEdit_MaterialPage.cpp" />
+    <ClCompile Include="FaceEditSheet.cpp" />
+    <ClCompile Include="FilterControl.cpp" />
+    <ClCompile Include="GotoBrushDlg.cpp" />
+    <ClCompile Include="hammerbar.cpp" />
+    <ClCompile Include="MapAnimationDlg.cpp" />
+    <ClCompile Include="MapCheckDlg.cpp" />
+    <ClCompile Include="MapDiffDlg.cpp" />
+    <ClCompile Include="MapErrorsDlg.cpp" />
+    <ClCompile Include="MapInfoDlg.cpp" />
+    <ClCompile Include="materialdlg.cpp" />
+    <ClCompile Include="NewDocType.cpp" />
+    <ClCompile Include="NewKeyValue.cpp" />
+    <ClCompile Include="NewVisGroupDlg.cpp" />
+    <ClCompile Include="ObjectProperties.cpp" />
+    <ClCompile Include="ObjectPage.cpp" />
+    <ClCompile Include="OP_Entity.cpp" />
+    <ClCompile Include="OP_Flags.cpp" />
+    <ClCompile Include="OP_Groups.cpp" />
+    <ClCompile Include="OP_Input.cpp" />
+    <ClCompile Include="OP_Model.cpp" />
+    <ClCompile Include="OP_Output.cpp" />
+    <ClCompile Include="OPTBuild.cpp" />
+    <ClCompile Include="OPTConfigs.cpp" />
+    <ClCompile Include="OPTGeneral.cpp" />
+    <ClCompile Include="OptionProperties.cpp" />
+    <ClCompile Include="OPTTextures.cpp" />
+    <ClCompile Include="OPTView2D.cpp" />
+    <ClCompile Include="OPTView3D.cpp" />
+    <ClCompile Include="PasteSpecialDlg.cpp" />
+    <ClCompile Include="PrefabsDlg.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="ReplaceTexDlg.cpp" />
+    <ClCompile Include="RunMapCfgDlg.cpp" />
+    <ClCompile Include="RunMapExpertDlg.cpp" />
+    <ClCompile Include="ScaleVerticesDlg.cpp" />
+    <ClCompile Include="SearchReplaceDlg.cpp" />
+    <ClCompile Include="SelectEntityDlg.cpp" />
+    <ClCompile Include="SelectModeDlgBar.cpp" />
+    <ClCompile Include="StrDlg.cpp" />
+    <ClCompile Include="TextureBar.cpp" />
+    <ClCompile Include="texturebrowser.cpp" />
+    <ClCompile Include="TorusDlg.cpp" />
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="UndoWarningDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="ActiveItemList.h" />
+    <ClInclude Include="AnchorMgr.h" />
+    <ClInclude Include="AngleBox.h" />
+    <ClInclude Include="AutoSelCombo.h" />
+    <ClInclude Include="Axes2.h" />
+    <ClInclude Include="BlockArray.h" />
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BrushOps.h" />
+    <ClInclude Include="bsplighting.h" />
+    <ClInclude Include="bsplightingthread.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="../../Public/ChunkFile.h" />
+    <ClInclude Include="clipcode.h" />
+    <ClInclude Include="../../Public/CollisionUtils.h" />
+    <ClInclude Include="ControlBarIDs.h" />
+    <ClInclude Include="CullTreeNode.h" />
+    <ClInclude Include="CustomMessages.h" />
+    <ClInclude Include="DetailObjects.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="DispManager.h" />
+    <ClInclude Include="DispMapImageFilter.h" />
+    <ClInclude Include="DispPaint.h" />
+    <ClInclude Include="DispSew.h" />
+    <ClInclude Include="DispShore.h" />
+    <ClInclude Include="DispSubdiv.h" />
+    <ClInclude Include="DynamicDialogWnd.h" />
+    <ClInclude Include="EditGameClass.h" />
+    <ClInclude Include="EditGameConfigs.h" />
+    <ClInclude Include="EditGroups.h" />
+    <ClInclude Include="EntityConnection.h" />
+    <ClInclude Include="Error3d.h" />
+    <ClInclude Include="FaceEdit_DispPage.h" />
+    <ClInclude Include="FaceEdit_MaterialPage.h" />
+    <ClInclude Include="FaceEditSheet.h" />
+    <ClInclude Include="FileChangeWatcher.h" />
+    <ClInclude Include="FilterControl.h" />
+    <ClInclude Include="gameconfig.h" />
+    <ClInclude Include="gamepalette.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="GlobalFunctions.h" />
+    <ClInclude Include="GroupList.h" />
+    <ClInclude Include="hammer.h" />
+    <ClInclude Include="hammer_mathlib.h" />
+    <ClInclude Include="HammerScene.h" />
+    <ClInclude Include="HammerVGui.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="ibsplighting.h" />
+    <ClInclude Include="IconComboBox.h" />
+    <ClInclude Include="../../public/ivraddll.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="../../public/KeyFrame/keyframe.h" />
+    <ClInclude Include="ListBoxEx.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapDefs.h" />
+    <ClInclude Include="MapErrorsDlg.h" />
+    <ClInclude Include="MapInfoDlg.h" />
+    <ClInclude Include="MapPath.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="MapView2D.h" />
+    <ClInclude Include="mapview2dbase.h" />
+    <ClInclude Include="mapview3d.h" />
+    <ClInclude Include="mapviewlogical.h" />
+    <ClInclude Include="materialproxyfactory_wc.h" />
+    <ClInclude Include="MDIClientWnd.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="ModelBrowser.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="MyCheckListBox.h" />
+    <ClInclude Include="NewDocType.h" />
+    <ClInclude Include="NewKeyValue.h" />
+    <ClInclude Include="NewVisGroupDlg.h" />
+    <ClInclude Include="ObjectBar.h" />
+    <ClInclude Include="ObjectPage.h" />
+    <ClInclude Include="ObjectProperties.h" />
+    <ClInclude Include="OP_Entity.h" />
+    <ClInclude Include="OP_Flags.h" />
+    <ClInclude Include="OP_Groups.h" />
+    <ClInclude Include="OP_Input.h" />
+    <ClInclude Include="OP_Model.h" />
+    <ClInclude Include="OP_Output.h" />
+    <ClInclude Include="optbuild.h" />
+    <ClInclude Include="OPTConfigs.h" />
+    <ClInclude Include="OPTGeneral.h" />
+    <ClInclude Include="OptionProperties.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OPTTextures.h" />
+    <ClInclude Include="OPTView2D.h" />
+    <ClInclude Include="OPTView3D.h" />
+    <ClInclude Include="PakDoc.h" />
+    <ClInclude Include="PakFrame.h" />
+    <ClInclude Include="PakViewDirec.h" />
+    <ClInclude Include="PakViewFiles.h" />
+    <ClInclude Include="PopupMenus.h" />
+    <ClInclude Include="Prefab3d.h" />
+    <ClInclude Include="Prefabs.h" />
+    <ClInclude Include="ProcessWnd.h" />
+    <ClInclude Include="progdlg.h" />
+    <ClInclude Include="Render2D.h" />
+    <ClInclude Include="Render3DMS.h" />
+    <ClInclude Include="RenderUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RunCommands.h" />
+    <ClInclude Include="RunMap.h" />
+    <ClInclude Include="SaveInfo.h" />
+    <ClInclude Include="ScenePreviewDlg.h" />
+    <ClInclude Include="SearchBox.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="SoundBrowser.h" />
+    <ClInclude Include="soundsystem.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="SSolid.h" />
+    <ClInclude Include="StatusBarIDs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockSolids.h" />
+    <ClInclude Include="StudioModel.h" />
+    <ClInclude Include="TargetNameCombo.h" />
+    <ClInclude Include="TextureBar.h" />
+    <ClInclude Include="TextureBox.h" />
+    <ClInclude Include="texturebrowser.h" />
+    <ClInclude Include="TextureConverter.h" />
+    <ClInclude Include="TextureWindow.h" />
+    <ClInclude Include="TitleWnd.h" />
+    <ClInclude Include="Tooldefs.h" />
+    <ClInclude Include="Undo.h" />
+    <ClInclude Include="UndoWarningDlg.h" />
+    <ClInclude Include="VGuiWnd.h" />
+    <ClInclude Include="ViewerSettings.h" />
+    <ClInclude Include="VisGroup.h" />
+    <ClInclude Include="wndTex.h" />
+    <ClInclude Include="MapAlignedBox.h" />
+    <ClInclude Include="MapAnimator.h" />
+    <ClInclude Include="MapAtom.h" />
+    <ClInclude Include="MapAxisHandle.h" />
+    <ClInclude Include="mapclass.h" />
+    <ClInclude Include="mapcylinder.h" />
+    <ClInclude Include="MapDecal.h" />
+    <ClInclude Include="MapDisp.h" />
+    <ClInclude Include="mapdoc.h" />
+    <ClInclude Include="MapEntity.h" />
+    <ClInclude Include="MapFace.h" />
+    <ClInclude Include="MapFrustum.h" />
+    <ClInclude Include="MapGroup.h" />
+    <ClInclude Include="MapKeyFrame.h" />
+    <ClInclude Include="MapLight.h" />
+    <ClInclude Include="MapLightCone.h" />
+    <ClInclude Include="MapLine.h" />
+    <ClInclude Include="MapOverlay.h" />
+    <ClInclude Include="mapoverlaytrans.h" />
+    <ClInclude Include="mapplayerhullhandle.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MapPointHandle.h" />
+    <ClInclude Include="MapQuadBounds.h" />
+    <ClInclude Include="MapSideList.h" />
+    <ClInclude Include="MapSolid.h" />
+    <ClInclude Include="MapSphere.h" />
+    <ClInclude Include="MapStudioModel.h" />
+    <ClInclude Include="mapsweptplayerhull.h" />
+    <ClInclude Include="MapWorld.h" />
+    <ClInclude Include="Box3D.h" />
+    <ClInclude Include="Tool3D.h" />
+    <ClInclude Include="ToolAxisHandle.h" />
+    <ClInclude Include="ToolBlock.h" />
+    <ClInclude Include="ToolCamera.h" />
+    <ClInclude Include="ToolClipper.h" />
+    <ClInclude Include="ToolCordon.h" />
+    <ClInclude Include="ToolDecal.h" />
+    <ClInclude Include="ToolDisplace.h" />
+    <ClInclude Include="ToolEntity.h" />
+    <ClInclude Include="ToolInterface.h" />
+    <ClInclude Include="ToolMagnify.h" />
+    <ClInclude Include="ToolManager.h" />
+    <ClInclude Include="ToolMaterial.h" />
+    <ClInclude Include="ToolMorph.h" />
+    <ClInclude Include="ToolOverlay.h" />
+    <ClInclude Include="ToolPickAngles.h" />
+    <ClInclude Include="ToolPickEntity.h" />
+    <ClInclude Include="ToolPickFace.h" />
+    <ClInclude Include="ToolPointHandle.h" />
+    <ClInclude Include="ToolSelection.h" />
+    <ClInclude Include="ToolSphere.h" />
+    <ClInclude Include="toolswepthull.h" />
+    <ClInclude Include="DummyTexture.h" />
+    <ClInclude Include="IEditorTexture.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="WADTexture.h" />
+    <ClInclude Include="ArchDlg.h" />
+    <ClInclude Include="DispDlg.h" />
+    <ClInclude Include="EditPathDlg.h" />
+    <ClInclude Include="EditPathNodeDlg.h" />
+    <ClInclude Include="EditPrefabDlg.h" />
+    <ClInclude Include="EntityHelpDlg.h" />
+    <ClInclude Include="EntityReportDlg.h" />
+    <ClInclude Include="GotoBrushDlg.h" />
+    <ClInclude Include="MapAnimationDlg.h" />
+    <ClInclude Include="MapCheckDlg.h" />
+    <ClInclude Include="MapDiffDlg.h" />
+    <ClInclude Include="materialdlg.h" />
+    <ClInclude Include="PasteSpecialDlg.h" />
+    <ClInclude Include="PrefabsDlg.h" />
+    <ClInclude Include="ReplaceTexDlg.h" />
+    <ClInclude Include="RunMapCfgDlg.h" />
+    <ClInclude Include="RunMapExpertDlg.h" />
+    <ClInclude Include="ScaleVerticesDlg.h" />
+    <ClInclude Include="SearchReplaceDlg.h" />
+    <ClInclude Include="SelectEntityDlg.h" />
+    <ClInclude Include="StrDlg.h" />
+    <ClInclude Include="torusdlg.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/arraystack.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/bone_setup.h" />
+    <ClInclude Include="../../Public/BSPFILE.H" />
+    <ClInclude Include="../../Public/bspflags.h" />
+    <ClInclude Include="BuildNum.h" />
+    <ClInclude Include="../../Public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../Public/cmodel.h" />
+    <ClInclude Include="../../common/ConfigManager.h" />
+    <ClInclude Include="../../Public/const.h" />
+    <ClInclude Include="dispview.h" />
+    <ClInclude Include="../../Public/fgdlib/EntityDefs.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="FilteredComboBox.h" />
+    <ClInclude Include="../../public/fgdlib/GDClass.h" />
+    <ClInclude Include="hammerbar.h" />
+    <ClInclude Include="HelperFactory.h" />
+    <ClInclude Include="../../public/fgdlib/HelperInfo.h" />
+    <ClInclude Include="ibsplightingthread.h" />
+    <ClInclude Include="../../public/IHammer.h" />
+    <ClInclude Include="../../public/fgdlib/InputOutput.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="lpreview_thread.h" />
+    <ClInclude Include="lprvwindow.h" />
+    <ClInclude Include="MapHelper.h" />
+    <ClInclude Include="MapSprite.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../Public/NTree.h" />
+    <ClInclude Include="osver.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="SelectModeDlgBar.h" />
+    <ClInclude Include="ShellMessageWnd.h" />
+    <ClInclude Include="SmoothingGroupMgr.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="../../Public/studio.h" />
+    <ClInclude Include="subdiv.h" />
+    <ClInclude Include="TextureSystem.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../Public/mathlib/vector4d.h" />
+    <ClInclude Include="../../Public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../Public/mathlib/vplane.h" />
+    <ClInclude Include="../../Public/wadtypes.h" />
+    <ClInclude Include="../../Public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ResourceCompile Include="Hammer.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <None Include="res/afx_idi_.ico" />
+    <None Include="res/bitmap1.bmp" />
+    <None Include="res/bmp00001.bmp" />
+    <None Include="res/bmp00002.bmp" />
+    <None Include="res/camera.ico" />
+    <None Include="res/crosshair.cur" />
+    <None Include="res/crosshair.ico" />
+    <None Include="res/cube.bmp" />
+    <None Include="res/cubechec.bmp" />
+    <None Include="res/cur00001.cur" />
+    <None Include="res/cur00002.cur" />
+    <None Include="res/cursor1.cur" />
+    <None Include="res/cursor2.cur" />
+    <None Include="res/cursor3.cur" />
+    <None Include="res/dispedit.bmp" />
+    <None Include="res/entity.cur" />
+    <None Include="res/eyedropper.cur" />
+    <None Include="res/eyedropper.ico" />
+    <None Include="facepaint.cur" />
+    <None Include="res/Forge.ico" />
+    <None Include="res/ForgeDoc.ico" />
+    <None Include="res/forgemap.bmp" />
+    <None Include="res/gizmoaxis.bmp" />
+    <None Include="res/gizmorotate.bmp" />
+    <None Include="res/gizmoscale.bmp" />
+    <None Include="res/gizmotranslate.bmp" />
+    <None Include="res/handclos.cur" />
+    <None Include="res/handcurs.cur" />
+    <None Include="res/ico00001.ico" />
+    <None Include="res/ico00002.ico" />
+    <None Include="res/ico00003.ico" />
+    <None Include="res/ico00004.ico" />
+    <None Include="res/icon1.ico" />
+    <None Include="res/input.ico" />
+    <None Include="res/input1.ico" />
+    <None Include="res/input_grey.ico" />
+    <None Include="res/inputbad.ico" />
+    <None Include="res/inputbad_grey.ico" />
+    <None Include="res/magnify.cur" />
+    <None Include="res/mapdoc_n.bmp" />
+    <None Include="res/mapedit.bmp" />
+    <None Include="res/mapedit256.bmp" />
+    <None Include="res/mapeditt.bmp" />
+    <None Include="res/mapopera.bmp" />
+    <None Include="res/newsplash.BMP" />
+    <None Include="res/newtoolbar.bmp" />
+    <None Include="res/output.ico" />
+    <None Include="res/output_grey.ico" />
+    <None Include="res/outputbad.ico" />
+    <None Include="res/outputbad_grey.ico" />
+    <None Include="res/paktypes.bmp" />
+    <None Include="res/seltools.bmp" />
+    <None Include="res/set_u.bmp" />
+    <None Include="res/smartclick.cur" />
+    <None Include="res/splash7b.BMP" />
+    <None Include="res/texturew.ico" />
+    <None Include="res/Toolbar.bmp" />
+    <None Include="res/toolbar1.bmp" />
+    <None Include="res/treeroot.bmp" />
+    <None Include="res/undoredo.bmp" />
+    <None Include="res/visgroup.bmp" />
+    <None Include="res/wcsplash.bmp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PreprocessorDefinitions>NO_MEMOVERRIDE_NEW_DELETE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/builddisp.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BuildNum.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/ChunkFile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/CollisionUtils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/ConfigManager.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/SourceAppInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_common.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_powerinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_init.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hammer_mathlib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/KeyFrame/keyframe.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/rope_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SaveInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/simple_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerSettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/tier0/afxmem_override.cpp" />
+    <ClCompile Include="AnchorMgr.cpp" />
+    <ClCompile Include="AngleBox.cpp" />
+    <ClCompile Include="AutoSelCombo.cpp" />
+    <ClCompile Include="Axes2.cpp" />
+    <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="Brushops.cpp" />
+    <ClCompile Include="bsplighting.cpp" />
+    <ClCompile Include="bsplightingthread.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="clipcode.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="CreateArch.cpp" />
+    <ClCompile Include="CullTreeNode.cpp" />
+    <ClCompile Include="DetailObjects.cpp" />
+    <ClCompile Include="DispManager.cpp" />
+    <ClCompile Include="DispMapImageFilter.cpp" />
+    <ClCompile Include="DispPaint.cpp" />
+    <ClCompile Include="DispSew.cpp" />
+    <ClCompile Include="DispShore.cpp" />
+    <ClCompile Include="DispSubdiv.cpp" />
+    <ClCompile Include="DynamicDialogWnd.cpp" />
+    <ClCompile Include="EditGameClass.cpp" />
+    <ClCompile Include="EditGameConfigs.cpp" />
+    <ClCompile Include="EntityConnection.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="FileChangeWatcher.cpp" />
+    <ClCompile Include="FilteredComboBox.cpp" />
+    <ClCompile Include="gameconfig.cpp" />
+    <ClCompile Include="gamepalette.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="GroupList.cpp" />
+    <ClCompile Include="hammer.cpp" />
+    <ClCompile Include="HammerScene.cpp" />
+    <ClCompile Include="HammerVGui.cpp" />
+    <ClCompile Include="HelperFactory.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="IconComboBox.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="ListBoxEx.cpp" />
+    <ClCompile Include="LoadSave_MAP.cpp" />
+    <ClCompile Include="LoadSave_RMF.cpp" />
+    <ClCompile Include="lpreview_thread.cpp" />
+    <ClCompile Include="lprvwindow.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MakePrefabLibrary.cpp" />
+    <ClCompile Include="Mapdoc.cpp" />
+    <ClCompile Include="MapPath.cpp" />
+    <ClCompile Include="MapView.cpp" />
+    <ClCompile Include="MapView2D.cpp" />
+    <ClCompile Include="mapview2dbase.cpp" />
+    <ClCompile Include="MapView3D.cpp" />
+    <ClCompile Include="mapviewlogical.cpp" />
+    <ClCompile Include="materialproxyfactory_wc.cpp" />
+    <ClCompile Include="MDIClientWnd.cpp" />
+    <ClCompile Include="MessageWnd.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="ModelBrowser.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="ObjectBar.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="osver.cpp" />
+    <ClCompile Include="Prefab3D.cpp" />
+    <ClCompile Include="Prefabs.cpp" />
+    <ClCompile Include="ProcessWnd.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Render2D.cpp" />
+    <ClCompile Include="Render3DMS.cpp" />
+    <ClCompile Include="RenderUtils.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="RunCommands.cpp" />
+    <ClCompile Include="RunMap.cpp" />
+    <ClCompile Include="ScenePreviewDlg.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="SoundBrowser.cpp" />
+    <ClCompile Include="soundsystem.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SSolid.cpp" />
+    <ClCompile Include="../../utils/common/scriplib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockSolids.cpp" />
+    <ClCompile Include="StudioModel.cpp" />
+    <ClCompile Include="TargetNameCombo.cpp" />
+    <ClCompile Include="TextureBox.cpp" />
+    <ClCompile Include="TextureConverter.cpp" />
+    <ClCompile Include="TextureWindow.cpp" />
+    <ClCompile Include="TitleWnd.cpp" />
+    <ClCompile Include="VGuiWnd.cpp" />
+    <ClCompile Include="VisGroup.cpp" />
+    <ClCompile Include="MapAlignedBox.cpp" />
+    <ClCompile Include="MapAnimator.cpp" />
+    <ClCompile Include="MapAxisHandle.cpp" />
+    <ClCompile Include="Mapclass.cpp" />
+    <ClCompile Include="mapcylinder.cpp" />
+    <ClCompile Include="MapDecal.cpp" />
+    <ClCompile Include="MapDisp.cpp" />
+    <ClCompile Include="MapEntity.cpp" />
+    <ClCompile Include="MapFace.cpp" />
+    <ClCompile Include="MapFrustum.cpp" />
+    <ClCompile Include="MapGroup.cpp" />
+    <ClCompile Include="MapHelper.cpp" />
+    <ClCompile Include="MapKeyFrame.cpp" />
+    <ClCompile Include="MapLight.cpp" />
+    <ClCompile Include="MapLightCone.cpp" />
+    <ClCompile Include="MapLine.cpp" />
+    <ClCompile Include="MapOverlay.cpp" />
+    <ClCompile Include="mapoverlaytrans.cpp" />
+    <ClCompile Include="mapplayerhullhandle.cpp" />
+    <ClCompile Include="MapPoint.cpp" />
+    <ClCompile Include="MapPointHandle.cpp" />
+    <ClCompile Include="MapQuadBounds.cpp" />
+    <ClCompile Include="MapSideList.cpp" />
+    <ClCompile Include="MapSolid.cpp" />
+    <ClCompile Include="MapSphere.cpp" />
+    <ClCompile Include="MapSprite.cpp" />
+    <ClCompile Include="MapStudioModel.cpp" />
+    <ClCompile Include="mapsweptplayerhull.cpp" />
+    <ClCompile Include="MapWorld.cpp" />
+    <ClCompile Include="Box3D.cpp" />
+    <ClCompile Include="Tool3D.cpp" />
+    <ClCompile Include="ToolAxisHandle.cpp" />
+    <ClCompile Include="ToolBase.cpp" />
+    <ClCompile Include="ToolBlock.cpp" />
+    <ClCompile Include="ToolCamera.cpp" />
+    <ClCompile Include="ToolClipper.cpp" />
+    <ClCompile Include="ToolCordon.cpp" />
+    <ClCompile Include="ToolDecal.cpp" />
+    <ClCompile Include="ToolDisplace.cpp" />
+    <ClCompile Include="ToolEntity.cpp" />
+    <ClCompile Include="ToolMagnify.cpp" />
+    <ClCompile Include="ToolManager.cpp" />
+    <ClCompile Include="ToolMaterial.cpp" />
+    <ClCompile Include="ToolMorph.cpp" />
+    <ClCompile Include="ToolOverlay.cpp" />
+    <ClCompile Include="ToolPickAngles.cpp" />
+    <ClCompile Include="ToolPickEntity.cpp" />
+    <ClCompile Include="ToolPickFace.cpp" />
+    <ClCompile Include="ToolPointHandle.cpp" />
+    <ClCompile Include="ToolSelection.cpp" />
+    <ClCompile Include="ToolSphere.cpp" />
+    <ClCompile Include="toolswepthull.cpp" />
+    <ClCompile Include="DummyTexture.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureSystem.cpp" />
+    <ClCompile Include="WADTexture.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="ShellMessageWnd.cpp" />
+    <ClCompile Include="ArchDlg.cpp" />
+    <ClCompile Include="DispDlg.cpp" />
+    <ClCompile Include="EditGroups.cpp" />
+    <ClCompile Include="EditPathDlg.cpp" />
+    <ClCompile Include="EditPathNodeDlg.cpp" />
+    <ClCompile Include="EditPrefabDlg.cpp" />
+    <ClCompile Include="EntityHelpDlg.cpp" />
+    <ClCompile Include="EntityReportDlg.cpp" />
+    <ClCompile Include="FaceEdit_DispPage.cpp" />
+    <ClCompile Include="FaceEdit_MaterialPage.cpp" />
+    <ClCompile Include="FaceEditSheet.cpp" />
+    <ClCompile Include="FilterControl.cpp" />
+    <ClCompile Include="GotoBrushDlg.cpp" />
+    <ClCompile Include="hammerbar.cpp" />
+    <ClCompile Include="MapAnimationDlg.cpp" />
+    <ClCompile Include="MapCheckDlg.cpp" />
+    <ClCompile Include="MapDiffDlg.cpp" />
+    <ClCompile Include="MapErrorsDlg.cpp" />
+    <ClCompile Include="MapInfoDlg.cpp" />
+    <ClCompile Include="materialdlg.cpp" />
+    <ClCompile Include="NewDocType.cpp" />
+    <ClCompile Include="NewKeyValue.cpp" />
+    <ClCompile Include="NewVisGroupDlg.cpp" />
+    <ClCompile Include="ObjectProperties.cpp" />
+    <ClCompile Include="ObjectPage.cpp" />
+    <ClCompile Include="OP_Entity.cpp" />
+    <ClCompile Include="OP_Flags.cpp" />
+    <ClCompile Include="OP_Groups.cpp" />
+    <ClCompile Include="OP_Input.cpp" />
+    <ClCompile Include="OP_Model.cpp" />
+    <ClCompile Include="OP_Output.cpp" />
+    <ClCompile Include="OPTBuild.cpp" />
+    <ClCompile Include="OPTConfigs.cpp" />
+    <ClCompile Include="OPTGeneral.cpp" />
+    <ClCompile Include="OptionProperties.cpp" />
+    <ClCompile Include="OPTTextures.cpp" />
+    <ClCompile Include="OPTView2D.cpp" />
+    <ClCompile Include="OPTView3D.cpp" />
+    <ClCompile Include="PasteSpecialDlg.cpp" />
+    <ClCompile Include="PrefabsDlg.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="ReplaceTexDlg.cpp" />
+    <ClCompile Include="RunMapCfgDlg.cpp" />
+    <ClCompile Include="RunMapExpertDlg.cpp" />
+    <ClCompile Include="ScaleVerticesDlg.cpp" />
+    <ClCompile Include="SearchReplaceDlg.cpp" />
+    <ClCompile Include="SelectEntityDlg.cpp" />
+    <ClCompile Include="SelectModeDlgBar.cpp" />
+    <ClCompile Include="StrDlg.cpp" />
+    <ClCompile Include="TextureBar.cpp" />
+    <ClCompile Include="texturebrowser.cpp" />
+    <ClCompile Include="TorusDlg.cpp" />
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="UndoWarningDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="ActiveItemList.h" />
+    <ClInclude Include="AnchorMgr.h" />
+    <ClInclude Include="AngleBox.h" />
+    <ClInclude Include="AutoSelCombo.h" />
+    <ClInclude Include="Axes2.h" />
+    <ClInclude Include="BlockArray.h" />
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BrushOps.h" />
+    <ClInclude Include="bsplighting.h" />
+    <ClInclude Include="bsplightingthread.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="../../Public/ChunkFile.h" />
+    <ClInclude Include="clipcode.h" />
+    <ClInclude Include="../../Public/CollisionUtils.h" />
+    <ClInclude Include="ControlBarIDs.h" />
+    <ClInclude Include="CullTreeNode.h" />
+    <ClInclude Include="CustomMessages.h" />
+    <ClInclude Include="DetailObjects.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="DispManager.h" />
+    <ClInclude Include="DispMapImageFilter.h" />
+    <ClInclude Include="DispPaint.h" />
+    <ClInclude Include="DispSew.h" />
+    <ClInclude Include="DispShore.h" />
+    <ClInclude Include="DispSubdiv.h" />
+    <ClInclude Include="DynamicDialogWnd.h" />
+    <ClInclude Include="EditGameClass.h" />
+    <ClInclude Include="EditGameConfigs.h" />
+    <ClInclude Include="EditGroups.h" />
+    <ClInclude Include="EntityConnection.h" />
+    <ClInclude Include="Error3d.h" />
+    <ClInclude Include="FaceEdit_DispPage.h" />
+    <ClInclude Include="FaceEdit_MaterialPage.h" />
+    <ClInclude Include="FaceEditSheet.h" />
+    <ClInclude Include="FileChangeWatcher.h" />
+    <ClInclude Include="FilterControl.h" />
+    <ClInclude Include="gameconfig.h" />
+    <ClInclude Include="gamepalette.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="GlobalFunctions.h" />
+    <ClInclude Include="GroupList.h" />
+    <ClInclude Include="hammer.h" />
+    <ClInclude Include="hammer_mathlib.h" />
+    <ClInclude Include="HammerScene.h" />
+    <ClInclude Include="HammerVGui.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="ibsplighting.h" />
+    <ClInclude Include="IconComboBox.h" />
+    <ClInclude Include="../../public/ivraddll.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="../../public/KeyFrame/keyframe.h" />
+    <ClInclude Include="ListBoxEx.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapDefs.h" />
+    <ClInclude Include="MapErrorsDlg.h" />
+    <ClInclude Include="MapInfoDlg.h" />
+    <ClInclude Include="MapPath.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="MapView2D.h" />
+    <ClInclude Include="mapview2dbase.h" />
+    <ClInclude Include="mapview3d.h" />
+    <ClInclude Include="mapviewlogical.h" />
+    <ClInclude Include="materialproxyfactory_wc.h" />
+    <ClInclude Include="MDIClientWnd.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="ModelBrowser.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="MyCheckListBox.h" />
+    <ClInclude Include="NewDocType.h" />
+    <ClInclude Include="NewKeyValue.h" />
+    <ClInclude Include="NewVisGroupDlg.h" />
+    <ClInclude Include="ObjectBar.h" />
+    <ClInclude Include="ObjectPage.h" />
+    <ClInclude Include="ObjectProperties.h" />
+    <ClInclude Include="OP_Entity.h" />
+    <ClInclude Include="OP_Flags.h" />
+    <ClInclude Include="OP_Groups.h" />
+    <ClInclude Include="OP_Input.h" />
+    <ClInclude Include="OP_Model.h" />
+    <ClInclude Include="OP_Output.h" />
+    <ClInclude Include="optbuild.h" />
+    <ClInclude Include="OPTConfigs.h" />
+    <ClInclude Include="OPTGeneral.h" />
+    <ClInclude Include="OptionProperties.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OPTTextures.h" />
+    <ClInclude Include="OPTView2D.h" />
+    <ClInclude Include="OPTView3D.h" />
+    <ClInclude Include="PakDoc.h" />
+    <ClInclude Include="PakFrame.h" />
+    <ClInclude Include="PakViewDirec.h" />
+    <ClInclude Include="PakViewFiles.h" />
+    <ClInclude Include="PopupMenus.h" />
+    <ClInclude Include="Prefab3d.h" />
+    <ClInclude Include="Prefabs.h" />
+    <ClInclude Include="ProcessWnd.h" />
+    <ClInclude Include="progdlg.h" />
+    <ClInclude Include="Render2D.h" />
+    <ClInclude Include="Render3DMS.h" />
+    <ClInclude Include="RenderUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RunCommands.h" />
+    <ClInclude Include="RunMap.h" />
+    <ClInclude Include="SaveInfo.h" />
+    <ClInclude Include="ScenePreviewDlg.h" />
+    <ClInclude Include="SearchBox.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="SoundBrowser.h" />
+    <ClInclude Include="soundsystem.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="SSolid.h" />
+    <ClInclude Include="StatusBarIDs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockSolids.h" />
+    <ClInclude Include="StudioModel.h" />
+    <ClInclude Include="TargetNameCombo.h" />
+    <ClInclude Include="TextureBar.h" />
+    <ClInclude Include="TextureBox.h" />
+    <ClInclude Include="texturebrowser.h" />
+    <ClInclude Include="TextureConverter.h" />
+    <ClInclude Include="TextureWindow.h" />
+    <ClInclude Include="TitleWnd.h" />
+    <ClInclude Include="Tooldefs.h" />
+    <ClInclude Include="Undo.h" />
+    <ClInclude Include="UndoWarningDlg.h" />
+    <ClInclude Include="VGuiWnd.h" />
+    <ClInclude Include="ViewerSettings.h" />
+    <ClInclude Include="VisGroup.h" />
+    <ClInclude Include="wndTex.h" />
+    <ClInclude Include="MapAlignedBox.h" />
+    <ClInclude Include="MapAnimator.h" />
+    <ClInclude Include="MapAtom.h" />
+    <ClInclude Include="MapAxisHandle.h" />
+    <ClInclude Include="mapclass.h" />
+    <ClInclude Include="mapcylinder.h" />
+    <ClInclude Include="MapDecal.h" />
+    <ClInclude Include="MapDisp.h" />
+    <ClInclude Include="mapdoc.h" />
+    <ClInclude Include="MapEntity.h" />
+    <ClInclude Include="MapFace.h" />
+    <ClInclude Include="MapFrustum.h" />
+    <ClInclude Include="MapGroup.h" />
+    <ClInclude Include="MapKeyFrame.h" />
+    <ClInclude Include="MapLight.h" />
+    <ClInclude Include="MapLightCone.h" />
+    <ClInclude Include="MapLine.h" />
+    <ClInclude Include="MapOverlay.h" />
+    <ClInclude Include="mapoverlaytrans.h" />
+    <ClInclude Include="mapplayerhullhandle.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MapPointHandle.h" />
+    <ClInclude Include="MapQuadBounds.h" />
+    <ClInclude Include="MapSideList.h" />
+    <ClInclude Include="MapSolid.h" />
+    <ClInclude Include="MapSphere.h" />
+    <ClInclude Include="MapStudioModel.h" />
+    <ClInclude Include="mapsweptplayerhull.h" />
+    <ClInclude Include="MapWorld.h" />
+    <ClInclude Include="Box3D.h" />
+    <ClInclude Include="Tool3D.h" />
+    <ClInclude Include="ToolAxisHandle.h" />
+    <ClInclude Include="ToolBlock.h" />
+    <ClInclude Include="ToolCamera.h" />
+    <ClInclude Include="ToolClipper.h" />
+    <ClInclude Include="ToolCordon.h" />
+    <ClInclude Include="ToolDecal.h" />
+    <ClInclude Include="ToolDisplace.h" />
+    <ClInclude Include="ToolEntity.h" />
+    <ClInclude Include="ToolInterface.h" />
+    <ClInclude Include="ToolMagnify.h" />
+    <ClInclude Include="ToolManager.h" />
+    <ClInclude Include="ToolMaterial.h" />
+    <ClInclude Include="ToolMorph.h" />
+    <ClInclude Include="ToolOverlay.h" />
+    <ClInclude Include="ToolPickAngles.h" />
+    <ClInclude Include="ToolPickEntity.h" />
+    <ClInclude Include="ToolPickFace.h" />
+    <ClInclude Include="ToolPointHandle.h" />
+    <ClInclude Include="ToolSelection.h" />
+    <ClInclude Include="ToolSphere.h" />
+    <ClInclude Include="toolswepthull.h" />
+    <ClInclude Include="DummyTexture.h" />
+    <ClInclude Include="IEditorTexture.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="WADTexture.h" />
+    <ClInclude Include="ArchDlg.h" />
+    <ClInclude Include="DispDlg.h" />
+    <ClInclude Include="EditPathDlg.h" />
+    <ClInclude Include="EditPathNodeDlg.h" />
+    <ClInclude Include="EditPrefabDlg.h" />
+    <ClInclude Include="EntityHelpDlg.h" />
+    <ClInclude Include="EntityReportDlg.h" />
+    <ClInclude Include="GotoBrushDlg.h" />
+    <ClInclude Include="MapAnimationDlg.h" />
+    <ClInclude Include="MapCheckDlg.h" />
+    <ClInclude Include="MapDiffDlg.h" />
+    <ClInclude Include="materialdlg.h" />
+    <ClInclude Include="PasteSpecialDlg.h" />
+    <ClInclude Include="PrefabsDlg.h" />
+    <ClInclude Include="ReplaceTexDlg.h" />
+    <ClInclude Include="RunMapCfgDlg.h" />
+    <ClInclude Include="RunMapExpertDlg.h" />
+    <ClInclude Include="ScaleVerticesDlg.h" />
+    <ClInclude Include="SearchReplaceDlg.h" />
+    <ClInclude Include="SelectEntityDlg.h" />
+    <ClInclude Include="StrDlg.h" />
+    <ClInclude Include="torusdlg.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/arraystack.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/bone_setup.h" />
+    <ClInclude Include="../../Public/BSPFILE.H" />
+    <ClInclude Include="../../Public/bspflags.h" />
+    <ClInclude Include="BuildNum.h" />
+    <ClInclude Include="../../Public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../Public/cmodel.h" />
+    <ClInclude Include="../../common/ConfigManager.h" />
+    <ClInclude Include="../../Public/const.h" />
+    <ClInclude Include="dispview.h" />
+    <ClInclude Include="../../Public/fgdlib/EntityDefs.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="FilteredComboBox.h" />
+    <ClInclude Include="../../public/fgdlib/GDClass.h" />
+    <ClInclude Include="hammerbar.h" />
+    <ClInclude Include="HelperFactory.h" />
+    <ClInclude Include="../../public/fgdlib/HelperInfo.h" />
+    <ClInclude Include="ibsplightingthread.h" />
+    <ClInclude Include="../../public/IHammer.h" />
+    <ClInclude Include="../../public/fgdlib/InputOutput.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="lpreview_thread.h" />
+    <ClInclude Include="lprvwindow.h" />
+    <ClInclude Include="MapHelper.h" />
+    <ClInclude Include="MapSprite.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../Public/NTree.h" />
+    <ClInclude Include="osver.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="SelectModeDlgBar.h" />
+    <ClInclude Include="ShellMessageWnd.h" />
+    <ClInclude Include="SmoothingGroupMgr.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="../../Public/studio.h" />
+    <ClInclude Include="subdiv.h" />
+    <ClInclude Include="TextureSystem.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../Public/mathlib/vector4d.h" />
+    <ClInclude Include="../../Public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../Public/mathlib/vplane.h" />
+    <ClInclude Include="../../Public/wadtypes.h" />
+    <ClInclude Include="../../Public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ResourceCompile Include="Hammer.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <None Include="res/afx_idi_.ico" />
+    <None Include="res/bitmap1.bmp" />
+    <None Include="res/bmp00001.bmp" />
+    <None Include="res/bmp00002.bmp" />
+    <None Include="res/camera.ico" />
+    <None Include="res/crosshair.cur" />
+    <None Include="res/crosshair.ico" />
+    <None Include="res/cube.bmp" />
+    <None Include="res/cubechec.bmp" />
+    <None Include="res/cur00001.cur" />
+    <None Include="res/cur00002.cur" />
+    <None Include="res/cursor1.cur" />
+    <None Include="res/cursor2.cur" />
+    <None Include="res/cursor3.cur" />
+    <None Include="res/dispedit.bmp" />
+    <None Include="res/entity.cur" />
+    <None Include="res/eyedropper.cur" />
+    <None Include="res/eyedropper.ico" />
+    <None Include="facepaint.cur" />
+    <None Include="res/Forge.ico" />
+    <None Include="res/ForgeDoc.ico" />
+    <None Include="res/forgemap.bmp" />
+    <None Include="res/gizmoaxis.bmp" />
+    <None Include="res/gizmorotate.bmp" />
+    <None Include="res/gizmoscale.bmp" />
+    <None Include="res/gizmotranslate.bmp" />
+    <None Include="res/handclos.cur" />
+    <None Include="res/handcurs.cur" />
+    <None Include="res/ico00001.ico" />
+    <None Include="res/ico00002.ico" />
+    <None Include="res/ico00003.ico" />
+    <None Include="res/ico00004.ico" />
+    <None Include="res/icon1.ico" />
+    <None Include="res/input.ico" />
+    <None Include="res/input1.ico" />
+    <None Include="res/input_grey.ico" />
+    <None Include="res/inputbad.ico" />
+    <None Include="res/inputbad_grey.ico" />
+    <None Include="res/magnify.cur" />
+    <None Include="res/mapdoc_n.bmp" />
+    <None Include="res/mapedit.bmp" />
+    <None Include="res/mapedit256.bmp" />
+    <None Include="res/mapeditt.bmp" />
+    <None Include="res/mapopera.bmp" />
+    <None Include="res/newsplash.BMP" />
+    <None Include="res/newtoolbar.bmp" />
+    <None Include="res/output.ico" />
+    <None Include="res/output_grey.ico" />
+    <None Include="res/outputbad.ico" />
+    <None Include="res/outputbad_grey.ico" />
+    <None Include="res/paktypes.bmp" />
+    <None Include="res/seltools.bmp" />
+    <None Include="res/set_u.bmp" />
+    <None Include="res/smartclick.cur" />
+    <None Include="res/splash7b.BMP" />
+    <None Include="res/texturew.ico" />
+    <None Include="res/Toolbar.bmp" />
+    <None Include="res/toolbar1.bmp" />
+    <None Include="res/treeroot.bmp" />
+    <None Include="res/undoredo.bmp" />
+    <None Include="res/visgroup.bmp" />
+    <None Include="res/wcsplash.bmp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PreprocessorDefinitions>NO_MEMOVERRIDE_NEW_DELETE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/builddisp.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BuildNum.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/ChunkFile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/CollisionUtils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/ConfigManager.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/SourceAppInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_common.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_powerinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_init.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hammer_mathlib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/KeyFrame/keyframe.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/rope_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SaveInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/simple_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerSettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/tier0/afxmem_override.cpp" />
+    <ClCompile Include="AnchorMgr.cpp" />
+    <ClCompile Include="AngleBox.cpp" />
+    <ClCompile Include="AutoSelCombo.cpp" />
+    <ClCompile Include="Axes2.cpp" />
+    <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="Brushops.cpp" />
+    <ClCompile Include="bsplighting.cpp" />
+    <ClCompile Include="bsplightingthread.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="clipcode.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="CreateArch.cpp" />
+    <ClCompile Include="CullTreeNode.cpp" />
+    <ClCompile Include="DetailObjects.cpp" />
+    <ClCompile Include="DispManager.cpp" />
+    <ClCompile Include="DispMapImageFilter.cpp" />
+    <ClCompile Include="DispPaint.cpp" />
+    <ClCompile Include="DispSew.cpp" />
+    <ClCompile Include="DispShore.cpp" />
+    <ClCompile Include="DispSubdiv.cpp" />
+    <ClCompile Include="DynamicDialogWnd.cpp" />
+    <ClCompile Include="EditGameClass.cpp" />
+    <ClCompile Include="EditGameConfigs.cpp" />
+    <ClCompile Include="EntityConnection.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="FileChangeWatcher.cpp" />
+    <ClCompile Include="FilteredComboBox.cpp" />
+    <ClCompile Include="gameconfig.cpp" />
+    <ClCompile Include="gamepalette.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="GroupList.cpp" />
+    <ClCompile Include="hammer.cpp" />
+    <ClCompile Include="HammerScene.cpp" />
+    <ClCompile Include="HammerVGui.cpp" />
+    <ClCompile Include="HelperFactory.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="IconComboBox.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="ListBoxEx.cpp" />
+    <ClCompile Include="LoadSave_MAP.cpp" />
+    <ClCompile Include="LoadSave_RMF.cpp" />
+    <ClCompile Include="lpreview_thread.cpp" />
+    <ClCompile Include="lprvwindow.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MakePrefabLibrary.cpp" />
+    <ClCompile Include="Mapdoc.cpp" />
+    <ClCompile Include="MapPath.cpp" />
+    <ClCompile Include="MapView.cpp" />
+    <ClCompile Include="MapView2D.cpp" />
+    <ClCompile Include="mapview2dbase.cpp" />
+    <ClCompile Include="MapView3D.cpp" />
+    <ClCompile Include="mapviewlogical.cpp" />
+    <ClCompile Include="materialproxyfactory_wc.cpp" />
+    <ClCompile Include="MDIClientWnd.cpp" />
+    <ClCompile Include="MessageWnd.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="ModelBrowser.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="ObjectBar.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="osver.cpp" />
+    <ClCompile Include="Prefab3D.cpp" />
+    <ClCompile Include="Prefabs.cpp" />
+    <ClCompile Include="ProcessWnd.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Render2D.cpp" />
+    <ClCompile Include="Render3DMS.cpp" />
+    <ClCompile Include="RenderUtils.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="RunCommands.cpp" />
+    <ClCompile Include="RunMap.cpp" />
+    <ClCompile Include="ScenePreviewDlg.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="SoundBrowser.cpp" />
+    <ClCompile Include="soundsystem.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SSolid.cpp" />
+    <ClCompile Include="../../utils/common/scriplib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockSolids.cpp" />
+    <ClCompile Include="StudioModel.cpp" />
+    <ClCompile Include="TargetNameCombo.cpp" />
+    <ClCompile Include="TextureBox.cpp" />
+    <ClCompile Include="TextureConverter.cpp" />
+    <ClCompile Include="TextureWindow.cpp" />
+    <ClCompile Include="TitleWnd.cpp" />
+    <ClCompile Include="VGuiWnd.cpp" />
+    <ClCompile Include="VisGroup.cpp" />
+    <ClCompile Include="MapAlignedBox.cpp" />
+    <ClCompile Include="MapAnimator.cpp" />
+    <ClCompile Include="MapAxisHandle.cpp" />
+    <ClCompile Include="Mapclass.cpp" />
+    <ClCompile Include="mapcylinder.cpp" />
+    <ClCompile Include="MapDecal.cpp" />
+    <ClCompile Include="MapDisp.cpp" />
+    <ClCompile Include="MapEntity.cpp" />
+    <ClCompile Include="MapFace.cpp" />
+    <ClCompile Include="MapFrustum.cpp" />
+    <ClCompile Include="MapGroup.cpp" />
+    <ClCompile Include="MapHelper.cpp" />
+    <ClCompile Include="MapKeyFrame.cpp" />
+    <ClCompile Include="MapLight.cpp" />
+    <ClCompile Include="MapLightCone.cpp" />
+    <ClCompile Include="MapLine.cpp" />
+    <ClCompile Include="MapOverlay.cpp" />
+    <ClCompile Include="mapoverlaytrans.cpp" />
+    <ClCompile Include="mapplayerhullhandle.cpp" />
+    <ClCompile Include="MapPoint.cpp" />
+    <ClCompile Include="MapPointHandle.cpp" />
+    <ClCompile Include="MapQuadBounds.cpp" />
+    <ClCompile Include="MapSideList.cpp" />
+    <ClCompile Include="MapSolid.cpp" />
+    <ClCompile Include="MapSphere.cpp" />
+    <ClCompile Include="MapSprite.cpp" />
+    <ClCompile Include="MapStudioModel.cpp" />
+    <ClCompile Include="mapsweptplayerhull.cpp" />
+    <ClCompile Include="MapWorld.cpp" />
+    <ClCompile Include="Box3D.cpp" />
+    <ClCompile Include="Tool3D.cpp" />
+    <ClCompile Include="ToolAxisHandle.cpp" />
+    <ClCompile Include="ToolBase.cpp" />
+    <ClCompile Include="ToolBlock.cpp" />
+    <ClCompile Include="ToolCamera.cpp" />
+    <ClCompile Include="ToolClipper.cpp" />
+    <ClCompile Include="ToolCordon.cpp" />
+    <ClCompile Include="ToolDecal.cpp" />
+    <ClCompile Include="ToolDisplace.cpp" />
+    <ClCompile Include="ToolEntity.cpp" />
+    <ClCompile Include="ToolMagnify.cpp" />
+    <ClCompile Include="ToolManager.cpp" />
+    <ClCompile Include="ToolMaterial.cpp" />
+    <ClCompile Include="ToolMorph.cpp" />
+    <ClCompile Include="ToolOverlay.cpp" />
+    <ClCompile Include="ToolPickAngles.cpp" />
+    <ClCompile Include="ToolPickEntity.cpp" />
+    <ClCompile Include="ToolPickFace.cpp" />
+    <ClCompile Include="ToolPointHandle.cpp" />
+    <ClCompile Include="ToolSelection.cpp" />
+    <ClCompile Include="ToolSphere.cpp" />
+    <ClCompile Include="toolswepthull.cpp" />
+    <ClCompile Include="DummyTexture.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureSystem.cpp" />
+    <ClCompile Include="WADTexture.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="ShellMessageWnd.cpp" />
+    <ClCompile Include="ArchDlg.cpp" />
+    <ClCompile Include="DispDlg.cpp" />
+    <ClCompile Include="EditGroups.cpp" />
+    <ClCompile Include="EditPathDlg.cpp" />
+    <ClCompile Include="EditPathNodeDlg.cpp" />
+    <ClCompile Include="EditPrefabDlg.cpp" />
+    <ClCompile Include="EntityHelpDlg.cpp" />
+    <ClCompile Include="EntityReportDlg.cpp" />
+    <ClCompile Include="FaceEdit_DispPage.cpp" />
+    <ClCompile Include="FaceEdit_MaterialPage.cpp" />
+    <ClCompile Include="FaceEditSheet.cpp" />
+    <ClCompile Include="FilterControl.cpp" />
+    <ClCompile Include="GotoBrushDlg.cpp" />
+    <ClCompile Include="hammerbar.cpp" />
+    <ClCompile Include="MapAnimationDlg.cpp" />
+    <ClCompile Include="MapCheckDlg.cpp" />
+    <ClCompile Include="MapDiffDlg.cpp" />
+    <ClCompile Include="MapErrorsDlg.cpp" />
+    <ClCompile Include="MapInfoDlg.cpp" />
+    <ClCompile Include="materialdlg.cpp" />
+    <ClCompile Include="NewDocType.cpp" />
+    <ClCompile Include="NewKeyValue.cpp" />
+    <ClCompile Include="NewVisGroupDlg.cpp" />
+    <ClCompile Include="ObjectProperties.cpp" />
+    <ClCompile Include="ObjectPage.cpp" />
+    <ClCompile Include="OP_Entity.cpp" />
+    <ClCompile Include="OP_Flags.cpp" />
+    <ClCompile Include="OP_Groups.cpp" />
+    <ClCompile Include="OP_Input.cpp" />
+    <ClCompile Include="OP_Model.cpp" />
+    <ClCompile Include="OP_Output.cpp" />
+    <ClCompile Include="OPTBuild.cpp" />
+    <ClCompile Include="OPTConfigs.cpp" />
+    <ClCompile Include="OPTGeneral.cpp" />
+    <ClCompile Include="OptionProperties.cpp" />
+    <ClCompile Include="OPTTextures.cpp" />
+    <ClCompile Include="OPTView2D.cpp" />
+    <ClCompile Include="OPTView3D.cpp" />
+    <ClCompile Include="PasteSpecialDlg.cpp" />
+    <ClCompile Include="PrefabsDlg.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="ReplaceTexDlg.cpp" />
+    <ClCompile Include="RunMapCfgDlg.cpp" />
+    <ClCompile Include="RunMapExpertDlg.cpp" />
+    <ClCompile Include="ScaleVerticesDlg.cpp" />
+    <ClCompile Include="SearchReplaceDlg.cpp" />
+    <ClCompile Include="SelectEntityDlg.cpp" />
+    <ClCompile Include="SelectModeDlgBar.cpp" />
+    <ClCompile Include="StrDlg.cpp" />
+    <ClCompile Include="TextureBar.cpp" />
+    <ClCompile Include="texturebrowser.cpp" />
+    <ClCompile Include="TorusDlg.cpp" />
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="UndoWarningDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="ActiveItemList.h" />
+    <ClInclude Include="AnchorMgr.h" />
+    <ClInclude Include="AngleBox.h" />
+    <ClInclude Include="AutoSelCombo.h" />
+    <ClInclude Include="Axes2.h" />
+    <ClInclude Include="BlockArray.h" />
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BrushOps.h" />
+    <ClInclude Include="bsplighting.h" />
+    <ClInclude Include="bsplightingthread.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="../../Public/ChunkFile.h" />
+    <ClInclude Include="clipcode.h" />
+    <ClInclude Include="../../Public/CollisionUtils.h" />
+    <ClInclude Include="ControlBarIDs.h" />
+    <ClInclude Include="CullTreeNode.h" />
+    <ClInclude Include="CustomMessages.h" />
+    <ClInclude Include="DetailObjects.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="DispManager.h" />
+    <ClInclude Include="DispMapImageFilter.h" />
+    <ClInclude Include="DispPaint.h" />
+    <ClInclude Include="DispSew.h" />
+    <ClInclude Include="DispShore.h" />
+    <ClInclude Include="DispSubdiv.h" />
+    <ClInclude Include="DynamicDialogWnd.h" />
+    <ClInclude Include="EditGameClass.h" />
+    <ClInclude Include="EditGameConfigs.h" />
+    <ClInclude Include="EditGroups.h" />
+    <ClInclude Include="EntityConnection.h" />
+    <ClInclude Include="Error3d.h" />
+    <ClInclude Include="FaceEdit_DispPage.h" />
+    <ClInclude Include="FaceEdit_MaterialPage.h" />
+    <ClInclude Include="FaceEditSheet.h" />
+    <ClInclude Include="FileChangeWatcher.h" />
+    <ClInclude Include="FilterControl.h" />
+    <ClInclude Include="gameconfig.h" />
+    <ClInclude Include="gamepalette.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="GlobalFunctions.h" />
+    <ClInclude Include="GroupList.h" />
+    <ClInclude Include="hammer.h" />
+    <ClInclude Include="hammer_mathlib.h" />
+    <ClInclude Include="HammerScene.h" />
+    <ClInclude Include="HammerVGui.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="ibsplighting.h" />
+    <ClInclude Include="IconComboBox.h" />
+    <ClInclude Include="../../public/ivraddll.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="../../public/KeyFrame/keyframe.h" />
+    <ClInclude Include="ListBoxEx.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapDefs.h" />
+    <ClInclude Include="MapErrorsDlg.h" />
+    <ClInclude Include="MapInfoDlg.h" />
+    <ClInclude Include="MapPath.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="MapView2D.h" />
+    <ClInclude Include="mapview2dbase.h" />
+    <ClInclude Include="mapview3d.h" />
+    <ClInclude Include="mapviewlogical.h" />
+    <ClInclude Include="materialproxyfactory_wc.h" />
+    <ClInclude Include="MDIClientWnd.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="ModelBrowser.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="MyCheckListBox.h" />
+    <ClInclude Include="NewDocType.h" />
+    <ClInclude Include="NewKeyValue.h" />
+    <ClInclude Include="NewVisGroupDlg.h" />
+    <ClInclude Include="ObjectBar.h" />
+    <ClInclude Include="ObjectPage.h" />
+    <ClInclude Include="ObjectProperties.h" />
+    <ClInclude Include="OP_Entity.h" />
+    <ClInclude Include="OP_Flags.h" />
+    <ClInclude Include="OP_Groups.h" />
+    <ClInclude Include="OP_Input.h" />
+    <ClInclude Include="OP_Model.h" />
+    <ClInclude Include="OP_Output.h" />
+    <ClInclude Include="optbuild.h" />
+    <ClInclude Include="OPTConfigs.h" />
+    <ClInclude Include="OPTGeneral.h" />
+    <ClInclude Include="OptionProperties.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OPTTextures.h" />
+    <ClInclude Include="OPTView2D.h" />
+    <ClInclude Include="OPTView3D.h" />
+    <ClInclude Include="PakDoc.h" />
+    <ClInclude Include="PakFrame.h" />
+    <ClInclude Include="PakViewDirec.h" />
+    <ClInclude Include="PakViewFiles.h" />
+    <ClInclude Include="PopupMenus.h" />
+    <ClInclude Include="Prefab3d.h" />
+    <ClInclude Include="Prefabs.h" />
+    <ClInclude Include="ProcessWnd.h" />
+    <ClInclude Include="progdlg.h" />
+    <ClInclude Include="Render2D.h" />
+    <ClInclude Include="Render3DMS.h" />
+    <ClInclude Include="RenderUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RunCommands.h" />
+    <ClInclude Include="RunMap.h" />
+    <ClInclude Include="SaveInfo.h" />
+    <ClInclude Include="ScenePreviewDlg.h" />
+    <ClInclude Include="SearchBox.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="SoundBrowser.h" />
+    <ClInclude Include="soundsystem.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="SSolid.h" />
+    <ClInclude Include="StatusBarIDs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockSolids.h" />
+    <ClInclude Include="StudioModel.h" />
+    <ClInclude Include="TargetNameCombo.h" />
+    <ClInclude Include="TextureBar.h" />
+    <ClInclude Include="TextureBox.h" />
+    <ClInclude Include="texturebrowser.h" />
+    <ClInclude Include="TextureConverter.h" />
+    <ClInclude Include="TextureWindow.h" />
+    <ClInclude Include="TitleWnd.h" />
+    <ClInclude Include="Tooldefs.h" />
+    <ClInclude Include="Undo.h" />
+    <ClInclude Include="UndoWarningDlg.h" />
+    <ClInclude Include="VGuiWnd.h" />
+    <ClInclude Include="ViewerSettings.h" />
+    <ClInclude Include="VisGroup.h" />
+    <ClInclude Include="wndTex.h" />
+    <ClInclude Include="MapAlignedBox.h" />
+    <ClInclude Include="MapAnimator.h" />
+    <ClInclude Include="MapAtom.h" />
+    <ClInclude Include="MapAxisHandle.h" />
+    <ClInclude Include="mapclass.h" />
+    <ClInclude Include="mapcylinder.h" />
+    <ClInclude Include="MapDecal.h" />
+    <ClInclude Include="MapDisp.h" />
+    <ClInclude Include="mapdoc.h" />
+    <ClInclude Include="MapEntity.h" />
+    <ClInclude Include="MapFace.h" />
+    <ClInclude Include="MapFrustum.h" />
+    <ClInclude Include="MapGroup.h" />
+    <ClInclude Include="MapKeyFrame.h" />
+    <ClInclude Include="MapLight.h" />
+    <ClInclude Include="MapLightCone.h" />
+    <ClInclude Include="MapLine.h" />
+    <ClInclude Include="MapOverlay.h" />
+    <ClInclude Include="mapoverlaytrans.h" />
+    <ClInclude Include="mapplayerhullhandle.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MapPointHandle.h" />
+    <ClInclude Include="MapQuadBounds.h" />
+    <ClInclude Include="MapSideList.h" />
+    <ClInclude Include="MapSolid.h" />
+    <ClInclude Include="MapSphere.h" />
+    <ClInclude Include="MapStudioModel.h" />
+    <ClInclude Include="mapsweptplayerhull.h" />
+    <ClInclude Include="MapWorld.h" />
+    <ClInclude Include="Box3D.h" />
+    <ClInclude Include="Tool3D.h" />
+    <ClInclude Include="ToolAxisHandle.h" />
+    <ClInclude Include="ToolBlock.h" />
+    <ClInclude Include="ToolCamera.h" />
+    <ClInclude Include="ToolClipper.h" />
+    <ClInclude Include="ToolCordon.h" />
+    <ClInclude Include="ToolDecal.h" />
+    <ClInclude Include="ToolDisplace.h" />
+    <ClInclude Include="ToolEntity.h" />
+    <ClInclude Include="ToolInterface.h" />
+    <ClInclude Include="ToolMagnify.h" />
+    <ClInclude Include="ToolManager.h" />
+    <ClInclude Include="ToolMaterial.h" />
+    <ClInclude Include="ToolMorph.h" />
+    <ClInclude Include="ToolOverlay.h" />
+    <ClInclude Include="ToolPickAngles.h" />
+    <ClInclude Include="ToolPickEntity.h" />
+    <ClInclude Include="ToolPickFace.h" />
+    <ClInclude Include="ToolPointHandle.h" />
+    <ClInclude Include="ToolSelection.h" />
+    <ClInclude Include="ToolSphere.h" />
+    <ClInclude Include="toolswepthull.h" />
+    <ClInclude Include="DummyTexture.h" />
+    <ClInclude Include="IEditorTexture.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="WADTexture.h" />
+    <ClInclude Include="ArchDlg.h" />
+    <ClInclude Include="DispDlg.h" />
+    <ClInclude Include="EditPathDlg.h" />
+    <ClInclude Include="EditPathNodeDlg.h" />
+    <ClInclude Include="EditPrefabDlg.h" />
+    <ClInclude Include="EntityHelpDlg.h" />
+    <ClInclude Include="EntityReportDlg.h" />
+    <ClInclude Include="GotoBrushDlg.h" />
+    <ClInclude Include="MapAnimationDlg.h" />
+    <ClInclude Include="MapCheckDlg.h" />
+    <ClInclude Include="MapDiffDlg.h" />
+    <ClInclude Include="materialdlg.h" />
+    <ClInclude Include="PasteSpecialDlg.h" />
+    <ClInclude Include="PrefabsDlg.h" />
+    <ClInclude Include="ReplaceTexDlg.h" />
+    <ClInclude Include="RunMapCfgDlg.h" />
+    <ClInclude Include="RunMapExpertDlg.h" />
+    <ClInclude Include="ScaleVerticesDlg.h" />
+    <ClInclude Include="SearchReplaceDlg.h" />
+    <ClInclude Include="SelectEntityDlg.h" />
+    <ClInclude Include="StrDlg.h" />
+    <ClInclude Include="torusdlg.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/arraystack.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/bone_setup.h" />
+    <ClInclude Include="../../Public/BSPFILE.H" />
+    <ClInclude Include="../../Public/bspflags.h" />
+    <ClInclude Include="BuildNum.h" />
+    <ClInclude Include="../../Public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../Public/cmodel.h" />
+    <ClInclude Include="../../common/ConfigManager.h" />
+    <ClInclude Include="../../Public/const.h" />
+    <ClInclude Include="dispview.h" />
+    <ClInclude Include="../../Public/fgdlib/EntityDefs.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="FilteredComboBox.h" />
+    <ClInclude Include="../../public/fgdlib/GDClass.h" />
+    <ClInclude Include="hammerbar.h" />
+    <ClInclude Include="HelperFactory.h" />
+    <ClInclude Include="../../public/fgdlib/HelperInfo.h" />
+    <ClInclude Include="ibsplightingthread.h" />
+    <ClInclude Include="../../public/IHammer.h" />
+    <ClInclude Include="../../public/fgdlib/InputOutput.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="lpreview_thread.h" />
+    <ClInclude Include="lprvwindow.h" />
+    <ClInclude Include="MapHelper.h" />
+    <ClInclude Include="MapSprite.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../Public/NTree.h" />
+    <ClInclude Include="osver.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="SelectModeDlgBar.h" />
+    <ClInclude Include="ShellMessageWnd.h" />
+    <ClInclude Include="SmoothingGroupMgr.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="../../Public/studio.h" />
+    <ClInclude Include="subdiv.h" />
+    <ClInclude Include="TextureSystem.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../Public/mathlib/vector4d.h" />
+    <ClInclude Include="../../Public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../Public/mathlib/vplane.h" />
+    <ClInclude Include="../../Public/wadtypes.h" />
+    <ClInclude Include="../../Public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ResourceCompile Include="Hammer.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <None Include="res/afx_idi_.ico" />
+    <None Include="res/bitmap1.bmp" />
+    <None Include="res/bmp00001.bmp" />
+    <None Include="res/bmp00002.bmp" />
+    <None Include="res/camera.ico" />
+    <None Include="res/crosshair.cur" />
+    <None Include="res/crosshair.ico" />
+    <None Include="res/cube.bmp" />
+    <None Include="res/cubechec.bmp" />
+    <None Include="res/cur00001.cur" />
+    <None Include="res/cur00002.cur" />
+    <None Include="res/cursor1.cur" />
+    <None Include="res/cursor2.cur" />
+    <None Include="res/cursor3.cur" />
+    <None Include="res/dispedit.bmp" />
+    <None Include="res/entity.cur" />
+    <None Include="res/eyedropper.cur" />
+    <None Include="res/eyedropper.ico" />
+    <None Include="facepaint.cur" />
+    <None Include="res/Forge.ico" />
+    <None Include="res/ForgeDoc.ico" />
+    <None Include="res/forgemap.bmp" />
+    <None Include="res/gizmoaxis.bmp" />
+    <None Include="res/gizmorotate.bmp" />
+    <None Include="res/gizmoscale.bmp" />
+    <None Include="res/gizmotranslate.bmp" />
+    <None Include="res/handclos.cur" />
+    <None Include="res/handcurs.cur" />
+    <None Include="res/ico00001.ico" />
+    <None Include="res/ico00002.ico" />
+    <None Include="res/ico00003.ico" />
+    <None Include="res/ico00004.ico" />
+    <None Include="res/icon1.ico" />
+    <None Include="res/input.ico" />
+    <None Include="res/input1.ico" />
+    <None Include="res/input_grey.ico" />
+    <None Include="res/inputbad.ico" />
+    <None Include="res/inputbad_grey.ico" />
+    <None Include="res/magnify.cur" />
+    <None Include="res/mapdoc_n.bmp" />
+    <None Include="res/mapedit.bmp" />
+    <None Include="res/mapedit256.bmp" />
+    <None Include="res/mapeditt.bmp" />
+    <None Include="res/mapopera.bmp" />
+    <None Include="res/newsplash.BMP" />
+    <None Include="res/newtoolbar.bmp" />
+    <None Include="res/output.ico" />
+    <None Include="res/output_grey.ico" />
+    <None Include="res/outputbad.ico" />
+    <None Include="res/outputbad_grey.ico" />
+    <None Include="res/paktypes.bmp" />
+    <None Include="res/seltools.bmp" />
+    <None Include="res/set_u.bmp" />
+    <None Include="res/smartclick.cur" />
+    <None Include="res/splash7b.BMP" />
+    <None Include="res/texturew.ico" />
+    <None Include="res/Toolbar.bmp" />
+    <None Include="res/toolbar1.bmp" />
+    <None Include="res/treeroot.bmp" />
+    <None Include="res/undoredo.bmp" />
+    <None Include="res/visgroup.bmp" />
+    <None Include="res/wcsplash.bmp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PreprocessorDefinitions>NO_MEMOVERRIDE_NEW_DELETE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/bone_setup.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/builddisp.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BuildNum.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/ChunkFile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/CollisionUtils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/ConfigManager.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../common/SourceAppInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_common.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/disp_powerinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_helpers.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/filesystem_init.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hammer_mathlib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/KeyFrame/keyframe.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/rope_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SaveInfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Public/simple_physics.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/studio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/vgui_controls/vgui_controls.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerSettings.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../public/tier0/afxmem_override.cpp" />
+    <ClCompile Include="AnchorMgr.cpp" />
+    <ClCompile Include="AngleBox.cpp" />
+    <ClCompile Include="AutoSelCombo.cpp" />
+    <ClCompile Include="Axes2.cpp" />
+    <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="Brushops.cpp" />
+    <ClCompile Include="bsplighting.cpp" />
+    <ClCompile Include="bsplightingthread.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="clipcode.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="CreateArch.cpp" />
+    <ClCompile Include="CullTreeNode.cpp" />
+    <ClCompile Include="DetailObjects.cpp" />
+    <ClCompile Include="DispManager.cpp" />
+    <ClCompile Include="DispMapImageFilter.cpp" />
+    <ClCompile Include="DispPaint.cpp" />
+    <ClCompile Include="DispSew.cpp" />
+    <ClCompile Include="DispShore.cpp" />
+    <ClCompile Include="DispSubdiv.cpp" />
+    <ClCompile Include="DynamicDialogWnd.cpp" />
+    <ClCompile Include="EditGameClass.cpp" />
+    <ClCompile Include="EditGameConfigs.cpp" />
+    <ClCompile Include="EntityConnection.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="FileChangeWatcher.cpp" />
+    <ClCompile Include="FilteredComboBox.cpp" />
+    <ClCompile Include="gameconfig.cpp" />
+    <ClCompile Include="gamepalette.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="GroupList.cpp" />
+    <ClCompile Include="hammer.cpp" />
+    <ClCompile Include="HammerScene.cpp" />
+    <ClCompile Include="HammerVGui.cpp" />
+    <ClCompile Include="HelperFactory.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="IconComboBox.cpp" />
+    <ClCompile Include="../../public/interpolatortypes.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="ListBoxEx.cpp" />
+    <ClCompile Include="LoadSave_MAP.cpp" />
+    <ClCompile Include="LoadSave_RMF.cpp" />
+    <ClCompile Include="lpreview_thread.cpp" />
+    <ClCompile Include="lprvwindow.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MakePrefabLibrary.cpp" />
+    <ClCompile Include="Mapdoc.cpp" />
+    <ClCompile Include="MapPath.cpp" />
+    <ClCompile Include="MapView.cpp" />
+    <ClCompile Include="MapView2D.cpp" />
+    <ClCompile Include="mapview2dbase.cpp" />
+    <ClCompile Include="MapView3D.cpp" />
+    <ClCompile Include="mapviewlogical.cpp" />
+    <ClCompile Include="materialproxyfactory_wc.cpp" />
+    <ClCompile Include="MDIClientWnd.cpp" />
+    <ClCompile Include="MessageWnd.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="ModelBrowser.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="ObjectBar.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="osver.cpp" />
+    <ClCompile Include="Prefab3D.cpp" />
+    <ClCompile Include="Prefabs.cpp" />
+    <ClCompile Include="ProcessWnd.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Render2D.cpp" />
+    <ClCompile Include="Render3DMS.cpp" />
+    <ClCompile Include="RenderUtils.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="RunCommands.cpp" />
+    <ClCompile Include="RunMap.cpp" />
+    <ClCompile Include="ScenePreviewDlg.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="SoundBrowser.cpp" />
+    <ClCompile Include="soundsystem.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SSolid.cpp" />
+    <ClCompile Include="../../utils/common/scriplib.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockSolids.cpp" />
+    <ClCompile Include="StudioModel.cpp" />
+    <ClCompile Include="TargetNameCombo.cpp" />
+    <ClCompile Include="TextureBox.cpp" />
+    <ClCompile Include="TextureConverter.cpp" />
+    <ClCompile Include="TextureWindow.cpp" />
+    <ClCompile Include="TitleWnd.cpp" />
+    <ClCompile Include="VGuiWnd.cpp" />
+    <ClCompile Include="VisGroup.cpp" />
+    <ClCompile Include="MapAlignedBox.cpp" />
+    <ClCompile Include="MapAnimator.cpp" />
+    <ClCompile Include="MapAxisHandle.cpp" />
+    <ClCompile Include="Mapclass.cpp" />
+    <ClCompile Include="mapcylinder.cpp" />
+    <ClCompile Include="MapDecal.cpp" />
+    <ClCompile Include="MapDisp.cpp" />
+    <ClCompile Include="MapEntity.cpp" />
+    <ClCompile Include="MapFace.cpp" />
+    <ClCompile Include="MapFrustum.cpp" />
+    <ClCompile Include="MapGroup.cpp" />
+    <ClCompile Include="MapHelper.cpp" />
+    <ClCompile Include="MapKeyFrame.cpp" />
+    <ClCompile Include="MapLight.cpp" />
+    <ClCompile Include="MapLightCone.cpp" />
+    <ClCompile Include="MapLine.cpp" />
+    <ClCompile Include="MapOverlay.cpp" />
+    <ClCompile Include="mapoverlaytrans.cpp" />
+    <ClCompile Include="mapplayerhullhandle.cpp" />
+    <ClCompile Include="MapPoint.cpp" />
+    <ClCompile Include="MapPointHandle.cpp" />
+    <ClCompile Include="MapQuadBounds.cpp" />
+    <ClCompile Include="MapSideList.cpp" />
+    <ClCompile Include="MapSolid.cpp" />
+    <ClCompile Include="MapSphere.cpp" />
+    <ClCompile Include="MapSprite.cpp" />
+    <ClCompile Include="MapStudioModel.cpp" />
+    <ClCompile Include="mapsweptplayerhull.cpp" />
+    <ClCompile Include="MapWorld.cpp" />
+    <ClCompile Include="Box3D.cpp" />
+    <ClCompile Include="Tool3D.cpp" />
+    <ClCompile Include="ToolAxisHandle.cpp" />
+    <ClCompile Include="ToolBase.cpp" />
+    <ClCompile Include="ToolBlock.cpp" />
+    <ClCompile Include="ToolCamera.cpp" />
+    <ClCompile Include="ToolClipper.cpp" />
+    <ClCompile Include="ToolCordon.cpp" />
+    <ClCompile Include="ToolDecal.cpp" />
+    <ClCompile Include="ToolDisplace.cpp" />
+    <ClCompile Include="ToolEntity.cpp" />
+    <ClCompile Include="ToolMagnify.cpp" />
+    <ClCompile Include="ToolManager.cpp" />
+    <ClCompile Include="ToolMaterial.cpp" />
+    <ClCompile Include="ToolMorph.cpp" />
+    <ClCompile Include="ToolOverlay.cpp" />
+    <ClCompile Include="ToolPickAngles.cpp" />
+    <ClCompile Include="ToolPickEntity.cpp" />
+    <ClCompile Include="ToolPickFace.cpp" />
+    <ClCompile Include="ToolPointHandle.cpp" />
+    <ClCompile Include="ToolSelection.cpp" />
+    <ClCompile Include="ToolSphere.cpp" />
+    <ClCompile Include="toolswepthull.cpp" />
+    <ClCompile Include="DummyTexture.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureSystem.cpp" />
+    <ClCompile Include="WADTexture.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="ShellMessageWnd.cpp" />
+    <ClCompile Include="ArchDlg.cpp" />
+    <ClCompile Include="DispDlg.cpp" />
+    <ClCompile Include="EditGroups.cpp" />
+    <ClCompile Include="EditPathDlg.cpp" />
+    <ClCompile Include="EditPathNodeDlg.cpp" />
+    <ClCompile Include="EditPrefabDlg.cpp" />
+    <ClCompile Include="EntityHelpDlg.cpp" />
+    <ClCompile Include="EntityReportDlg.cpp" />
+    <ClCompile Include="FaceEdit_DispPage.cpp" />
+    <ClCompile Include="FaceEdit_MaterialPage.cpp" />
+    <ClCompile Include="FaceEditSheet.cpp" />
+    <ClCompile Include="FilterControl.cpp" />
+    <ClCompile Include="GotoBrushDlg.cpp" />
+    <ClCompile Include="hammerbar.cpp" />
+    <ClCompile Include="MapAnimationDlg.cpp" />
+    <ClCompile Include="MapCheckDlg.cpp" />
+    <ClCompile Include="MapDiffDlg.cpp" />
+    <ClCompile Include="MapErrorsDlg.cpp" />
+    <ClCompile Include="MapInfoDlg.cpp" />
+    <ClCompile Include="materialdlg.cpp" />
+    <ClCompile Include="NewDocType.cpp" />
+    <ClCompile Include="NewKeyValue.cpp" />
+    <ClCompile Include="NewVisGroupDlg.cpp" />
+    <ClCompile Include="ObjectProperties.cpp" />
+    <ClCompile Include="ObjectPage.cpp" />
+    <ClCompile Include="OP_Entity.cpp" />
+    <ClCompile Include="OP_Flags.cpp" />
+    <ClCompile Include="OP_Groups.cpp" />
+    <ClCompile Include="OP_Input.cpp" />
+    <ClCompile Include="OP_Model.cpp" />
+    <ClCompile Include="OP_Output.cpp" />
+    <ClCompile Include="OPTBuild.cpp" />
+    <ClCompile Include="OPTConfigs.cpp" />
+    <ClCompile Include="OPTGeneral.cpp" />
+    <ClCompile Include="OptionProperties.cpp" />
+    <ClCompile Include="OPTTextures.cpp" />
+    <ClCompile Include="OPTView2D.cpp" />
+    <ClCompile Include="OPTView3D.cpp" />
+    <ClCompile Include="PasteSpecialDlg.cpp" />
+    <ClCompile Include="PrefabsDlg.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="ReplaceTexDlg.cpp" />
+    <ClCompile Include="RunMapCfgDlg.cpp" />
+    <ClCompile Include="RunMapExpertDlg.cpp" />
+    <ClCompile Include="ScaleVerticesDlg.cpp" />
+    <ClCompile Include="SearchReplaceDlg.cpp" />
+    <ClCompile Include="SelectEntityDlg.cpp" />
+    <ClCompile Include="SelectModeDlgBar.cpp" />
+    <ClCompile Include="StrDlg.cpp" />
+    <ClCompile Include="TextureBar.cpp" />
+    <ClCompile Include="texturebrowser.cpp" />
+    <ClCompile Include="TorusDlg.cpp" />
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="UndoWarningDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="ActiveItemList.h" />
+    <ClInclude Include="AnchorMgr.h" />
+    <ClInclude Include="AngleBox.h" />
+    <ClInclude Include="AutoSelCombo.h" />
+    <ClInclude Include="Axes2.h" />
+    <ClInclude Include="BlockArray.h" />
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BrushOps.h" />
+    <ClInclude Include="bsplighting.h" />
+    <ClInclude Include="bsplightingthread.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="../../Public/ChunkFile.h" />
+    <ClInclude Include="clipcode.h" />
+    <ClInclude Include="../../Public/CollisionUtils.h" />
+    <ClInclude Include="ControlBarIDs.h" />
+    <ClInclude Include="CullTreeNode.h" />
+    <ClInclude Include="CustomMessages.h" />
+    <ClInclude Include="DetailObjects.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="DispManager.h" />
+    <ClInclude Include="DispMapImageFilter.h" />
+    <ClInclude Include="DispPaint.h" />
+    <ClInclude Include="DispSew.h" />
+    <ClInclude Include="DispShore.h" />
+    <ClInclude Include="DispSubdiv.h" />
+    <ClInclude Include="DynamicDialogWnd.h" />
+    <ClInclude Include="EditGameClass.h" />
+    <ClInclude Include="EditGameConfigs.h" />
+    <ClInclude Include="EditGroups.h" />
+    <ClInclude Include="EntityConnection.h" />
+    <ClInclude Include="Error3d.h" />
+    <ClInclude Include="FaceEdit_DispPage.h" />
+    <ClInclude Include="FaceEdit_MaterialPage.h" />
+    <ClInclude Include="FaceEditSheet.h" />
+    <ClInclude Include="FileChangeWatcher.h" />
+    <ClInclude Include="FilterControl.h" />
+    <ClInclude Include="gameconfig.h" />
+    <ClInclude Include="gamepalette.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="GlobalFunctions.h" />
+    <ClInclude Include="GroupList.h" />
+    <ClInclude Include="hammer.h" />
+    <ClInclude Include="hammer_mathlib.h" />
+    <ClInclude Include="HammerScene.h" />
+    <ClInclude Include="HammerVGui.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="ibsplighting.h" />
+    <ClInclude Include="IconComboBox.h" />
+    <ClInclude Include="../../public/ivraddll.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="../../public/KeyFrame/keyframe.h" />
+    <ClInclude Include="ListBoxEx.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapDefs.h" />
+    <ClInclude Include="MapErrorsDlg.h" />
+    <ClInclude Include="MapInfoDlg.h" />
+    <ClInclude Include="MapPath.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="MapView2D.h" />
+    <ClInclude Include="mapview2dbase.h" />
+    <ClInclude Include="mapview3d.h" />
+    <ClInclude Include="mapviewlogical.h" />
+    <ClInclude Include="materialproxyfactory_wc.h" />
+    <ClInclude Include="MDIClientWnd.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="ModelBrowser.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="MyCheckListBox.h" />
+    <ClInclude Include="NewDocType.h" />
+    <ClInclude Include="NewKeyValue.h" />
+    <ClInclude Include="NewVisGroupDlg.h" />
+    <ClInclude Include="ObjectBar.h" />
+    <ClInclude Include="ObjectPage.h" />
+    <ClInclude Include="ObjectProperties.h" />
+    <ClInclude Include="OP_Entity.h" />
+    <ClInclude Include="OP_Flags.h" />
+    <ClInclude Include="OP_Groups.h" />
+    <ClInclude Include="OP_Input.h" />
+    <ClInclude Include="OP_Model.h" />
+    <ClInclude Include="OP_Output.h" />
+    <ClInclude Include="optbuild.h" />
+    <ClInclude Include="OPTConfigs.h" />
+    <ClInclude Include="OPTGeneral.h" />
+    <ClInclude Include="OptionProperties.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OPTTextures.h" />
+    <ClInclude Include="OPTView2D.h" />
+    <ClInclude Include="OPTView3D.h" />
+    <ClInclude Include="PakDoc.h" />
+    <ClInclude Include="PakFrame.h" />
+    <ClInclude Include="PakViewDirec.h" />
+    <ClInclude Include="PakViewFiles.h" />
+    <ClInclude Include="PopupMenus.h" />
+    <ClInclude Include="Prefab3d.h" />
+    <ClInclude Include="Prefabs.h" />
+    <ClInclude Include="ProcessWnd.h" />
+    <ClInclude Include="progdlg.h" />
+    <ClInclude Include="Render2D.h" />
+    <ClInclude Include="Render3DMS.h" />
+    <ClInclude Include="RenderUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RunCommands.h" />
+    <ClInclude Include="RunMap.h" />
+    <ClInclude Include="SaveInfo.h" />
+    <ClInclude Include="ScenePreviewDlg.h" />
+    <ClInclude Include="SearchBox.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="SoundBrowser.h" />
+    <ClInclude Include="soundsystem.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="SSolid.h" />
+    <ClInclude Include="StatusBarIDs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockSolids.h" />
+    <ClInclude Include="StudioModel.h" />
+    <ClInclude Include="TargetNameCombo.h" />
+    <ClInclude Include="TextureBar.h" />
+    <ClInclude Include="TextureBox.h" />
+    <ClInclude Include="texturebrowser.h" />
+    <ClInclude Include="TextureConverter.h" />
+    <ClInclude Include="TextureWindow.h" />
+    <ClInclude Include="TitleWnd.h" />
+    <ClInclude Include="Tooldefs.h" />
+    <ClInclude Include="Undo.h" />
+    <ClInclude Include="UndoWarningDlg.h" />
+    <ClInclude Include="VGuiWnd.h" />
+    <ClInclude Include="ViewerSettings.h" />
+    <ClInclude Include="VisGroup.h" />
+    <ClInclude Include="wndTex.h" />
+    <ClInclude Include="MapAlignedBox.h" />
+    <ClInclude Include="MapAnimator.h" />
+    <ClInclude Include="MapAtom.h" />
+    <ClInclude Include="MapAxisHandle.h" />
+    <ClInclude Include="mapclass.h" />
+    <ClInclude Include="mapcylinder.h" />
+    <ClInclude Include="MapDecal.h" />
+    <ClInclude Include="MapDisp.h" />
+    <ClInclude Include="mapdoc.h" />
+    <ClInclude Include="MapEntity.h" />
+    <ClInclude Include="MapFace.h" />
+    <ClInclude Include="MapFrustum.h" />
+    <ClInclude Include="MapGroup.h" />
+    <ClInclude Include="MapKeyFrame.h" />
+    <ClInclude Include="MapLight.h" />
+    <ClInclude Include="MapLightCone.h" />
+    <ClInclude Include="MapLine.h" />
+    <ClInclude Include="MapOverlay.h" />
+    <ClInclude Include="mapoverlaytrans.h" />
+    <ClInclude Include="mapplayerhullhandle.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MapPointHandle.h" />
+    <ClInclude Include="MapQuadBounds.h" />
+    <ClInclude Include="MapSideList.h" />
+    <ClInclude Include="MapSolid.h" />
+    <ClInclude Include="MapSphere.h" />
+    <ClInclude Include="MapStudioModel.h" />
+    <ClInclude Include="mapsweptplayerhull.h" />
+    <ClInclude Include="MapWorld.h" />
+    <ClInclude Include="Box3D.h" />
+    <ClInclude Include="Tool3D.h" />
+    <ClInclude Include="ToolAxisHandle.h" />
+    <ClInclude Include="ToolBlock.h" />
+    <ClInclude Include="ToolCamera.h" />
+    <ClInclude Include="ToolClipper.h" />
+    <ClInclude Include="ToolCordon.h" />
+    <ClInclude Include="ToolDecal.h" />
+    <ClInclude Include="ToolDisplace.h" />
+    <ClInclude Include="ToolEntity.h" />
+    <ClInclude Include="ToolInterface.h" />
+    <ClInclude Include="ToolMagnify.h" />
+    <ClInclude Include="ToolManager.h" />
+    <ClInclude Include="ToolMaterial.h" />
+    <ClInclude Include="ToolMorph.h" />
+    <ClInclude Include="ToolOverlay.h" />
+    <ClInclude Include="ToolPickAngles.h" />
+    <ClInclude Include="ToolPickEntity.h" />
+    <ClInclude Include="ToolPickFace.h" />
+    <ClInclude Include="ToolPointHandle.h" />
+    <ClInclude Include="ToolSelection.h" />
+    <ClInclude Include="ToolSphere.h" />
+    <ClInclude Include="toolswepthull.h" />
+    <ClInclude Include="DummyTexture.h" />
+    <ClInclude Include="IEditorTexture.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="WADTexture.h" />
+    <ClInclude Include="ArchDlg.h" />
+    <ClInclude Include="DispDlg.h" />
+    <ClInclude Include="EditPathDlg.h" />
+    <ClInclude Include="EditPathNodeDlg.h" />
+    <ClInclude Include="EditPrefabDlg.h" />
+    <ClInclude Include="EntityHelpDlg.h" />
+    <ClInclude Include="EntityReportDlg.h" />
+    <ClInclude Include="GotoBrushDlg.h" />
+    <ClInclude Include="MapAnimationDlg.h" />
+    <ClInclude Include="MapCheckDlg.h" />
+    <ClInclude Include="MapDiffDlg.h" />
+    <ClInclude Include="materialdlg.h" />
+    <ClInclude Include="PasteSpecialDlg.h" />
+    <ClInclude Include="PrefabsDlg.h" />
+    <ClInclude Include="ReplaceTexDlg.h" />
+    <ClInclude Include="RunMapCfgDlg.h" />
+    <ClInclude Include="RunMapExpertDlg.h" />
+    <ClInclude Include="ScaleVerticesDlg.h" />
+    <ClInclude Include="SearchReplaceDlg.h" />
+    <ClInclude Include="SelectEntityDlg.h" />
+    <ClInclude Include="StrDlg.h" />
+    <ClInclude Include="torusdlg.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="../../Public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../Public/arraystack.h" />
+    <ClInclude Include="../../Public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/bone_setup.h" />
+    <ClInclude Include="../../Public/BSPFILE.H" />
+    <ClInclude Include="../../Public/bspflags.h" />
+    <ClInclude Include="BuildNum.h" />
+    <ClInclude Include="../../Public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../Public/cmodel.h" />
+    <ClInclude Include="../../common/ConfigManager.h" />
+    <ClInclude Include="../../Public/const.h" />
+    <ClInclude Include="dispview.h" />
+    <ClInclude Include="../../Public/fgdlib/EntityDefs.h" />
+    <ClInclude Include="../../Public/FileSystem.h" />
+    <ClInclude Include="FilteredComboBox.h" />
+    <ClInclude Include="../../public/fgdlib/GDClass.h" />
+    <ClInclude Include="hammerbar.h" />
+    <ClInclude Include="HelperFactory.h" />
+    <ClInclude Include="../../public/fgdlib/HelperInfo.h" />
+    <ClInclude Include="ibsplightingthread.h" />
+    <ClInclude Include="../../public/IHammer.h" />
+    <ClInclude Include="../../public/fgdlib/InputOutput.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="lpreview_thread.h" />
+    <ClInclude Include="lprvwindow.h" />
+    <ClInclude Include="MapHelper.h" />
+    <ClInclude Include="MapSprite.h" />
+    <ClInclude Include="../../Public/mathlib/MATHLIB.H" />
+    <ClInclude Include="../../Public/NTree.h" />
+    <ClInclude Include="osver.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="SelectModeDlgBar.h" />
+    <ClInclude Include="ShellMessageWnd.h" />
+    <ClInclude Include="SmoothingGroupMgr.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="../../Public/studio.h" />
+    <ClInclude Include="subdiv.h" />
+    <ClInclude Include="TextureSystem.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../Public/mathlib/vector.h" />
+    <ClInclude Include="../../Public/mathlib/vector2d.h" />
+    <ClInclude Include="../../Public/mathlib/vector4d.h" />
+    <ClInclude Include="../../Public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../Public/mathlib/vplane.h" />
+    <ClInclude Include="../../Public/wadtypes.h" />
+    <ClInclude Include="../../Public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ResourceCompile Include="Hammer.rc" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <None Include="res/afx_idi_.ico" />
+    <None Include="res/bitmap1.bmp" />
+    <None Include="res/bmp00001.bmp" />
+    <None Include="res/bmp00002.bmp" />
+    <None Include="res/camera.ico" />
+    <None Include="res/crosshair.cur" />
+    <None Include="res/crosshair.ico" />
+    <None Include="res/cube.bmp" />
+    <None Include="res/cubechec.bmp" />
+    <None Include="res/cur00001.cur" />
+    <None Include="res/cur00002.cur" />
+    <None Include="res/cursor1.cur" />
+    <None Include="res/cursor2.cur" />
+    <None Include="res/cursor3.cur" />
+    <None Include="res/dispedit.bmp" />
+    <None Include="res/entity.cur" />
+    <None Include="res/eyedropper.cur" />
+    <None Include="res/eyedropper.ico" />
+    <None Include="facepaint.cur" />
+    <None Include="res/Forge.ico" />
+    <None Include="res/ForgeDoc.ico" />
+    <None Include="res/forgemap.bmp" />
+    <None Include="res/gizmoaxis.bmp" />
+    <None Include="res/gizmorotate.bmp" />
+    <None Include="res/gizmoscale.bmp" />
+    <None Include="res/gizmotranslate.bmp" />
+    <None Include="res/handclos.cur" />
+    <None Include="res/handcurs.cur" />
+    <None Include="res/ico00001.ico" />
+    <None Include="res/ico00002.ico" />
+    <None Include="res/ico00003.ico" />
+    <None Include="res/ico00004.ico" />
+    <None Include="res/icon1.ico" />
+    <None Include="res/input.ico" />
+    <None Include="res/input1.ico" />
+    <None Include="res/input_grey.ico" />
+    <None Include="res/inputbad.ico" />
+    <None Include="res/inputbad_grey.ico" />
+    <None Include="res/magnify.cur" />
+    <None Include="res/mapdoc_n.bmp" />
+    <None Include="res/mapedit.bmp" />
+    <None Include="res/mapedit256.bmp" />
+    <None Include="res/mapeditt.bmp" />
+    <None Include="res/mapopera.bmp" />
+    <None Include="res/newsplash.BMP" />
+    <None Include="res/newtoolbar.bmp" />
+    <None Include="res/output.ico" />
+    <None Include="res/output_grey.ico" />
+    <None Include="res/outputbad.ico" />
+    <None Include="res/outputbad_grey.ico" />
+    <None Include="res/paktypes.bmp" />
+    <None Include="res/seltools.bmp" />
+    <None Include="res/set_u.bmp" />
+    <None Include="res/smartclick.cur" />
+    <None Include="res/splash7b.BMP" />
+    <None Include="res/texturew.ico" />
+    <None Include="res/Toolbar.bmp" />
+    <None Include="res/toolbar1.bmp" />
+    <None Include="res/treeroot.bmp" />
+    <None Include="res/undoredo.bmp" />
+    <None Include="res/visgroup.bmp" />
+    <None Include="res/wcsplash.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

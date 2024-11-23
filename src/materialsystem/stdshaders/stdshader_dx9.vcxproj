@@ -1,0 +1,637 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>stdshader_dx9</ProjectName>
+    <ProjectGuid>{97AD4983-DA40-47BB-9024-B727B42E6C1A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32/dx9\</IntDir>
+    <TargetName>stdshader_dx9</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;fxctmp9;vshtmp9;../../dx9sdk/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64/dx9\</IntDir>
+    <TargetName>stdshader_dx9</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32/dx9\</IntDir>
+    <TargetName>stdshader_dx9</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;fxctmp9;vshtmp9;../../dx9sdk/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64/dx9\</IntDir>
+    <TargetName>stdshader_dx9</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=stdshader_dx9;STDSHADER_DX9_DLL_EXPORT;FAST_MATERIALVAR_ACCESS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;version.lib;winmm.lib;../../dx9sdk/lib/d3dx9.lib;mathlib.lib;shaderlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/stdshader_dx9.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/stdshader_dx9.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=stdshader_dx9;STDSHADER_DX9_DLL_EXPORT;FAST_MATERIALVAR_ACCESS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;mathlib.lib;shaderlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/stdshader_dx9.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/stdshader_dx9.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=stdshader_dx9;STDSHADER_DX9_DLL_EXPORT;FAST_MATERIALVAR_ACCESS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;version.lib;winmm.lib;../../dx9sdk/lib/d3dx9.lib;mathlib.lib;shaderlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/stdshader_dx9.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/stdshader_dx9.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=stdshader_dx9;STDSHADER_DX9_DLL_EXPORT;FAST_MATERIALVAR_ACCESS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;mathlib.lib;shaderlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/stdshader_dx9.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/stdshader_dx9.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="aftershock.cpp" />
+    <ClCompile Include="aftershock_helper.cpp" />
+    <ClCompile Include="AccumBuff4Sample.cpp" />
+    <ClCompile Include="accumbuff5sample.cpp" />
+    <ClCompile Include="BaseVSShader.cpp" />
+    <ClCompile Include="bik_dx90.cpp" />
+    <ClCompile Include="Bloom.cpp" />
+    <ClCompile Include="BlurFilterX.cpp" />
+    <ClCompile Include="BlurFilterY.cpp" />
+    <ClCompile Include="BufferClearObeyStencil_dx9.cpp" />
+    <ClCompile Include="cable_dx9.cpp" />
+    <ClCompile Include="cloak.cpp" />
+    <ClCompile Include="cloak_blended_pass_helper.cpp" />
+    <ClCompile Include="cloak_dx9_helper.cpp" />
+    <ClCompile Include="colorcorrection.cpp" />
+    <ClCompile Include="core_dx9.cpp" />
+    <ClCompile Include="debugmrttexture.cpp" />
+    <ClCompile Include="debugmorphaccumulator_dx9.cpp" />
+    <ClCompile Include="DebugTextureView.cpp" />
+    <ClCompile Include="DecalBaseTimesLightmapAlphaBlendSelfIllum_dx9.cpp" />
+    <ClCompile Include="DecalModulate_dx9.cpp" />
+    <ClCompile Include="depthwrite.cpp" />
+    <ClCompile Include="Downsample.cpp" />
+    <ClCompile Include="downsample_nohdr.cpp" />
+    <ClCompile Include="Engine_Post_dx9.cpp" />
+    <ClCompile Include="emissive_scroll_blended_pass_helper.cpp" />
+    <ClCompile Include="eye_refract.cpp" />
+    <ClCompile Include="eye_refract_helper.cpp" />
+    <ClCompile Include="eyes_dx8_dx9_helper.cpp" />
+    <ClCompile Include="eyes_dx9.cpp" />
+    <ClCompile Include="eyeglint_dx9.cpp" />
+    <ClCompile Include="flesh_interior_blended_pass_helper.cpp" />
+    <ClCompile Include="floatcombine.cpp" />
+    <ClCompile Include="floatcombine_autoexpose.cpp" />
+    <ClCompile Include="floattoscreen.cpp" />
+    <ClCompile Include="floattoscreen_vanilla.cpp" />
+    <ClCompile Include="HDRCombineTo16Bit.cpp" />
+    <ClCompile Include="HDRSelectRange.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass1.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass2.cpp" />
+    <ClCompile Include="hsv.cpp" />
+    <ClCompile Include="introscreenspaceeffect.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9_helper.cpp" />
+    <ClCompile Include="lightmappedreflective.cpp" />
+    <ClCompile Include="modulate_dx9.cpp" />
+    <ClCompile Include="MonitorScreen_dx9.cpp" />
+    <ClCompile Include="morphaccumulate_dx9.cpp" />
+    <ClCompile Include="morphweight_dx9.cpp" />
+    <ClCompile Include="motion_blur_dx9.cpp" />
+    <ClCompile Include="occlusion_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="particlesphere_dx9.cpp" />
+    <ClCompile Include="portal.cpp" />
+    <ClCompile Include="portalstaticoverlay.cpp" />
+    <ClCompile Include="portal_refract.cpp" />
+    <ClCompile Include="portal_refract_helper.cpp" />
+    <ClCompile Include="refract.cpp" />
+    <ClCompile Include="refract_dx9_helper.cpp" />
+    <ClCompile Include="sample4x4.cpp" />
+    <ClCompile Include="sample4x4_blend.cpp" />
+    <ClCompile Include="screenspace_general.cpp" />
+    <ClCompile Include="sfm_blurfilterx.cpp" />
+    <ClCompile Include="sfm_blurfiltery.cpp" />
+    <ClCompile Include="sfm_downsample.cpp" />
+    <ClCompile Include="sfm_integercombine.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shadowbuild_dx9.cpp" />
+    <ClCompile Include="shatteredglass.cpp" />
+    <ClCompile Include="showz.cpp" />
+    <ClCompile Include="skin_dx9_helper.cpp" />
+    <ClCompile Include="sky_dx9.cpp" />
+    <ClCompile Include="sky_hdr_dx9.cpp" />
+    <ClCompile Include="sprite_dx9.cpp" />
+    <ClCompile Include="spritecard.cpp" />
+    <ClCompile Include="teeth.cpp" />
+    <ClCompile Include="TreeLeaf.cpp" />
+    <ClCompile Include="unlitgeneric_dx9.cpp" />
+    <ClCompile Include="unlittwotexture_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="volume_clouds.cpp" />
+    <ClCompile Include="volume_clouds_helper.cpp" />
+    <ClCompile Include="vortwarp_dx9.cpp" />
+    <ClCompile Include="water.cpp" />
+    <ClCompile Include="windowimposter_dx90.cpp" />
+    <ClCompile Include="wireframe_dx9.cpp" />
+    <ClCompile Include="worldtwotextureblend.cpp" />
+    <ClCompile Include="worldvertextransition.cpp" />
+    <ClCompile Include="writez_dx9.cpp" />
+    <ClCompile Include="writestencil_dx9.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="BaseVSShader.h" />
+    <ClInclude Include="cloak_dx9_helper.h" />
+    <ClInclude Include="common_fxc.h" />
+    <ClInclude Include="common_hlsl_cpp_consts.h" />
+    <ClInclude Include="common_ps_fxc.h" />
+    <ClInclude Include="common_vertexlitgeneric_dx9.h" />
+    <ClInclude Include="common_vs_fxc.h" />
+    <ClInclude Include="lightmappedgeneric_dx9_helper.h" />
+    <ClInclude Include="lightmappedgeneric_ps2_3_x.h" />
+    <ClInclude Include="refract_dx9_helper.h" />
+    <ClInclude Include="shader_constant_register_map.h" />
+    <ClInclude Include="skin_dx9_helper.h" />
+    <ClInclude Include="particlelitgeneric_dx9_helper.h" />
+    <ClInclude Include="vertexlitgeneric_dx95_helper.h" />
+    <ClInclude Include="vortwarp_vs20_helper.h" />
+    <ClInclude Include="water_ps2x_helper.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="aftershock.cpp" />
+    <ClCompile Include="aftershock_helper.cpp" />
+    <ClCompile Include="AccumBuff4Sample.cpp" />
+    <ClCompile Include="accumbuff5sample.cpp" />
+    <ClCompile Include="BaseVSShader.cpp" />
+    <ClCompile Include="bik_dx90.cpp" />
+    <ClCompile Include="Bloom.cpp" />
+    <ClCompile Include="BlurFilterX.cpp" />
+    <ClCompile Include="BlurFilterY.cpp" />
+    <ClCompile Include="BufferClearObeyStencil_dx9.cpp" />
+    <ClCompile Include="cable_dx9.cpp" />
+    <ClCompile Include="cloak.cpp" />
+    <ClCompile Include="cloak_blended_pass_helper.cpp" />
+    <ClCompile Include="cloak_dx9_helper.cpp" />
+    <ClCompile Include="colorcorrection.cpp" />
+    <ClCompile Include="core_dx9.cpp" />
+    <ClCompile Include="debugmrttexture.cpp" />
+    <ClCompile Include="DebugTextureView.cpp" />
+    <ClCompile Include="DecalBaseTimesLightmapAlphaBlendSelfIllum_dx9.cpp" />
+    <ClCompile Include="DecalModulate_dx9.cpp" />
+    <ClCompile Include="depthwrite.cpp" />
+    <ClCompile Include="Downsample.cpp" />
+    <ClCompile Include="downsample_nohdr.cpp" />
+    <ClCompile Include="Engine_Post_dx9.cpp" />
+    <ClCompile Include="emissive_scroll_blended_pass_helper.cpp" />
+    <ClCompile Include="eye_refract.cpp" />
+    <ClCompile Include="eye_refract_helper.cpp" />
+    <ClCompile Include="eyes_dx8_dx9_helper.cpp" />
+    <ClCompile Include="eyes_dx9.cpp" />
+    <ClCompile Include="eyeglint_dx9.cpp" />
+    <ClCompile Include="flesh_interior_blended_pass_helper.cpp" />
+    <ClCompile Include="floatcombine.cpp" />
+    <ClCompile Include="floatcombine_autoexpose.cpp" />
+    <ClCompile Include="floattoscreen.cpp" />
+    <ClCompile Include="floattoscreen_vanilla.cpp" />
+    <ClCompile Include="HDRCombineTo16Bit.cpp" />
+    <ClCompile Include="HDRSelectRange.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass1.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass2.cpp" />
+    <ClCompile Include="hsv.cpp" />
+    <ClCompile Include="introscreenspaceeffect.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9_helper.cpp" />
+    <ClCompile Include="lightmappedreflective.cpp" />
+    <ClCompile Include="modulate_dx9.cpp" />
+    <ClCompile Include="MonitorScreen_dx9.cpp" />
+    <ClCompile Include="motion_blur_dx9.cpp" />
+    <ClCompile Include="occlusion_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="particlesphere_dx9.cpp" />
+    <ClCompile Include="portal.cpp" />
+    <ClCompile Include="portalstaticoverlay.cpp" />
+    <ClCompile Include="portal_refract.cpp" />
+    <ClCompile Include="portal_refract_helper.cpp" />
+    <ClCompile Include="refract.cpp" />
+    <ClCompile Include="refract_dx9_helper.cpp" />
+    <ClCompile Include="sample4x4.cpp" />
+    <ClCompile Include="sample4x4_blend.cpp" />
+    <ClCompile Include="screenspace_general.cpp" />
+    <ClCompile Include="sfm_blurfilterx.cpp" />
+    <ClCompile Include="sfm_blurfiltery.cpp" />
+    <ClCompile Include="sfm_downsample.cpp" />
+    <ClCompile Include="sfm_integercombine.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shadowbuild_dx9.cpp" />
+    <ClCompile Include="shatteredglass.cpp" />
+    <ClCompile Include="showz.cpp" />
+    <ClCompile Include="skin_dx9_helper.cpp" />
+    <ClCompile Include="sky_dx9.cpp" />
+    <ClCompile Include="sky_hdr_dx9.cpp" />
+    <ClCompile Include="sprite_dx9.cpp" />
+    <ClCompile Include="spritecard.cpp" />
+    <ClCompile Include="teeth.cpp" />
+    <ClCompile Include="TreeLeaf.cpp" />
+    <ClCompile Include="unlitgeneric_dx9.cpp" />
+    <ClCompile Include="unlittwotexture_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="volume_clouds.cpp" />
+    <ClCompile Include="volume_clouds_helper.cpp" />
+    <ClCompile Include="vortwarp_dx9.cpp" />
+    <ClCompile Include="water.cpp" />
+    <ClCompile Include="windowimposter_dx90.cpp" />
+    <ClCompile Include="wireframe_dx9.cpp" />
+    <ClCompile Include="worldtwotextureblend.cpp" />
+    <ClCompile Include="worldvertextransition.cpp" />
+    <ClCompile Include="writez_dx9.cpp" />
+    <ClCompile Include="writestencil_dx9.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="BaseVSShader.h" />
+    <ClInclude Include="cloak_dx9_helper.h" />
+    <ClInclude Include="common_fxc.h" />
+    <ClInclude Include="common_hlsl_cpp_consts.h" />
+    <ClInclude Include="common_ps_fxc.h" />
+    <ClInclude Include="common_vertexlitgeneric_dx9.h" />
+    <ClInclude Include="common_vs_fxc.h" />
+    <ClInclude Include="lightmappedgeneric_dx9_helper.h" />
+    <ClInclude Include="lightmappedgeneric_ps2_3_x.h" />
+    <ClInclude Include="refract_dx9_helper.h" />
+    <ClInclude Include="shader_constant_register_map.h" />
+    <ClInclude Include="skin_dx9_helper.h" />
+    <ClInclude Include="particlelitgeneric_dx9_helper.h" />
+    <ClInclude Include="vertexlitgeneric_dx95_helper.h" />
+    <ClInclude Include="vortwarp_vs20_helper.h" />
+    <ClInclude Include="water_ps2x_helper.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="aftershock.cpp" />
+    <ClCompile Include="aftershock_helper.cpp" />
+    <ClCompile Include="AccumBuff4Sample.cpp" />
+    <ClCompile Include="accumbuff5sample.cpp" />
+    <ClCompile Include="BaseVSShader.cpp" />
+    <ClCompile Include="bik_dx90.cpp" />
+    <ClCompile Include="Bloom.cpp" />
+    <ClCompile Include="BlurFilterX.cpp" />
+    <ClCompile Include="BlurFilterY.cpp" />
+    <ClCompile Include="BufferClearObeyStencil_dx9.cpp" />
+    <ClCompile Include="cable_dx9.cpp" />
+    <ClCompile Include="cloak.cpp" />
+    <ClCompile Include="cloak_blended_pass_helper.cpp" />
+    <ClCompile Include="cloak_dx9_helper.cpp" />
+    <ClCompile Include="colorcorrection.cpp" />
+    <ClCompile Include="core_dx9.cpp" />
+    <ClCompile Include="debugmrttexture.cpp" />
+    <ClCompile Include="debugmorphaccumulator_dx9.cpp" />
+    <ClCompile Include="DebugTextureView.cpp" />
+    <ClCompile Include="DecalBaseTimesLightmapAlphaBlendSelfIllum_dx9.cpp" />
+    <ClCompile Include="DecalModulate_dx9.cpp" />
+    <ClCompile Include="depthwrite.cpp" />
+    <ClCompile Include="Downsample.cpp" />
+    <ClCompile Include="downsample_nohdr.cpp" />
+    <ClCompile Include="Engine_Post_dx9.cpp" />
+    <ClCompile Include="emissive_scroll_blended_pass_helper.cpp" />
+    <ClCompile Include="eye_refract.cpp" />
+    <ClCompile Include="eye_refract_helper.cpp" />
+    <ClCompile Include="eyes_dx8_dx9_helper.cpp" />
+    <ClCompile Include="eyes_dx9.cpp" />
+    <ClCompile Include="eyeglint_dx9.cpp" />
+    <ClCompile Include="flesh_interior_blended_pass_helper.cpp" />
+    <ClCompile Include="floatcombine.cpp" />
+    <ClCompile Include="floatcombine_autoexpose.cpp" />
+    <ClCompile Include="floattoscreen.cpp" />
+    <ClCompile Include="floattoscreen_vanilla.cpp" />
+    <ClCompile Include="HDRCombineTo16Bit.cpp" />
+    <ClCompile Include="HDRSelectRange.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass1.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass2.cpp" />
+    <ClCompile Include="hsv.cpp" />
+    <ClCompile Include="introscreenspaceeffect.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9_helper.cpp" />
+    <ClCompile Include="lightmappedreflective.cpp" />
+    <ClCompile Include="modulate_dx9.cpp" />
+    <ClCompile Include="MonitorScreen_dx9.cpp" />
+    <ClCompile Include="morphaccumulate_dx9.cpp" />
+    <ClCompile Include="morphweight_dx9.cpp" />
+    <ClCompile Include="motion_blur_dx9.cpp" />
+    <ClCompile Include="occlusion_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="particlesphere_dx9.cpp" />
+    <ClCompile Include="portal.cpp" />
+    <ClCompile Include="portalstaticoverlay.cpp" />
+    <ClCompile Include="portal_refract.cpp" />
+    <ClCompile Include="portal_refract_helper.cpp" />
+    <ClCompile Include="refract.cpp" />
+    <ClCompile Include="refract_dx9_helper.cpp" />
+    <ClCompile Include="sample4x4.cpp" />
+    <ClCompile Include="sample4x4_blend.cpp" />
+    <ClCompile Include="screenspace_general.cpp" />
+    <ClCompile Include="sfm_blurfilterx.cpp" />
+    <ClCompile Include="sfm_blurfiltery.cpp" />
+    <ClCompile Include="sfm_downsample.cpp" />
+    <ClCompile Include="sfm_integercombine.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shadowbuild_dx9.cpp" />
+    <ClCompile Include="shatteredglass.cpp" />
+    <ClCompile Include="showz.cpp" />
+    <ClCompile Include="skin_dx9_helper.cpp" />
+    <ClCompile Include="sky_dx9.cpp" />
+    <ClCompile Include="sky_hdr_dx9.cpp" />
+    <ClCompile Include="sprite_dx9.cpp" />
+    <ClCompile Include="spritecard.cpp" />
+    <ClCompile Include="teeth.cpp" />
+    <ClCompile Include="TreeLeaf.cpp" />
+    <ClCompile Include="unlitgeneric_dx9.cpp" />
+    <ClCompile Include="unlittwotexture_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="volume_clouds.cpp" />
+    <ClCompile Include="volume_clouds_helper.cpp" />
+    <ClCompile Include="vortwarp_dx9.cpp" />
+    <ClCompile Include="water.cpp" />
+    <ClCompile Include="windowimposter_dx90.cpp" />
+    <ClCompile Include="wireframe_dx9.cpp" />
+    <ClCompile Include="worldtwotextureblend.cpp" />
+    <ClCompile Include="worldvertextransition.cpp" />
+    <ClCompile Include="writez_dx9.cpp" />
+    <ClCompile Include="writestencil_dx9.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="BaseVSShader.h" />
+    <ClInclude Include="cloak_dx9_helper.h" />
+    <ClInclude Include="common_fxc.h" />
+    <ClInclude Include="common_hlsl_cpp_consts.h" />
+    <ClInclude Include="common_ps_fxc.h" />
+    <ClInclude Include="common_vertexlitgeneric_dx9.h" />
+    <ClInclude Include="common_vs_fxc.h" />
+    <ClInclude Include="lightmappedgeneric_dx9_helper.h" />
+    <ClInclude Include="lightmappedgeneric_ps2_3_x.h" />
+    <ClInclude Include="refract_dx9_helper.h" />
+    <ClInclude Include="shader_constant_register_map.h" />
+    <ClInclude Include="skin_dx9_helper.h" />
+    <ClInclude Include="particlelitgeneric_dx9_helper.h" />
+    <ClInclude Include="vertexlitgeneric_dx95_helper.h" />
+    <ClInclude Include="vortwarp_vs20_helper.h" />
+    <ClInclude Include="water_ps2x_helper.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="aftershock.cpp" />
+    <ClCompile Include="aftershock_helper.cpp" />
+    <ClCompile Include="AccumBuff4Sample.cpp" />
+    <ClCompile Include="accumbuff5sample.cpp" />
+    <ClCompile Include="BaseVSShader.cpp" />
+    <ClCompile Include="bik_dx90.cpp" />
+    <ClCompile Include="Bloom.cpp" />
+    <ClCompile Include="BlurFilterX.cpp" />
+    <ClCompile Include="BlurFilterY.cpp" />
+    <ClCompile Include="BufferClearObeyStencil_dx9.cpp" />
+    <ClCompile Include="cable_dx9.cpp" />
+    <ClCompile Include="cloak.cpp" />
+    <ClCompile Include="cloak_blended_pass_helper.cpp" />
+    <ClCompile Include="cloak_dx9_helper.cpp" />
+    <ClCompile Include="colorcorrection.cpp" />
+    <ClCompile Include="core_dx9.cpp" />
+    <ClCompile Include="debugmrttexture.cpp" />
+    <ClCompile Include="DebugTextureView.cpp" />
+    <ClCompile Include="DecalBaseTimesLightmapAlphaBlendSelfIllum_dx9.cpp" />
+    <ClCompile Include="DecalModulate_dx9.cpp" />
+    <ClCompile Include="depthwrite.cpp" />
+    <ClCompile Include="Downsample.cpp" />
+    <ClCompile Include="downsample_nohdr.cpp" />
+    <ClCompile Include="Engine_Post_dx9.cpp" />
+    <ClCompile Include="emissive_scroll_blended_pass_helper.cpp" />
+    <ClCompile Include="eye_refract.cpp" />
+    <ClCompile Include="eye_refract_helper.cpp" />
+    <ClCompile Include="eyes_dx8_dx9_helper.cpp" />
+    <ClCompile Include="eyes_dx9.cpp" />
+    <ClCompile Include="eyeglint_dx9.cpp" />
+    <ClCompile Include="flesh_interior_blended_pass_helper.cpp" />
+    <ClCompile Include="floatcombine.cpp" />
+    <ClCompile Include="floatcombine_autoexpose.cpp" />
+    <ClCompile Include="floattoscreen.cpp" />
+    <ClCompile Include="floattoscreen_vanilla.cpp" />
+    <ClCompile Include="HDRCombineTo16Bit.cpp" />
+    <ClCompile Include="HDRSelectRange.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass1.cpp" />
+    <ClCompile Include="hsl_filmgrain_pass2.cpp" />
+    <ClCompile Include="hsv.cpp" />
+    <ClCompile Include="introscreenspaceeffect.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9.cpp" />
+    <ClCompile Include="lightmappedgeneric_dx9_helper.cpp" />
+    <ClCompile Include="lightmappedreflective.cpp" />
+    <ClCompile Include="modulate_dx9.cpp" />
+    <ClCompile Include="MonitorScreen_dx9.cpp" />
+    <ClCompile Include="motion_blur_dx9.cpp" />
+    <ClCompile Include="occlusion_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9.cpp" />
+    <ClCompile Include="particlelitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="particlesphere_dx9.cpp" />
+    <ClCompile Include="portal.cpp" />
+    <ClCompile Include="portalstaticoverlay.cpp" />
+    <ClCompile Include="portal_refract.cpp" />
+    <ClCompile Include="portal_refract_helper.cpp" />
+    <ClCompile Include="refract.cpp" />
+    <ClCompile Include="refract_dx9_helper.cpp" />
+    <ClCompile Include="sample4x4.cpp" />
+    <ClCompile Include="sample4x4_blend.cpp" />
+    <ClCompile Include="screenspace_general.cpp" />
+    <ClCompile Include="sfm_blurfilterx.cpp" />
+    <ClCompile Include="sfm_blurfiltery.cpp" />
+    <ClCompile Include="sfm_downsample.cpp" />
+    <ClCompile Include="sfm_integercombine.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shadowbuild_dx9.cpp" />
+    <ClCompile Include="shatteredglass.cpp" />
+    <ClCompile Include="showz.cpp" />
+    <ClCompile Include="skin_dx9_helper.cpp" />
+    <ClCompile Include="sky_dx9.cpp" />
+    <ClCompile Include="sky_hdr_dx9.cpp" />
+    <ClCompile Include="sprite_dx9.cpp" />
+    <ClCompile Include="spritecard.cpp" />
+    <ClCompile Include="teeth.cpp" />
+    <ClCompile Include="TreeLeaf.cpp" />
+    <ClCompile Include="unlitgeneric_dx9.cpp" />
+    <ClCompile Include="unlittwotexture_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9.cpp" />
+    <ClCompile Include="vertexlitgeneric_dx9_helper.cpp" />
+    <ClCompile Include="volume_clouds.cpp" />
+    <ClCompile Include="volume_clouds_helper.cpp" />
+    <ClCompile Include="vortwarp_dx9.cpp" />
+    <ClCompile Include="water.cpp" />
+    <ClCompile Include="windowimposter_dx90.cpp" />
+    <ClCompile Include="wireframe_dx9.cpp" />
+    <ClCompile Include="worldtwotextureblend.cpp" />
+    <ClCompile Include="worldvertextransition.cpp" />
+    <ClCompile Include="writez_dx9.cpp" />
+    <ClCompile Include="writestencil_dx9.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="BaseVSShader.h" />
+    <ClInclude Include="cloak_dx9_helper.h" />
+    <ClInclude Include="common_fxc.h" />
+    <ClInclude Include="common_hlsl_cpp_consts.h" />
+    <ClInclude Include="common_ps_fxc.h" />
+    <ClInclude Include="common_vertexlitgeneric_dx9.h" />
+    <ClInclude Include="common_vs_fxc.h" />
+    <ClInclude Include="lightmappedgeneric_dx9_helper.h" />
+    <ClInclude Include="lightmappedgeneric_ps2_3_x.h" />
+    <ClInclude Include="refract_dx9_helper.h" />
+    <ClInclude Include="shader_constant_register_map.h" />
+    <ClInclude Include="skin_dx9_helper.h" />
+    <ClInclude Include="particlelitgeneric_dx9_helper.h" />
+    <ClInclude Include="vertexlitgeneric_dx95_helper.h" />
+    <ClInclude Include="vortwarp_vs20_helper.h" />
+    <ClInclude Include="water_ps2x_helper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

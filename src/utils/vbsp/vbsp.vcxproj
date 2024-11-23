@@ -1,0 +1,719 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Vbsp</ProjectName>
+    <ProjectGuid>{01434259-C2D5-4431-AA27-C8172EB7B693}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>vbsp</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>vbsp</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>vbsp</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>vbsp</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=vbsp;MACRO_MATHLIB;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;winmm.lib;bitmap.lib;fgdlib.lib;mathlib.lib;tier2.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/vbsp.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/vbsp.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=vbsp;MACRO_MATHLIB;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;winmm.lib;bitmap.lib;fgdlib.lib;mathlib.lib;tier2.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/vbsp.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/vbsp.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=vbsp;MACRO_MATHLIB;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;winmm.lib;bitmap.lib;fgdlib.lib;mathlib.lib;tier2.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/vbsp.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/vbsp.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;EXENAME=vbsp;MACRO_MATHLIB;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO /NXCOMPAT /SUBSYSTEM:CONSOLE</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;legacy_stdio_definitions.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;winmm.lib;bitmap.lib;fgdlib.lib;mathlib.lib;tier2.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/vbsp.exe</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/vbsp.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../hammer/boundbox.cpp" />
+    <ClCompile Include="brushbsp.cpp" />
+    <ClCompile Include="../../public/CollisionUtils.cpp" />
+    <ClCompile Include="csg.cpp" />
+    <ClCompile Include="cubemap.cpp" />
+    <ClCompile Include="detail.cpp" />
+    <ClCompile Include="detailObjects.cpp" />
+    <ClCompile Include="../../public/disp_common.cpp" />
+    <ClCompile Include="disp_ivp.cpp" />
+    <ClCompile Include="../../public/disp_powerinfo.cpp" />
+    <ClCompile Include="disp_vbsp.cpp" />
+    <ClCompile Include="faces.cpp" />
+    <ClCompile Include="glfile.cpp" />
+    <ClCompile Include="ivp.cpp" />
+    <ClCompile Include="leakfile.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="materialpatch.cpp" />
+    <ClCompile Include="materialsub.cpp" />
+    <ClCompile Include="../common/mstristrip.cpp" />
+    <ClCompile Include="nodraw.cpp" />
+    <ClCompile Include="normals.cpp" />
+    <ClCompile Include="overlay.cpp" />
+    <ClCompile Include="../common/physdll.cpp" />
+    <ClCompile Include="portals.cpp" />
+    <ClCompile Include="prtfile.cpp" />
+    <ClCompile Include="../../public/ScratchPad3D.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="StaticProp.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="../common/utilmatlib.cpp" />
+    <ClCompile Include="vbsp.cpp" />
+    <ClCompile Include="worldvertextransitionfixup.cpp" />
+    <ClCompile Include="writebsp.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../../public/builddisp.cpp" />
+    <ClCompile Include="../../public/ChunkFile.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../common/map_shared.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/polylib.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../hammer/boundbox.h" />
+    <ClInclude Include="csg.h" />
+    <ClInclude Include="detail.h" />
+    <ClInclude Include="../../public/disp_powerinfo.h" />
+    <ClInclude Include="disp_vbsp.h" />
+    <ClInclude Include="../../public/disp_vertindex.h" />
+    <ClInclude Include="faces.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="materialpatch.h" />
+    <ClInclude Include="materialsub.h" />
+    <ClInclude Include="../common/scratchpad_helpers.h" />
+    <ClInclude Include="vbsp.h" />
+    <ClInclude Include="worldvertextransitionfixup.h" />
+    <ClInclude Include="writebsp.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="../../public/ChunkFile.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="disp_ivp.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../common/FileSystem_Tools.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="ivp.h" />
+    <ClInclude Include="../common/map_shared.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/polylib.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../common/utilmatlib.h" />
+    <ClInclude Include="../vmpi/vmpi.h" />
+    <ClInclude Include="../../public/zip_uncompressed.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/arraystack.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/CollisionUtils.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="../../public/IScratchPad3D.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="../common/mstristrip.h" />
+    <ClInclude Include="../../public/nmatrix.h" />
+    <ClInclude Include="../../public/NTree.h" />
+    <ClInclude Include="../../public/nvector.h" />
+    <ClInclude Include="../../public/phyfile.h" />
+    <ClInclude Include="../common/physdll.h" />
+    <ClInclude Include="../common/qfiles.h" />
+    <ClInclude Include="../../public/ScratchPad3D.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/studio.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/mathlib/vector4d.h" />
+    <ClInclude Include="../../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../public/vphysics_interface.h" />
+    <ClInclude Include="../../public/mathlib/vplane.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+    <ClInclude Include="../../public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <None Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../hammer/boundbox.cpp" />
+    <ClCompile Include="brushbsp.cpp" />
+    <ClCompile Include="../../public/CollisionUtils.cpp" />
+    <ClCompile Include="csg.cpp" />
+    <ClCompile Include="cubemap.cpp" />
+    <ClCompile Include="detail.cpp" />
+    <ClCompile Include="detailObjects.cpp" />
+    <ClCompile Include="../../public/disp_common.cpp" />
+    <ClCompile Include="disp_ivp.cpp" />
+    <ClCompile Include="../../public/disp_powerinfo.cpp" />
+    <ClCompile Include="disp_vbsp.cpp" />
+    <ClCompile Include="faces.cpp" />
+    <ClCompile Include="glfile.cpp" />
+    <ClCompile Include="ivp.cpp" />
+    <ClCompile Include="leakfile.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="materialpatch.cpp" />
+    <ClCompile Include="materialsub.cpp" />
+    <ClCompile Include="../common/mstristrip.cpp" />
+    <ClCompile Include="nodraw.cpp" />
+    <ClCompile Include="normals.cpp" />
+    <ClCompile Include="overlay.cpp" />
+    <ClCompile Include="../common/physdll.cpp" />
+    <ClCompile Include="portals.cpp" />
+    <ClCompile Include="prtfile.cpp" />
+    <ClCompile Include="../../public/ScratchPad3D.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="StaticProp.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="../common/utilmatlib.cpp" />
+    <ClCompile Include="vbsp.cpp" />
+    <ClCompile Include="worldvertextransitionfixup.cpp" />
+    <ClCompile Include="writebsp.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../../public/builddisp.cpp" />
+    <ClCompile Include="../../public/ChunkFile.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../common/map_shared.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/polylib.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../hammer/boundbox.h" />
+    <ClInclude Include="csg.h" />
+    <ClInclude Include="detail.h" />
+    <ClInclude Include="../../public/disp_powerinfo.h" />
+    <ClInclude Include="disp_vbsp.h" />
+    <ClInclude Include="../../public/disp_vertindex.h" />
+    <ClInclude Include="faces.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="materialpatch.h" />
+    <ClInclude Include="materialsub.h" />
+    <ClInclude Include="../common/scratchpad_helpers.h" />
+    <ClInclude Include="vbsp.h" />
+    <ClInclude Include="worldvertextransitionfixup.h" />
+    <ClInclude Include="writebsp.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="../../public/ChunkFile.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="disp_ivp.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../common/FileSystem_Tools.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="ivp.h" />
+    <ClInclude Include="../common/map_shared.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/polylib.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../common/utilmatlib.h" />
+    <ClInclude Include="../vmpi/vmpi.h" />
+    <ClInclude Include="../../public/zip_uncompressed.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/arraystack.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/CollisionUtils.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="../../public/IScratchPad3D.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="../common/mstristrip.h" />
+    <ClInclude Include="../../public/nmatrix.h" />
+    <ClInclude Include="../../public/NTree.h" />
+    <ClInclude Include="../../public/nvector.h" />
+    <ClInclude Include="../../public/phyfile.h" />
+    <ClInclude Include="../common/physdll.h" />
+    <ClInclude Include="../common/qfiles.h" />
+    <ClInclude Include="../../public/ScratchPad3D.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/studio.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/mathlib/vector4d.h" />
+    <ClInclude Include="../../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../public/vphysics_interface.h" />
+    <ClInclude Include="../../public/mathlib/vplane.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+    <ClInclude Include="../../public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <None Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../hammer/boundbox.cpp" />
+    <ClCompile Include="brushbsp.cpp" />
+    <ClCompile Include="../../public/CollisionUtils.cpp" />
+    <ClCompile Include="csg.cpp" />
+    <ClCompile Include="cubemap.cpp" />
+    <ClCompile Include="detail.cpp" />
+    <ClCompile Include="detailObjects.cpp" />
+    <ClCompile Include="../../public/disp_common.cpp" />
+    <ClCompile Include="disp_ivp.cpp" />
+    <ClCompile Include="../../public/disp_powerinfo.cpp" />
+    <ClCompile Include="disp_vbsp.cpp" />
+    <ClCompile Include="faces.cpp" />
+    <ClCompile Include="glfile.cpp" />
+    <ClCompile Include="ivp.cpp" />
+    <ClCompile Include="leakfile.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="materialpatch.cpp" />
+    <ClCompile Include="materialsub.cpp" />
+    <ClCompile Include="../common/mstristrip.cpp" />
+    <ClCompile Include="nodraw.cpp" />
+    <ClCompile Include="normals.cpp" />
+    <ClCompile Include="overlay.cpp" />
+    <ClCompile Include="../common/physdll.cpp" />
+    <ClCompile Include="portals.cpp" />
+    <ClCompile Include="prtfile.cpp" />
+    <ClCompile Include="../../public/ScratchPad3D.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="StaticProp.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="../common/utilmatlib.cpp" />
+    <ClCompile Include="vbsp.cpp" />
+    <ClCompile Include="worldvertextransitionfixup.cpp" />
+    <ClCompile Include="writebsp.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../../public/builddisp.cpp" />
+    <ClCompile Include="../../public/ChunkFile.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../common/map_shared.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/polylib.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../hammer/boundbox.h" />
+    <ClInclude Include="csg.h" />
+    <ClInclude Include="detail.h" />
+    <ClInclude Include="../../public/disp_powerinfo.h" />
+    <ClInclude Include="disp_vbsp.h" />
+    <ClInclude Include="../../public/disp_vertindex.h" />
+    <ClInclude Include="faces.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="materialpatch.h" />
+    <ClInclude Include="materialsub.h" />
+    <ClInclude Include="../common/scratchpad_helpers.h" />
+    <ClInclude Include="vbsp.h" />
+    <ClInclude Include="worldvertextransitionfixup.h" />
+    <ClInclude Include="writebsp.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="../../public/ChunkFile.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="disp_ivp.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../common/FileSystem_Tools.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="ivp.h" />
+    <ClInclude Include="../common/map_shared.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/polylib.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../common/utilmatlib.h" />
+    <ClInclude Include="../vmpi/vmpi.h" />
+    <ClInclude Include="../../public/zip_uncompressed.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/arraystack.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/CollisionUtils.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="../../public/IScratchPad3D.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="../common/mstristrip.h" />
+    <ClInclude Include="../../public/nmatrix.h" />
+    <ClInclude Include="../../public/NTree.h" />
+    <ClInclude Include="../../public/nvector.h" />
+    <ClInclude Include="../../public/phyfile.h" />
+    <ClInclude Include="../common/physdll.h" />
+    <ClInclude Include="../common/qfiles.h" />
+    <ClInclude Include="../../public/ScratchPad3D.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/studio.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/mathlib/vector4d.h" />
+    <ClInclude Include="../../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../public/vphysics_interface.h" />
+    <ClInclude Include="../../public/mathlib/vplane.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+    <ClInclude Include="../../public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <None Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../../public/tier0/memoverride.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../hammer/boundbox.cpp" />
+    <ClCompile Include="brushbsp.cpp" />
+    <ClCompile Include="../../public/CollisionUtils.cpp" />
+    <ClCompile Include="csg.cpp" />
+    <ClCompile Include="cubemap.cpp" />
+    <ClCompile Include="detail.cpp" />
+    <ClCompile Include="detailObjects.cpp" />
+    <ClCompile Include="../../public/disp_common.cpp" />
+    <ClCompile Include="disp_ivp.cpp" />
+    <ClCompile Include="../../public/disp_powerinfo.cpp" />
+    <ClCompile Include="disp_vbsp.cpp" />
+    <ClCompile Include="faces.cpp" />
+    <ClCompile Include="glfile.cpp" />
+    <ClCompile Include="ivp.cpp" />
+    <ClCompile Include="leakfile.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="materialpatch.cpp" />
+    <ClCompile Include="materialsub.cpp" />
+    <ClCompile Include="../common/mstristrip.cpp" />
+    <ClCompile Include="nodraw.cpp" />
+    <ClCompile Include="normals.cpp" />
+    <ClCompile Include="overlay.cpp" />
+    <ClCompile Include="../common/physdll.cpp" />
+    <ClCompile Include="portals.cpp" />
+    <ClCompile Include="prtfile.cpp" />
+    <ClCompile Include="../../public/ScratchPad3D.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="StaticProp.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="../common/utilmatlib.cpp" />
+    <ClCompile Include="vbsp.cpp" />
+    <ClCompile Include="worldvertextransitionfixup.cpp" />
+    <ClCompile Include="writebsp.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../../public/builddisp.cpp" />
+    <ClCompile Include="../../public/ChunkFile.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="../../public/filesystem_init.cpp" />
+    <ClCompile Include="../common/filesystem_tools.cpp" />
+    <ClCompile Include="../common/map_shared.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../common/polylib.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../hammer/boundbox.h" />
+    <ClInclude Include="csg.h" />
+    <ClInclude Include="detail.h" />
+    <ClInclude Include="../../public/disp_powerinfo.h" />
+    <ClInclude Include="disp_vbsp.h" />
+    <ClInclude Include="../../public/disp_vertindex.h" />
+    <ClInclude Include="faces.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="materialpatch.h" />
+    <ClInclude Include="materialsub.h" />
+    <ClInclude Include="../common/scratchpad_helpers.h" />
+    <ClInclude Include="vbsp.h" />
+    <ClInclude Include="worldvertextransitionfixup.h" />
+    <ClInclude Include="writebsp.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/builddisp.h" />
+    <ClInclude Include="../../public/ChunkFile.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="disp_ivp.h" />
+    <ClInclude Include="../../public/filesystem.h" />
+    <ClInclude Include="../../public/filesystem_helpers.h" />
+    <ClInclude Include="../common/FileSystem_Tools.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../../public/tier1/interface.h" />
+    <ClInclude Include="ivp.h" />
+    <ClInclude Include="../common/map_shared.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/polylib.h" />
+    <ClInclude Include="../../public/tier1/tokenreader.h" />
+    <ClInclude Include="../common/utilmatlib.h" />
+    <ClInclude Include="../vmpi/vmpi.h" />
+    <ClInclude Include="../../public/zip_uncompressed.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/arraystack.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/CollisionUtils.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/tier0/dbg.h" />
+    <ClInclude Include="../../public/disp_common.h" />
+    <ClInclude Include="../../public/IScratchPad3D.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="../common/mstristrip.h" />
+    <ClInclude Include="../../public/nmatrix.h" />
+    <ClInclude Include="../../public/NTree.h" />
+    <ClInclude Include="../../public/nvector.h" />
+    <ClInclude Include="../../public/phyfile.h" />
+    <ClInclude Include="../common/physdll.h" />
+    <ClInclude Include="../common/qfiles.h" />
+    <ClInclude Include="../../public/ScratchPad3D.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/studio.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="../../public/mathlib/vector4d.h" />
+    <ClInclude Include="../../public/mathlib/vmatrix.h" />
+    <ClInclude Include="../../public/vphysics_interface.h" />
+    <ClInclude Include="../../public/mathlib/vplane.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+    <ClInclude Include="../../public/worldsize.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <None Include="notes.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

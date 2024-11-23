@@ -1,0 +1,353 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>LinearMath</ProjectName>
+    <ProjectGuid>{D20CF5E0-C688-4139-82C4-F14B5709F5B3}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../../lib/common/win32\</OutDir>
+    <IntDir>Debug/win32/LinearMath\</IntDir>
+    <TargetName>LinearMath</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../../../common;../../../../public;../../../../public/tier0;../../../../public/tier1;../;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../../../lib/common/win64\</OutDir>
+    <IntDir>Debug/win64/LinearMath\</IntDir>
+    <TargetName>LinearMath</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../../../common;../../../../public;../../../../public/tier0;../../../../public/tier1;../;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../../lib/common/win32\</OutDir>
+    <IntDir>Release/win32/LinearMath\</IntDir>
+    <TargetName>LinearMath</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../../../common;../../../../public;../../../../public/tier0;../../../../public/tier1;../;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../../../lib/common/win64\</OutDir>
+    <IntDir>Release/win64/LinearMath\</IntDir>
+    <TargetName>LinearMath</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>../../../../common;../../../../public;../../../../public/tier0;../../../../public/tier1;../;$(IncludePath)</IncludePath>
+    <LibraryPath>;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=LinearMath;_DEBUG;MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../../lib/common/win32/LinearMath.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=LinearMath;_DEBUG;MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope /Gm</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../../lib/common/win64/LinearMath.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=LinearMath;NDEBUG;MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /d2Zi+</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../../lib/common/win32/LinearMath.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_LIB;LIBNAME=LinearMath;NDEBUG;MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /d2Zi+</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../../lib/common/win64/LinearMath.lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../LinearMath/btAlignedAllocator.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHull.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHullComputer.cpp" />
+    <ClCompile Include="../LinearMath/btDebug.cpp" />
+    <ClCompile Include="../LinearMath/btGeometryUtil.cpp" />
+    <ClCompile Include="../LinearMath/btPolarDecomposition.cpp" />
+    <ClCompile Include="../LinearMath/btQuickprof.cpp" />
+    <ClCompile Include="../LinearMath/btSerializer.cpp" />
+    <ClCompile Include="../LinearMath/btVector3.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../LinearMath/btAabbUtil2.h" />
+    <ClInclude Include="../LinearMath/btAlignedAllocator.h" />
+    <ClInclude Include="../LinearMath/btAlignedObjectArray.h" />
+    <ClInclude Include="../LinearMath/btConvexHull.h" />
+    <ClInclude Include="../LinearMath/btConvexHullComputer.h" />
+    <ClInclude Include="../LinearMath/btDebug.h" />
+    <ClInclude Include="../LinearMath/btDefaultMotionState.h" />
+    <ClInclude Include="../LinearMath/btDefines.h" />
+    <ClInclude Include="../LinearMath/btGeometryUtil.h" />
+    <ClInclude Include="../LinearMath/btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="../LinearMath/btHashMap.h" />
+    <ClInclude Include="../LinearMath/btIDebugDraw.h" />
+    <ClInclude Include="../LinearMath/btList.h" />
+    <ClInclude Include="../LinearMath/btMatrix3x3.h" />
+    <ClInclude Include="../LinearMath/btMatrixX.h" />
+    <ClInclude Include="../LinearMath/btMinMax.h" />
+    <ClInclude Include="../LinearMath/btMotionState.h" />
+    <ClInclude Include="../LinearMath/btPolarDecomposition.h" />
+    <ClInclude Include="../LinearMath/btPoolAllocator.h" />
+    <ClInclude Include="../LinearMath/btQuadWord.h" />
+    <ClInclude Include="../LinearMath/btQuaternion.h" />
+    <ClInclude Include="../LinearMath/btQuickprof.h" />
+    <ClInclude Include="../LinearMath/btRandom.h" />
+    <ClInclude Include="../LinearMath/btScalar.h" />
+    <ClInclude Include="../LinearMath/btSerializer.h" />
+    <ClInclude Include="../LinearMath/btStackAlloc.h" />
+    <ClInclude Include="../LinearMath/btTransform.h" />
+    <ClInclude Include="../LinearMath/btTransformUtil.h" />
+    <ClInclude Include="../LinearMath/btVector3.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../LinearMath/btAlignedAllocator.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHull.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHullComputer.cpp" />
+    <ClCompile Include="../LinearMath/btDebug.cpp" />
+    <ClCompile Include="../LinearMath/btGeometryUtil.cpp" />
+    <ClCompile Include="../LinearMath/btPolarDecomposition.cpp" />
+    <ClCompile Include="../LinearMath/btQuickprof.cpp" />
+    <ClCompile Include="../LinearMath/btSerializer.cpp" />
+    <ClCompile Include="../LinearMath/btVector3.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../LinearMath/btAabbUtil2.h" />
+    <ClInclude Include="../LinearMath/btAlignedAllocator.h" />
+    <ClInclude Include="../LinearMath/btAlignedObjectArray.h" />
+    <ClInclude Include="../LinearMath/btConvexHull.h" />
+    <ClInclude Include="../LinearMath/btConvexHullComputer.h" />
+    <ClInclude Include="../LinearMath/btDebug.h" />
+    <ClInclude Include="../LinearMath/btDefaultMotionState.h" />
+    <ClInclude Include="../LinearMath/btDefines.h" />
+    <ClInclude Include="../LinearMath/btGeometryUtil.h" />
+    <ClInclude Include="../LinearMath/btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="../LinearMath/btHashMap.h" />
+    <ClInclude Include="../LinearMath/btIDebugDraw.h" />
+    <ClInclude Include="../LinearMath/btList.h" />
+    <ClInclude Include="../LinearMath/btMatrix3x3.h" />
+    <ClInclude Include="../LinearMath/btMatrixX.h" />
+    <ClInclude Include="../LinearMath/btMinMax.h" />
+    <ClInclude Include="../LinearMath/btMotionState.h" />
+    <ClInclude Include="../LinearMath/btPolarDecomposition.h" />
+    <ClInclude Include="../LinearMath/btPoolAllocator.h" />
+    <ClInclude Include="../LinearMath/btQuadWord.h" />
+    <ClInclude Include="../LinearMath/btQuaternion.h" />
+    <ClInclude Include="../LinearMath/btQuickprof.h" />
+    <ClInclude Include="../LinearMath/btRandom.h" />
+    <ClInclude Include="../LinearMath/btScalar.h" />
+    <ClInclude Include="../LinearMath/btSerializer.h" />
+    <ClInclude Include="../LinearMath/btStackAlloc.h" />
+    <ClInclude Include="../LinearMath/btTransform.h" />
+    <ClInclude Include="../LinearMath/btTransformUtil.h" />
+    <ClInclude Include="../LinearMath/btVector3.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../LinearMath/btAlignedAllocator.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHull.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHullComputer.cpp" />
+    <ClCompile Include="../LinearMath/btDebug.cpp" />
+    <ClCompile Include="../LinearMath/btGeometryUtil.cpp" />
+    <ClCompile Include="../LinearMath/btPolarDecomposition.cpp" />
+    <ClCompile Include="../LinearMath/btQuickprof.cpp" />
+    <ClCompile Include="../LinearMath/btSerializer.cpp" />
+    <ClCompile Include="../LinearMath/btVector3.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../LinearMath/btAabbUtil2.h" />
+    <ClInclude Include="../LinearMath/btAlignedAllocator.h" />
+    <ClInclude Include="../LinearMath/btAlignedObjectArray.h" />
+    <ClInclude Include="../LinearMath/btConvexHull.h" />
+    <ClInclude Include="../LinearMath/btConvexHullComputer.h" />
+    <ClInclude Include="../LinearMath/btDebug.h" />
+    <ClInclude Include="../LinearMath/btDefaultMotionState.h" />
+    <ClInclude Include="../LinearMath/btDefines.h" />
+    <ClInclude Include="../LinearMath/btGeometryUtil.h" />
+    <ClInclude Include="../LinearMath/btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="../LinearMath/btHashMap.h" />
+    <ClInclude Include="../LinearMath/btIDebugDraw.h" />
+    <ClInclude Include="../LinearMath/btList.h" />
+    <ClInclude Include="../LinearMath/btMatrix3x3.h" />
+    <ClInclude Include="../LinearMath/btMatrixX.h" />
+    <ClInclude Include="../LinearMath/btMinMax.h" />
+    <ClInclude Include="../LinearMath/btMotionState.h" />
+    <ClInclude Include="../LinearMath/btPolarDecomposition.h" />
+    <ClInclude Include="../LinearMath/btPoolAllocator.h" />
+    <ClInclude Include="../LinearMath/btQuadWord.h" />
+    <ClInclude Include="../LinearMath/btQuaternion.h" />
+    <ClInclude Include="../LinearMath/btQuickprof.h" />
+    <ClInclude Include="../LinearMath/btRandom.h" />
+    <ClInclude Include="../LinearMath/btScalar.h" />
+    <ClInclude Include="../LinearMath/btSerializer.h" />
+    <ClInclude Include="../LinearMath/btStackAlloc.h" />
+    <ClInclude Include="../LinearMath/btTransform.h" />
+    <ClInclude Include="../LinearMath/btTransformUtil.h" />
+    <ClInclude Include="../LinearMath/btVector3.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../LinearMath/btAlignedAllocator.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHull.cpp" />
+    <ClCompile Include="../LinearMath/btConvexHullComputer.cpp" />
+    <ClCompile Include="../LinearMath/btDebug.cpp" />
+    <ClCompile Include="../LinearMath/btGeometryUtil.cpp" />
+    <ClCompile Include="../LinearMath/btPolarDecomposition.cpp" />
+    <ClCompile Include="../LinearMath/btQuickprof.cpp" />
+    <ClCompile Include="../LinearMath/btSerializer.cpp" />
+    <ClCompile Include="../LinearMath/btVector3.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../LinearMath/btAabbUtil2.h" />
+    <ClInclude Include="../LinearMath/btAlignedAllocator.h" />
+    <ClInclude Include="../LinearMath/btAlignedObjectArray.h" />
+    <ClInclude Include="../LinearMath/btConvexHull.h" />
+    <ClInclude Include="../LinearMath/btConvexHullComputer.h" />
+    <ClInclude Include="../LinearMath/btDebug.h" />
+    <ClInclude Include="../LinearMath/btDefaultMotionState.h" />
+    <ClInclude Include="../LinearMath/btDefines.h" />
+    <ClInclude Include="../LinearMath/btGeometryUtil.h" />
+    <ClInclude Include="../LinearMath/btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="../LinearMath/btHashMap.h" />
+    <ClInclude Include="../LinearMath/btIDebugDraw.h" />
+    <ClInclude Include="../LinearMath/btList.h" />
+    <ClInclude Include="../LinearMath/btMatrix3x3.h" />
+    <ClInclude Include="../LinearMath/btMatrixX.h" />
+    <ClInclude Include="../LinearMath/btMinMax.h" />
+    <ClInclude Include="../LinearMath/btMotionState.h" />
+    <ClInclude Include="../LinearMath/btPolarDecomposition.h" />
+    <ClInclude Include="../LinearMath/btPoolAllocator.h" />
+    <ClInclude Include="../LinearMath/btQuadWord.h" />
+    <ClInclude Include="../LinearMath/btQuaternion.h" />
+    <ClInclude Include="../LinearMath/btQuickprof.h" />
+    <ClInclude Include="../LinearMath/btRandom.h" />
+    <ClInclude Include="../LinearMath/btScalar.h" />
+    <ClInclude Include="../LinearMath/btSerializer.h" />
+    <ClInclude Include="../LinearMath/btStackAlloc.h" />
+    <ClInclude Include="../LinearMath/btTransform.h" />
+    <ClInclude Include="../LinearMath/btTransformUtil.h" />
+    <ClInclude Include="../LinearMath/btVector3.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

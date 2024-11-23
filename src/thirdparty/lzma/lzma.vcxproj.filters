@@ -1,0 +1,184 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{975F7E62-9FF5-4277-A64D-6D9DF6744E57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{4EE69ACD-F31C-4328-9AB9-34C556282BAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lzma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Alloc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Threads.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFind.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFindMt.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaDec.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaEnc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lzma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Alloc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Threads.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFind.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFindMt.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaDec.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaEnc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lzma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Alloc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Threads.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFind.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFindMt.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaDec.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaEnc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lzma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Alloc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/Threads.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFind.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzFindMt.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaDec.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="C/LzmaEnc.c">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMADecoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Compress/LZMAEncoder.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/CWrappers.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP/7zip/Common/StreamUtils.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C/Alloc.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="C/Threads.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="C/LzFind.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="C/LzFindMt.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="C/LzmaDec.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="C/LzmaEnc.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="CPP/7zip/Compress/LZMADecoder.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="CPP/7zip/Compress/LZMAEncoder.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="CPP/7zip/Common/CWrappers.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="CPP/7zip/Common/StreamUtils.h">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup/>
+  <ItemGroup/>
+</Project>

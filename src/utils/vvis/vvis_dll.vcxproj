@@ -1,0 +1,427 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Vvis_dll</ProjectName>
+    <ProjectGuid>{46EB30AA-0004-44B6-8557-625E6DF2330D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug/win32\</OutDir>
+    <IntDir>Debug/win32\</IntDir>
+    <TargetName>vvis_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;../vmpi/mysql/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug/win64\</OutDir>
+    <IntDir>Debug/win64\</IntDir>
+    <TargetName>vvis_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;../vmpi/mysql/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release/win32\</OutDir>
+    <IntDir>Release/win32\</IntDir>
+    <TargetName>vvis_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;../vmpi/mysql/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win32;../../lib/public/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Release/win64\</OutDir>
+    <IntDir>Release/win64\</IntDir>
+    <TargetName>vvis_dll</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>../../common;../../public;../../public/tier0;../../public/tier1;../common;../vmpi;../vmpi/mysql/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/common/win64;../../lib/public/win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=vvis_dll;MPI;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;mathlib.lib;tier2.lib;vmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/vvis_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/vvis_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;_HAS_ITERATOR_DEBUGGING=0;_DEBUG;DEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=vvis_dll;MPI;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/RTC1 /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;mathlib.lib;tier2.lib;vmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/vvis_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/vvis_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmt;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>COMPILER_MSVC32;PLATFORM_WINDOWS_PC32;WIN32;_WIN32;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X86_;_x86_;PLATFORM_32BITS;_I386_;_I386;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=vvis_dll;MPI;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>4316;4594;4457;4456;4458;4459;4624;4577</DisableSpecificWarnings>
+      <AdditionalOptions>/Gw /arch:SSE /Oy- /d2Zi+ /Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope /Zm200</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win32/tier0.lib;../../lib/public/win32/tier1.lib;../../lib/public/win32/vstdlib.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;mathlib.lib;tier2.lib;vmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win32/vvis_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win32/vvis_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS_PC64;WIN64;_WIN64;COMPILER_MSVC64;WINDOWS;_WINDOWS;COMPILER_MSVC;_ALLOW_RUNTIME_LIBRARY_MISMATCH;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;_ALLOW_MSC_VER_MISMATCH;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_X64_;_x64_;PLATFORM_64BITS;_x86_64_;_X86_64_;NDEBUG;DEV_BUILD;_DLL_EXT=.dll;FRAME_POINTER_OMISSION_DISABLED;VPC;_USRDLL;_DLL_EXT=.dll;DLLNAME=vvis_dll;MPI;PROTECTED_THINGS_DISABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/Ob2 /Oi /Gy /GF /GR /errorReport:prompt /Zc:forScope</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/INCREMENTAL:NO /MAP /OPT:NOICF /DEBUG /SUBSYSTEM:WINDOWS /ERRORREPORT:PROMPT /SAFESEH:NO /MACHINE:X64 /ignore:4221 /NOLOGO</AdditionalOptions>
+      <AdditionalDependencies>advapi32.lib;gdi32.lib;comdlg32.lib;ole32.lib;user32.lib;shell32.lib;../../lib/public/win64/tier0.lib;../../lib/public/win64/tier1.lib;../../lib/public/win64/vstdlib.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;mathlib.lib;tier2.lib;vmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../game/bin/win64/vvis_dll.dll</OutputFile>
+      <ProgramDatabaseFile>../../../game/bin/win64/vvis_dll.pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libc;libcd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/collisionutils.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="flow.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="../common/mpi_stats.cpp" />
+    <ClCompile Include="mpivis.cpp" />
+    <ClCompile Include="../common/MySqlDatabase.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../../public/scratchpad3d.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+    <ClCompile Include="../common/vmpi_tools_shared.cpp" />
+    <ClCompile Include="vvis.cpp" />
+    <ClCompile Include="WaterDist.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../common/ISQLDBReplyTarget.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="mpivis.h" />
+    <ClInclude Include="../common/MySqlDatabase.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="vis.h" />
+    <ClInclude Include="../vmpi/vmpi_distribute_work.h" />
+    <ClInclude Include="../common/vmpi_tools_shared.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/collisionutils.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="flow.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="../common/mpi_stats.cpp" />
+    <ClCompile Include="mpivis.cpp" />
+    <ClCompile Include="../common/MySqlDatabase.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../../public/scratchpad3d.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+    <ClCompile Include="../common/vmpi_tools_shared.cpp" />
+    <ClCompile Include="vvis.cpp" />
+    <ClCompile Include="WaterDist.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../common/ISQLDBReplyTarget.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="mpivis.h" />
+    <ClInclude Include="../common/MySqlDatabase.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="vis.h" />
+    <ClInclude Include="../vmpi/vmpi_distribute_work.h" />
+    <ClInclude Include="../common/vmpi_tools_shared.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/collisionutils.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="flow.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="../common/mpi_stats.cpp" />
+    <ClCompile Include="mpivis.cpp" />
+    <ClCompile Include="../common/MySqlDatabase.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../../public/scratchpad3d.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+    <ClCompile Include="../common/vmpi_tools_shared.cpp" />
+    <ClCompile Include="vvis.cpp" />
+    <ClCompile Include="WaterDist.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../common/ISQLDBReplyTarget.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="mpivis.h" />
+    <ClInclude Include="../common/MySqlDatabase.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="vis.h" />
+    <ClInclude Include="../vmpi/vmpi_distribute_work.h" />
+    <ClInclude Include="../common/vmpi_tools_shared.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile Include="../common/bsplib.cpp" />
+    <ClCompile Include="../common/cmdlib.cpp" />
+    <ClCompile Include="../../public/collisionutils.cpp" />
+    <ClCompile Include="../../public/filesystem_helpers.cpp" />
+    <ClCompile Include="flow.cpp" />
+    <ClCompile Include="../../public/loadcmdline.cpp" />
+    <ClCompile Include="../../public/lumpfiles.cpp" />
+    <ClCompile Include="../common/mpi_stats.cpp" />
+    <ClCompile Include="mpivis.cpp" />
+    <ClCompile Include="../common/MySqlDatabase.cpp" />
+    <ClCompile Include="../common/pacifier.cpp" />
+    <ClCompile Include="../../public/scratchpad3d.cpp" />
+    <ClCompile Include="../common/scratchpad_helpers.cpp" />
+    <ClCompile Include="../common/scriplib.cpp" />
+    <ClCompile Include="../common/threads.cpp" />
+    <ClCompile Include="../common/tools_minidump.cpp" />
+    <ClCompile Include="../common/vmpi_tools_shared.cpp" />
+    <ClCompile Include="vvis.cpp" />
+    <ClCompile Include="WaterDist.cpp" />
+    <ClCompile Include="../../public/zip_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClInclude Include="../common/tools_minidump.h" />
+    <ClInclude Include="../../public/mathlib/amd3dx.h" />
+    <ClInclude Include="../../public/tier0/basetypes.h" />
+    <ClInclude Include="../../public/BSPFILE.H" />
+    <ClInclude Include="../../public/bspflags.h" />
+    <ClInclude Include="../common/bsplib.h" />
+    <ClInclude Include="../../public/BSPTreeData.h" />
+    <ClInclude Include="../../public/mathlib/bumpvects.h" />
+    <ClInclude Include="../../public/tier1/byteswap.h" />
+    <ClInclude Include="../../public/tier1/checksum_crc.h" />
+    <ClInclude Include="../../public/tier1/checksum_md5.h" />
+    <ClInclude Include="../common/cmdlib.h" />
+    <ClInclude Include="../../public/cmodel.h" />
+    <ClInclude Include="../../public/tier0/commonmacros.h" />
+    <ClInclude Include="../../public/GameBSPFile.h" />
+    <ClInclude Include="../common/ISQLDBReplyTarget.h" />
+    <ClInclude Include="../../public/mathlib/mathlib.h" />
+    <ClInclude Include="mpivis.h" />
+    <ClInclude Include="../common/MySqlDatabase.h" />
+    <ClInclude Include="../common/pacifier.h" />
+    <ClInclude Include="../common/scriplib.h" />
+    <ClInclude Include="../../public/tier1/strtools.h" />
+    <ClInclude Include="../common/threads.h" />
+    <ClInclude Include="../../public/tier1/utlbuffer.h" />
+    <ClInclude Include="../../public/tier1/utllinkedlist.h" />
+    <ClInclude Include="../../public/tier1/utlmemory.h" />
+    <ClInclude Include="../../public/tier1/utlrbtree.h" />
+    <ClInclude Include="../../public/tier1/utlsymbol.h" />
+    <ClInclude Include="../../public/tier1/utlvector.h" />
+    <ClInclude Include="../../public/vcollide.h" />
+    <ClInclude Include="../../public/mathlib/vector.h" />
+    <ClInclude Include="../../public/mathlib/vector2d.h" />
+    <ClInclude Include="vis.h" />
+    <ClInclude Include="../vmpi/vmpi_distribute_work.h" />
+    <ClInclude Include="../common/vmpi_tools_shared.h" />
+    <ClInclude Include="../../public/vstdlib/vstdlib.h" />
+    <ClInclude Include="../../public/wadtypes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
